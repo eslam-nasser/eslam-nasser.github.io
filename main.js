@@ -83,6 +83,9 @@ function init() {
 
     // RESIZE IF NEEDED
     window.addEventListener('resize', onWindowResize, false);
+
+    // Init GUI
+    initGUI();
 }
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -148,4 +151,18 @@ function onDocumentMouseDown(event) {
         }
         INTERSECTED = null;
     }
+}
+
+function initGUI() {
+    var API = {
+        'Show model': true,
+        'Auto rotate camera': true
+    };
+    var gui = new dat.GUI();
+    gui.add(API, 'Show model').onChange(function() {
+        mesh.visible = API['Show model'];
+    });
+    gui.add(API, 'Auto rotate camera').onChange(function() {
+        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.1 : 0;
+    });
 }
