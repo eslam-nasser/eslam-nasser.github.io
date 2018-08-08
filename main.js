@@ -63,6 +63,7 @@ function init() {
     // CONTROLS
     controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
+    controls.enablePan = false;
     controls.autoRotateSpeed = 0;
     controls.enableDamping = true;
     controls.dampingFactor = 0.25;
@@ -100,26 +101,20 @@ function generateText(txt, font) {
     if (hash.length !== 0) {
         theText = hash;
     }
-    console.log(theText);
     var geometry = new THREE.TextGeometry(theText, {
         font: font,
         size: 0.5,
         height: 0.05
-        // curveSegments: 12,
-        // bevelEnabled: true,
-        // bevelThickness: 10,
-        // bevelSize: 8,
-        // bevelSegments: 5
     });
     geometry.computeBoundingBox();
     var centerOffset =
         -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
     var materials = [
         new THREE.MeshBasicMaterial({
-            color: 0xffffff,
+            color: 0xc55509,
             overdraw: 0.5
         }),
-        new THREE.MeshBasicMaterial({ color: 0x000000, overdraw: 0.5 })
+        new THREE.MeshBasicMaterial({ color: 0x703208, overdraw: 0.5 })
     ];
     model_name = new THREE.Mesh(geometry, materials);
     model_name.position.x = centerOffset;
