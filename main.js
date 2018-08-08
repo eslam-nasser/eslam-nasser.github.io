@@ -10,7 +10,8 @@ var camera,
     renderer,
     mesh,
     moving_pointLight,
-    static_pointLight;
+    static_pointLight,
+    model_name;
 let objects = [];
 let mouse = new THREE.Vector2(),
     INTERSECTED;
@@ -38,7 +39,7 @@ function init() {
         0.1,
         1000
     );
-    camera.position.set(2, 1, 3);
+    camera.position.set(0, 4, 1.7);
 
     // LIGHT #1
     moving_pointLight = new THREE.PointLight(0xfffef0, 2, 100000);
@@ -62,8 +63,7 @@ function init() {
     // CONTROLS
     controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.1;
-
+    controls.autoRotateSpeed = 0;
     controls.enableDamping = true;
     controls.dampingFactor = 0.25;
     controls.screenSpacePanning = false;
@@ -74,6 +74,12 @@ function init() {
     // MODEL
     const loader = new THREE.JSONLoader();
     loader.load('./model/formica-rufa-with-skin.json', handle_load);
+
+    // MODEL NAME
+    var fontLoader = new THREE.FontLoader();
+    fontLoader.load('fonts/helvetiker_regular.typeface.json', function(font) {
+        generateText('Formica Rufa', font);
+    });
 
     // CLICK
     // document.addEventListener('mousedown', onDocumentMouseDown, false);
@@ -86,6 +92,42 @@ function init() {
 
     // Init GUI
     initGUI();
+}
+
+function generateText(txt, font) {
+    var theText = txt;
+    var hash = document.location.hash.substr(1);
+    if (hash.length !== 0) {
+        theText = hash;
+    }
+    console.log(theText);
+    var geometry = new THREE.TextGeometry(theText, {
+        font: font,
+        size: 0.5,
+        height: 0.05
+        // curveSegments: 12,
+        // bevelEnabled: true,
+        // bevelThickness: 10,
+        // bevelSize: 8,
+        // bevelSegments: 5
+    });
+    geometry.computeBoundingBox();
+    var centerOffset =
+        -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+    var materials = [
+        new THREE.MeshBasicMaterial({
+            color: 0xffffff,
+            overdraw: 0.5
+        }),
+        new THREE.MeshBasicMaterial({ color: 0x000000, overdraw: 0.5 })
+    ];
+    model_name = new THREE.Mesh(geometry, materials);
+    model_name.position.x = centerOffset;
+    // model_name.position.y = 1;
+    model_name.position.z = 1.5;
+    // model_name.rotation.x = 0;
+    model_name.rotation.x = Math.PI / -2;
+    scene.add(model_name);
 }
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -155,14 +197,18 @@ function onDocumentMouseDown(event) {
 
 function initGUI() {
     var API = {
-        'Show model': true,
-        'Auto rotate camera': true
+        'Show insect': true,
+        'Show insect name': true,
+        'Auto rotate camera': false
     };
     var gui = new dat.GUI();
-    gui.add(API, 'Show model').onChange(function() {
-        mesh.visible = API['Show model'];
+    gui.add(API, 'Show insect').onChange(function() {
+        mesh.visible = API['Show insect'];
+    });
+    gui.add(API, 'Show insect name').onChange(function() {
+        model_name.visible = API['Show insect name'];
     });
     gui.add(API, 'Auto rotate camera').onChange(function() {
-        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.1 : 0;
+        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.2 : 0;
     });
 }
