@@ -52,8 +52,8 @@ function init() {
     var floor_texture = new THREE.TextureLoader().load('../img/floor.jpg');
     floor_texture.wrapS = floor_texture.wrapT = THREE.RepeatWrapping;
     floor_texture.offset.set(0, 0);
-    floor_texture.repeat.set(30, 30);
-    var geometry = new THREE.PlaneGeometry(30, 30, 1, 1);
+    floor_texture.repeat.set(60, 60);
+    var geometry = new THREE.PlaneGeometry(60, 60, 1, 1);
     var material = new THREE.MeshBasicMaterial({ map: floor_texture });
     floor = new THREE.Mesh(geometry, material);
     floor.material.side = THREE.DoubleSide;
@@ -73,8 +73,34 @@ function init() {
     controls.maxPolarAngle = Math.PI / 2.2;
 
     // MODEL
-    const loader = new THREE.JSONLoader();
-    loader.load('./model/formica-rufa-with-skin.json', handle_load);
+    // const loader = new THREE.JSONLoader();
+    // loader.load('./model/formica-rufa-with-skin.json', handle_load);
+
+    var textureLoader = new THREE.TextureLoader();
+    var model_texture = textureLoader.load('./model/texture.jpg');
+    // model
+    var onProgress = function(xhr) {
+        if (xhr.lengthComputable) {
+            var percentComplete = (xhr.loaded / xhr.total) * 100;
+            console.log(Math.round(percentComplete, 2) + '% downloaded');
+        }
+    };
+    var onError = function(xhr) {};
+    var loader = new THREE.OBJLoader();
+    loader.load(
+        './model/formica-rufa.obj',
+        function(object) {
+            object.traverse(function(child) {
+                if (child instanceof THREE.Mesh) {
+                    child.material.map = model_texture;
+                }
+            });
+            object.position.y = -0.001; // the .obj has a floor by default, so we hide it by moving it below the our floor
+            scene.add(object);
+        },
+        onProgress,
+        onError
+    );
 
     // MODEL NAME
     var fontLoader = new THREE.FontLoader();
@@ -132,13 +158,13 @@ function onWindowResize() {
 
 function handle_load(geometry, materials) {
     // Create the model with its texture
-    const model_texture = new THREE.TextureLoader().load(`./model/texture.jpg`);
-    const model_material = new THREE.MeshPhongMaterial({ map: model_texture });
+    // const model_texture = new THREE.TextureLoader().load(`./model/texture.jpg`);
+    // const model_material = new THREE.MeshPhongMaterial({ map: model_texture });
 
-    mesh = new THREE.Mesh(geometry, model_material);
-    objects.push(mesh);
-    scene.add(mesh);
-    mesh.position.z = 0.5; // to offset the model to the camera's center
+    // mesh = new THREE.Mesh(geometry, model_material);
+    // objects.push(mesh);
+    scene.add(geometry);
+    // mesh.position.z = 0.5; // to offset the model to the camera's center
 }
 function animate() {
     requestAnimationFrame(animate);
