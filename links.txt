@@ -1,0 +1,4 @@
+// REF: https://threejs.org/examples/canvas_interactive_cubes.html
+// https://cmichel.io/importing-blender-model-with-texture-to-threejs/
+// https://www.turbosquid.com/3d-model/insect?sort_column=a5&sort_order=asc
+// https://threejs.org/docs/?q=loading#api/loaders/managers/LoadingManager
