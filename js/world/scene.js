@@ -1,4 +1,4 @@
-import { Color, Scene, Fog } from '../libs/three.min';
+import { Color, Scene, Fog } from 'three-full';
 
 // SCENE
 const fogColor = new Color(0xe3deda);

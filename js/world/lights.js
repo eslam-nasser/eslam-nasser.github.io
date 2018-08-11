@@ -1,4 +1,4 @@
-import { PointLight } from '../libs/three.min';
+import { PointLight } from 'three-full';
 
 // LIGHT #1
 const movingPointLight = new PointLight(0xfffef0, 2, 100000);

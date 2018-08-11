@@ -5,10 +5,10 @@ import {
     Mesh,
     DoubleSide,
     RepeatWrapping,
-} from '../libs/three.min';
+} from 'three-full';
 
 // FLOOR
-const floorTexture = new TextureLoader().load('../img/floor.jpg');
+const floorTexture = new TextureLoader().load('../assets/img/floor.jpg');
 floorTexture.wrapS = RepeatWrapping;
 floorTexture.wrapT = RepeatWrapping;
 floorTexture.offset.set(0, 0);

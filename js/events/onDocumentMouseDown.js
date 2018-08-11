@@ -1,4 +1,4 @@
-import { Raycaster, Vector2 } from '../libs/three.min';
+import { Raycaster, Vector2 } from 'three-full';
 import camera from '../world/camera';
 
 const mouse = new Vector2();

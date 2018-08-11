@@ -1,4 +1,4 @@
-import { WebGLRenderer } from '../libs/three.min';
+import { WebGLRenderer } from 'three-full';
 
 // RENDERER
 const renderer = new WebGLRenderer({ antialias: true });

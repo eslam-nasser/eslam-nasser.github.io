@@ -7,7 +7,7 @@
     "author": "Eslam nasser <in1146@fayoum.edu.eg>",
     "license": "MIT",
     "scripts": {
-        "start": "babel js/index.js"
+        "start": "parcel js/index.js dist/"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
@@ -16,5 +16,7 @@
         "eslint-config-airbnb-base": "^13.0.0",
         "eslint-plugin-import": "^2.13.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "three-full": "^8.0.0"
+    }
 }

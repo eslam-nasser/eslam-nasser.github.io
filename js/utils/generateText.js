@@ -1,4 +1,4 @@
-import { TextGeometry, MeshBasicMaterial, Mesh } from '../libs/three.min';
+import { TextGeometry, MeshBasicMaterial, Mesh } from 'three-full';
 import scene from '../world/scene';
 
 export default function generateText(txt, font) {

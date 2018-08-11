@@ -1,4 +1,4 @@
-import { OrbitControls } from '../libs/three.min';
+import { OrbitControls } from 'three-full';
 import camera from './camera';
 import renderer from './renderer';
 

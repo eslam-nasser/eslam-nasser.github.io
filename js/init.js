@@ -4,12 +4,12 @@ import floor from './world/floor';
 import lights from './world/lights';
 import loadModel from './obj-loader/loadModel';
 import onWindowResize from './events/onWindowResize';
-import initGUI from './gui/init';
+// import initGUI from './gui/init';
 
 export default function init() {
     // Lights
-    scene.add(lights.static_pointLight);
-    scene.add(lights.moving_pointLight);
+    scene.add(lights.staticPointLight);
+    scene.add(lights.movingPointLight);
 
     // Floor
     scene.add(floor);
@@ -21,5 +21,5 @@ export default function init() {
     window.addEventListener('resize', onWindowResize, false);
 
     // Init GUI
-    initGUI();
+    // initGUI();
 }
