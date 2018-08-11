@@ -7,7 +7,8 @@
     "author": "Eslam nasser <in1146@fayoum.edu.eg>",
     "license": "MIT",
     "scripts": {
-        "start": "parcel js/index.js dist/"
+        "serve": "php -S localhost:4000",
+        "start": "parcel watch index.html"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
