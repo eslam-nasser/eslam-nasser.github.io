@@ -5,7 +5,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    font-family: arial;
+    font-family: 'Montserrat', sans-serif;
     user-select: none;
     font-size: 16px;
 }
@@ -27,6 +27,7 @@ canvas {
     justify-content: center;
     align-items: center;
     transition: 0.24s;
+    z-index: 11;
 }
 .bar-wrapper {
     width: 500px;
@@ -68,4 +69,26 @@ canvas {
     color: #6c5ce7;
     opacity: 0.7;
     font-weight: 100;
+}
+
+/* Info */
+.info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+.info h1 {
+    text-transform: capitalize;
+    margin-top: 0;
+}
+.info h3 {
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.info h3 span {
+    font-size: 80%;
+    width: 90px;
+    display: inline-block;
 }

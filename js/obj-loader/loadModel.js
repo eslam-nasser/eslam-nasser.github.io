@@ -21,6 +21,7 @@ export default function loadModel(modelUrl, textureUrl, scene) {
             object.position.y = -0.001;
             // to offset the model to the camera's center
             object.position.z = 0.5;
+            window.insect = object;
             scene.add(object);
         },
         onProgress,
