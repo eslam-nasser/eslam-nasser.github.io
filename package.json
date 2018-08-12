@@ -8,7 +8,8 @@
     "license": "MIT",
     "scripts": {
         "serve": "php -S localhost:4000",
-        "start": "parcel watch index.html"
+        "watch": "parcel watch index.html",
+        "build": "parcel build index.html --out-dir build/"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
