@@ -26,12 +26,27 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transition: 0.24s;
     z-index: 11;
+}
+.progress-bar-wrapper .spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 3px solid #6c5ce7;
+    animation: spin 0.3s linear infinite;
+    position: relative;
+}
+.progress-bar-wrapper .spinner + h3 {
+    color: #fff;
+    font-weight: 100;
 }
 .bar-wrapper {
     width: 500px;
     position: relative;
+    display: none;
 }
 .bar-wrapper::after {
     content: '';
@@ -91,4 +106,10 @@ canvas {
     font-size: 80%;
     width: 90px;
     display: inline-block;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }

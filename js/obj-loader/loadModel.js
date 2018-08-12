@@ -4,6 +4,11 @@ import onError from './onError';
 
 // Load model
 export default function loadModel(modelUrl, textureUrl, scene) {
+    // Hide spinner and show progress bar
+    document.querySelector('.spinner').style.display = 'none';
+    document.querySelector('.spinner + h3').style.display = 'none';
+
+    document.querySelector('.bar-wrapper').style.display = 'block';
     const textureLoader = new TextureLoader();
     const modelTexture = textureLoader.load(textureUrl);
     // model
