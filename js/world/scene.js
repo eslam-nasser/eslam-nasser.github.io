@@ -1,4 +1,4 @@
-import { Color, Scene, Fog } from 'three-full';
+import { Color, Scene, Fog } from '../../node_modules/three-full/builds/Three.es';
 
 // SCENE
 const fogColor = new Color(0xe3deda);

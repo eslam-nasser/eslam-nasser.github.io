@@ -1,4 +1,4 @@
-import { WebGLRenderer } from 'three-full';
+import { WebGLRenderer } from '../../node_modules/three-full/builds/Three.es';
 
 // RENDERER
 const renderer = new WebGLRenderer({ antialias: true });

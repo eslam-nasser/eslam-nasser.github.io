@@ -1,4 +1,4 @@
-import { Vector2 } from 'three-full';
+import { Vector2 } from '../../node_modules/three-full/builds/Three.es';
 
 const mouse = new Vector2();
 export default function onDocumentMouseMove(event) {

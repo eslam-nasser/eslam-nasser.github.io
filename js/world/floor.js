@@ -5,7 +5,7 @@ import {
     Mesh,
     DoubleSide,
     RepeatWrapping,
-} from 'three-full';
+} from '../../node_modules/three-full/builds/Three.es';
 
 // FLOOR
 const floorTexture = new TextureLoader().load('../assets/img/floor.jpg');

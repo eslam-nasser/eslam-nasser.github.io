@@ -1,4 +1,5 @@
-import { OrbitControls } from 'three-full';
+import { OrbitControls } from '../../node_modules/three-full/builds/Three.es';
+
 import camera from './camera';
 import renderer from './renderer';
 

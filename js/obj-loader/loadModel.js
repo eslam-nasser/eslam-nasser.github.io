@@ -1,4 +1,4 @@
-import { TextureLoader, Mesh, OBJLoader } from 'three-full';
+import { TextureLoader, Mesh, OBJLoader } from '../../node_modules/three-full/builds/Three.es';
 import onProgress from './onProgress';
 import onError from './onError';
 
