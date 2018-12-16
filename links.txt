@@ -2,3 +2,13 @@
 // https://cmichel.io/importing-blender-model-with-texture-to-threejs/
 // https://www.turbosquid.com/3d-model/insect?sort_column=a5&sort_order=asc
 // https://threejs.org/docs/?q=loading#api/loaders/managers/LoadingManager
+
+
+
+
+https://github.com/KhronosGroup/glTF-Blender-Exporter
+
+
+http://phylotree.hyphy.org/documentation/intro.html
+https://github.com/JamesStimson/json-to-newick-file-converter
+https://github.com/daviddao/biojs-io-newick

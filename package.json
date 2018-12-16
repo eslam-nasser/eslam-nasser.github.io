@@ -7,6 +7,7 @@
     "author": "Eslam nasser <in1146@fayoum.edu.eg>",
     "license": "MIT",
     "scripts": {
+        "start": "webpack-dev-server",
         "build": "npx webpack --config webpack.config.js",
         "serve": "php -S localhost:4000"
     },
@@ -18,7 +19,8 @@
         "eslint-plugin-import": "^2.13.0",
         "webpack": "^4.22.0",
         "webpack-bundle-analyzer": "^3.0.3",
-        "webpack-cli": "^3.1.2"
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10"
     },
     "dependencies": {
         "three-full": "^11.3.2"

@@ -1,16 +1,14 @@
-import { OrbitControls } from '../../node_modules/three-full/builds/Three.es';
-
 import camera from './camera';
 import renderer from './renderer';
 
 // CONTROLS
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.autoRotate = true;
-controls.enablePan = false;
-controls.autoRotateSpeed = 0;
+const controls = new window.THREE.OrbitControls(camera, renderer.domElement);
+// controls.autoRotate = true;
+// controls.autoRotateSpeed = 0;
+controls.enablePan = true;
 controls.enableDamping = true;
 controls.dampingFactor = 0.25;
-controls.screenSpacePanning = false;
+controls.screenSpacePanning = true;
 controls.minDistance = 2;
 controls.maxDistance = 10;
 controls.maxPolarAngle = Math.PI / 2.2;

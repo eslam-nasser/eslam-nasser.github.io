@@ -1,11 +1,10 @@
-import { Raycaster, Vector2 } from '../../node_modules/three-full/builds/Three.es';
 import camera from '../world/camera';
 
-const mouse = new Vector2();
+const mouse = new window.THREE.Vector2();
 const objects = [];
 
 let INTERSECTED;
-const raycaster = new Raycaster();
+const raycaster = new window.THREE.Raycaster();
 
 export default function onDocumentMouseDown() {
     // find intersections
