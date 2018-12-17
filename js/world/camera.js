@@ -5,8 +5,7 @@ const camera = new window.THREE.PerspectiveCamera(
     0.1,
     1000,
 );
-camera.position.set(0, 4, 1.7);
-// camera.position.set(1, 0, 0);
+camera.position.set(8, 5, 9);
 window.camera = camera;
 
 export default camera;

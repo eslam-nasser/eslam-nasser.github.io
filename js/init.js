@@ -31,16 +31,6 @@ export default function init() {
     // Load Model
     loadModels(
         [
-            // {
-            //     url: '../assets/test-ball.obj',
-            // },
-            // {
-            //     url: '../assets/aspergillus-model/leg.obj',
-            // },
-            // {
-            //     url: '../assets/aspergillus-model/spors.obj',
-            // },
-
             {
                 url: '../assets/phytophthora-infestans/fungus.obj',
             },

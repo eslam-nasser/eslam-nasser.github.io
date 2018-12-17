@@ -9,9 +9,9 @@ export default function initGUI() {
         'Auto rotate camera': false,
     };
     const CameraPositon = {
-        x: 0,
-        y: 0,
-        z: 0,
+        x: window.camera.position.x,
+        y: window.camera.position.y,
+        z: window.camera.position.z,
     };
     const gui = new GUI({
         closed: true,

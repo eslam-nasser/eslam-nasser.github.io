@@ -7,8 +7,7 @@
     "author": "Eslam nasser <in1146@fayoum.edu.eg>",
     "license": "MIT",
     "scripts": {
-        "start": "webpack-dev-server",
-        "build": "npx webpack --config webpack.config.js",
+        "start": "npx webpack --config webpack.config.js",
         "serve": "php -S localhost:4000"
     },
     "devDependencies": {
