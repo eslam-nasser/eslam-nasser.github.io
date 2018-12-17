@@ -17,8 +17,6 @@ export default function loadModels(modelsArray, scene) {
         loader.load(
             model.url,
             (object) => {
-                // Load texture if the model has one
-                // if (model.texture) {
                 // Load the texture
                 const textureLoader = new window.THREE.TextureLoader();
                 const modelTexture = textureLoader.load(
@@ -30,25 +28,16 @@ export default function loadModels(modelsArray, scene) {
                         child.material.map = modelTexture;
                     }
                 });
-                // } else {
-                //     // TODO: add a default texture
-                //     // console.log('default material');
-                //     const material = new window.THREE.MeshStandardMaterial({
-                //         metalness: 0.2,
-                //         roughness: 0,
-                //     });
-                //     // Append texture to its model
-                //     object.traverse((child) => {
-                //         if (child instanceof window.THREE.Mesh) {
-                //             child.material = material;
-                //         }
-                //     });
-                // }
+
                 // the .obj files has a floor by default,
                 // so we hide it by moving it below the our floor
                 object.position.y = -0.001;
                 // to offset the model to the camera's center
                 // object.position.z = 0.5;
+
+                // Add name to the object so we can query it
+                object.name = model.name;
+
                 window.LoadedObjectInScreen = object;
                 // window.insect = object;
                 scene.add(object);

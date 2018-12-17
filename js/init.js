@@ -4,6 +4,18 @@ import lights from './world/lights';
 import loadModels from './obj-loader/loadModels';
 import onWindowResize from './events/onWindowResize';
 import initGUI from './gui/init';
+import loadControllers from './controllers/loadControllers';
+
+const modelInfo = [
+    {
+        name: 'Spors',
+        url: '../assets/phytophthora-infestans/spors.obj',
+    },
+    {
+        name: 'Hypha',
+        url: '../assets/phytophthora-infestans/hypha.obj',
+    },
+];
 
 // TODO: MAKE ARROWS DYNAMIC
 function makeArrow(x, y, z) {
@@ -29,14 +41,10 @@ export default function init() {
     scene.add(floor);
 
     // Load Model
-    loadModels(
-        [
-            {
-                url: '../assets/phytophthora-infestans/fungus.obj',
-            },
-        ],
-        scene,
-    );
+    loadModels(modelInfo, scene);
+
+    // Load controllers
+    loadControllers(modelInfo);
 
     // Arrows
     // const ar = makeArrow(1, 2, 0);

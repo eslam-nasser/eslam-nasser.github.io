@@ -85,8 +85,13 @@ canvas {
     opacity: 0.7;
     font-weight: 100;
 }
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
-/* Info */
+/* Info 
 .info {
     position: absolute;
     left: 0;
@@ -107,9 +112,72 @@ canvas {
     width: 90px;
     display: inline-block;
 }
+*/
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+/* controllers */
+#controllers {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px 0 0 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#controllers [type='checkbox']:checked,
+#controllers [type='checkbox']:not(:checked) {
+    display: none;
+}
+
+#controllers label {
+    display: block;
+    padding: 10px 15px;
+    transition: 0.14s;
+    cursor: pointer;
+}
+#controllers label:hover {
+    background-color: #fff;
+}
+
+#controllers [type='checkbox']:checked + span,
+#controllers [type='checkbox']:not(:checked) + span {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+#controllers [type='checkbox']:checked + span:before,
+#controllers [type='checkbox']:not(:checked) + span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+#controllers [type='checkbox']:checked + span:after,
+#controllers [type='checkbox']:not(:checked) + span:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #be6656;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#controllers [type='checkbox']:not(:checked) + span:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+#controllers [type='checkbox']:checked + span:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
