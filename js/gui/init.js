@@ -17,7 +17,7 @@ export default function initGUI() {
         closed: true,
         useLocalStorage: true,
     });
-    gui.addFolder('Camera Position');
+    // gui.addFolder('Camera Position');
 
     // gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
     //     window.camera.position.x = value;
