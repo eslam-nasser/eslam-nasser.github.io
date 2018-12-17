@@ -1,7 +1,7 @@
 // SCENE
 const scene = new window.THREE.Scene();
 
-const bgFilename = '360-bg-texture.png';
+const bgFilename = '360-bg-texture-orange.png';
 
 const backgroundSphere = new window.THREE.Mesh(
     new window.THREE.SphereGeometry(100, 30, 30),
