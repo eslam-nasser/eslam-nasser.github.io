@@ -181,3 +181,25 @@ canvas {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+/* instructions */
+#instructions {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    opacity: 0.6;
+}
+#instructions:hover {
+    opacity: 1;
+}
+#instructions > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+#instructions > div img {
+    width: 20px;
+    margin-right: 10px;
+}
