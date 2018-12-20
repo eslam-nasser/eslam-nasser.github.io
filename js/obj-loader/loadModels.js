@@ -2,6 +2,7 @@
 
 import onProgress from './onProgress';
 import onError from './onError';
+import hexToRGB from '../utils/hexToRGB';
 
 // Load model
 export default function loadModels(modelsArray, scene) {
@@ -18,14 +19,21 @@ export default function loadModels(modelsArray, scene) {
             model.url,
             (object) => {
                 // Load the texture
-                const textureLoader = new window.THREE.TextureLoader();
-                const modelTexture = textureLoader.load(
-                    model.texture ? model.texture : '../assets/img/1.jpg',
-                );
+                // const textureLoader = new window.THREE.TextureLoader();
+                // const modelTexture = textureLoader.load(
+                //     model.texture ? model.texture : '../assets/img/1.jpg',
+                // );
                 // Append texture to its model
                 object.traverse((child) => {
                     if (child instanceof window.THREE.Mesh) {
-                        child.material.map = modelTexture;
+                        // child.material.map = modelTexture;
+                        child.material.flatShading = true;
+                        if (model.color) {
+                            const { r, g, b } = hexToRGB(model.color);
+                            child.material.color.setRGB(r / 255, g / 255, b / 255);
+                        } else {
+                            child.material.color.setRGB(0, 0, 0);
+                        }
                     }
                 });
 

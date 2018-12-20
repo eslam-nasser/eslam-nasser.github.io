@@ -12,26 +12,28 @@ const model1Info = {
         {
             name: 'Spors',
             url: '../assets/phytophthora-infestans/spors.obj',
+            color: '#574b90',
         },
         {
             name: 'Hypha',
             url: '../assets/phytophthora-infestans/hypha.obj',
+            color: '#303952',
         },
     ],
 };
-const model2Info = {
-    name: 'Penicillium',
-    parts: [
-        {
-            name: 'Spors',
-            url: '../assets/penicillium/spors.obj',
-        },
-        {
-            name: 'Hypha',
-            url: '../assets/penicillium/hypha.obj',
-        },
-    ],
-};
+// const model2Info = {
+//     name: 'Penicillium',
+//     parts: [
+//         {
+//             name: 'Spors',
+//             url: '../assets/penicillium/spors.obj',
+//         },
+//         {
+//             name: 'Hypha',
+//             url: '../assets/penicillium/hypha.obj',
+//         },
+//     ],
+// };
 
 // TODO: MAKE ARROWS DYNAMIC
 function makeArrow(x, y, z) {
