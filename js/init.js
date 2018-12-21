@@ -48,7 +48,7 @@ export default function init() {
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
         const geometry = new window.THREE.TextGeometry(model.name.split(' ').join('\n'), {
             font,
-            size: 1 / 2.2,
+            size: 1 / 3.1,
             height: 0.01,
         });
         const materials = [
@@ -59,9 +59,9 @@ export default function init() {
         ];
         const name = new window.THREE.Mesh(geometry, materials);
         name.rotation.x = Math.PI / -2;
-        name.position.x = -1.85;
+        name.position.x = -1.3;
         name.position.y = 0;
-        name.position.z = -4.7;
+        name.position.z = -3.85;
         window.f_name = name;
 
         scene.add(name);
