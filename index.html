@@ -23,7 +23,15 @@
 
 <body>
     <!-- Tree -->
-    <div class="chart" id="tree"></div>
+    <div class="chart dragscroll" id="tree"></div>
+
+    <!-- Instructions -->
+    <div id="instructions">
+        <div class="left-click">
+            <img src="./assets/img/move-arrows.svg" />
+            <span>Drag the tree</span>
+        </div>
+    </div>
     
     <!-- Vue App -->
     <div id="app" style="display: none">
@@ -45,13 +53,6 @@
                 <a v-if="el.link && el.link.href" :href="el.link.href" target="_blank">
                     Open in new tab
                 </a>
-                <!-- <input 
-                    type="text" 
-                    :value="parseName(el.text.name)" 
-                    class="link" 
-                    disabled 
-                    v-if="el.hasLink"
-                > -->
                 <local-draggable v-if="el.children" :tasks="el.children"></local-draggable>
             </li>
         </draggable>
@@ -59,6 +60,9 @@
     <!-- Tree libs -->
     <script src="./tree-libs/treant-js/raphael.js"></script>
     <script src="./tree-libs/treant-js/Treant.js"></script>
+
+    <!-- drag scroll -->
+    <script src="./tree-libs/dragscroll.js"></script>
 
     <!-- Vue App -->
     <script src="./tree-libs/vue/vue.js"></script>

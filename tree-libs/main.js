@@ -166,7 +166,7 @@ const app = new window.Vue({
     },
 });
 
-function renderTree() {
+async function renderTree() {
     // console.log('rendering ...');
 
     // Reset tree
@@ -175,11 +175,11 @@ function renderTree() {
     }
 
     // Get data
-    // const {
-    //     nodeStructure
-    // } = await fetch('./data/mycota.json').then(res => res.json());
-    const nodeStructure = JSON.parse(localStorage.getItem('nodeStructure'));
-    if (!nodeStructure || nodeStructure.length === 0) return;
+    let nodeStructure = JSON.parse(localStorage.getItem('nodeStructure'));
+    if (!nodeStructure || nodeStructure.length === 0) {
+        const { nodeStructure: data } = await fetch('./data/tree-data.json').then(res => res.json());
+        nodeStructure = data;
+    }
 
     const treeStructure = {
         chart: {
@@ -188,7 +188,6 @@ function renderTree() {
             siblingSeparation: 200,
             subTeeSeparation: 200,
             nodeAlign: 'CENTER',
-            // scrollbar: "fancy",
             rootOrientation: 'NORTH', // NORTH,EAST,WEST,SOUTH
             // animateOnInit: true,
             // animateOnInitDelay: 1000,
@@ -224,26 +223,26 @@ function renderTree() {
 }
 renderTree();
 
-function scrollByDrag() {
-    let curYPos = 0;
-    let curXPos = 0;
-    let curDown = false;
-    const el = document.querySelector('#tree');
+// function scrollByDrag() {
+//     let curYPos = 0;
+//     let curXPos = 0;
+//     let curDown = false;
+//     const el = document.querySelector('#tree');
 
-    el.addEventListener('mousemove', (e) => {
-        if (curDown === true) {
-            el.scrollTo(el.scrollLeft + (curXPos - e.pageX), el.scrollTop + (curYPos - e.pageY));
-        }
-    });
+//     el.addEventListener('mousemove', (e) => {
+//         if (curDown === true) {
+//             el.scrollTo(el.scrollLeft + (curXPos - e.pageX), el.scrollTop + (curYPos - e.pageY));
+//         }
+//     });
 
-    el.addEventListener('mousedown', (e) => {
-        curDown = true;
-        curYPos = e.pageY;
-        curXPos = e.pageX;
-    });
+//     el.addEventListener('mousedown', (e) => {
+//         curDown = true;
+//         curYPos = e.pageY;
+//         curXPos = e.pageX;
+//     });
 
-    el.addEventListener('mouseup', (e) => {
-        curDown = false;
-    });
-}
-scrollByDrag();
+//     el.addEventListener('mouseup', (e) => {
+//         curDown = false;
+//     });
+// }
+// scrollByDrag();

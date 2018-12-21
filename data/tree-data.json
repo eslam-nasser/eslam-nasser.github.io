@@ -1,0 +1,137 @@
+{
+    "nodeStructure": [
+        {
+            "id": 570,
+            "text": {
+                "name": "Zygomycota"
+            },
+            "hasLink": false,
+            "children": [],
+            "link": {
+                "href": null,
+                "target": "_blank"
+            }
+        },
+        {
+            "id": 901,
+            "text": {
+                "name": "Ascomycota"
+            },
+            "hasLink": false,
+            "children": [
+                {
+                    "text": {
+                        "name": "Trichocomaceae"
+                    },
+                    "children": [
+                        {
+                            "text": {
+                                "name": "Penicillium"
+                            },
+                            "children": [],
+                            "hasLink": true,
+                            "link": {
+                                "href": "/fungus.html?name=penicillium",
+                                "target": "_blank"
+                            }
+                        }
+                    ],
+                    "hasLink": false,
+                    "link": {
+                        "href": null,
+                        "target": "_blank"
+                    }
+                }
+            ],
+            "link": {
+                "href": null,
+                "target": "_blank"
+            }
+        },
+        {
+            "id": 532,
+            "text": {
+                "name": "Oomycota"
+            },
+            "hasLink": false,
+            "link": {
+                "href": null,
+                "target": "_blank"
+            },
+            "children": [
+                {
+                    "id": 200,
+                    "text": {
+                        "name": "Peronosporaceae"
+                    },
+                    "link": {
+                        "href": null,
+                        "target": "_blank"
+                    },
+                    "hasLink": false,
+                    "children": [
+                        {
+                            "text": {
+                                "name": "Phytophthora infestans"
+                            },
+                            "children": [],
+                            "hasLink": true,
+                            "link": {
+                                "href": "/fungus.html?name=phytophthora-infestans",
+                                "target": "_blank"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 298,
+                    "text": {
+                        "name": "Albugniaceae"
+                    },
+                    "link": {
+                        "href": null,
+                        "target": "_blank"
+                    },
+                    "hasLink": false,
+                    "children": []
+                },
+                {
+                    "id": 690,
+                    "text": {
+                        "name": "Pythiceae"
+                    },
+                    "link": {
+                        "href": null,
+                        "target": "_blank"
+                    },
+                    "hasLink": false,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 596,
+            "text": {
+                "name": "Basidiomycota"
+            },
+            "hasLink": false,
+            "children": [],
+            "link": {
+                "href": null,
+                "target": "_blank"
+            }
+        },
+        {
+            "id": 471,
+            "text": {
+                "name": "Deuteromycota"
+            },
+            "hasLink": false,
+            "children": [],
+            "link": {
+                "href": null,
+                "target": "_blank"
+            }
+        }
+    ]
+}

@@ -18,18 +18,46 @@ body {
 
 /* optional Container STYLES */
 .chart {
-    /* height: 600px; */
-    /* width: 900px; */
+    height: 96vh;
+    width: 98vw;
+    margin: 2vh auto;
+    border: 1px solid rgba(238, 238, 238, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
     /* margin: 5px;
     margin: 15px auto; */
     /* border: 3px solid #ddd; */
     /* border-radius: 3px; */
     user-select: none;
-    /* cursor: grab;
-    cursor: -o-grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab; */
+    cursor: move;
+    cursor: -o-move;
+    cursor: -moz-move;
+    cursor: -webkit-move;
     overflow: auto;
+}
+
+.chart::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.chart::after {
+    content: '';
+    position: absolute;
+    width: -10px;
+    height: -10px;
+    background-color: #1d2935;
+    right: 0;
+    bottom: 0;
+}
+
+.chart::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.chart::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
 
 .Treant path {
@@ -145,9 +173,6 @@ li input[type='text'] {
     margin-bottom: 5px;
 }
 
-li input[type='text'].link {
-    /*  */
-}
 .sortable-ghost {
     border: 1px dashed #0088f8;
     box-sizing: border-box;
@@ -159,11 +184,25 @@ li input[type='text'].link {
     align-items: center;
 }
 
-/* li {
-    border: none;
-    padding: 0px;
+/* instructions */
+#instructions {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    color: #fff;
+    opacity: 0.6;
+    transition: 0.15s;
 }
-
-li:hover {
-    background: #ddd;
-} */
+#instructions:hover {
+    opacity: 1;
+}
+#instructions > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+#instructions > div img {
+    width: 20px;
+    margin-right: 10px;
+}
