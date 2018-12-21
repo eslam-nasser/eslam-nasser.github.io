@@ -136,29 +136,6 @@ canvas {
     }
 }
 
-/* Info 
-.info {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 20px;
-}
-.info h1 {
-    text-transform: capitalize;
-    margin-top: 0;
-}
-.info h3 {
-    margin-top: 0;
-    margin-bottom: 7px;
-}
-
-.info h3 span {
-    font-size: 80%;
-    width: 90px;
-    display: inline-block;
-}
-*/
-
 /* controllers */
 #controllers {
     position: absolute;
@@ -166,7 +143,7 @@ canvas {
     bottom: 0;
     border-radius: 5px 0 0 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(29, 41, 53, 0.95);
 }
 #controllers [type='checkbox']:checked,
 #controllers [type='checkbox']:not(:checked) {
@@ -178,9 +155,10 @@ canvas {
     padding: 10px 15px;
     transition: 0.14s;
     cursor: pointer;
+    color: #fff;
 }
 #controllers label:hover {
-    background-color: #fff;
+    background-color: rgba(29, 41, 53, 1);
 }
 
 #controllers [type='checkbox']:checked + span,
@@ -190,7 +168,7 @@ canvas {
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #666;
+    color: #fff;
 }
 #controllers [type='checkbox']:checked + span:before,
 #controllers [type='checkbox']:not(:checked) + span:before {
@@ -200,8 +178,8 @@ canvas {
     top: 0;
     width: 18px;
     height: 18px;
-    border: 1px solid #ddd;
-    background: #fff;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #controllers [type='checkbox']:checked + span:after,
@@ -209,7 +187,7 @@ canvas {
     content: '';
     width: 10px;
     height: 10px;
-    background: #574b90;
+    background: #6c5ce7;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -257,14 +235,17 @@ canvas {
     bottom: 0;
     border-radius: 0 5px 0 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(29, 41, 53, 0.95);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #fff;
     border: 0;
     cursor: pointer;
     padding: 10px 20px;
     outline: 0;
+    transition: 0.15s;
 }
 .show-info-btn:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(29, 41, 53, 1);
 }
 
 /* Modal */

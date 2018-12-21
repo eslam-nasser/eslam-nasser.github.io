@@ -3,7 +3,7 @@ import floor from './world/floor';
 import lights from './world/lights';
 import loadModels from './obj-loader/loadModels';
 import onWindowResize from './events/onWindowResize';
-import initGUI from './gui/init';
+// import initGUI from './gui/init';
 import loadControllers from './controllers/loadControllers';
 import data from '../data/fungi-data.json';
 import loadModal from './loadModal/loadModal';
@@ -74,5 +74,5 @@ export default function init() {
     window.addEventListener('resize', onWindowResize, false);
 
     // Init GUI
-    initGUI();
+    // initGUI();
 }

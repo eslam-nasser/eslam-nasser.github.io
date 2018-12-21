@@ -18,7 +18,6 @@ export default function initGUI() {
         useLocalStorage: true,
     });
     // gui.addFolder('Camera Position');
-
     // gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
     //     window.camera.position.x = value;
     // });
@@ -31,6 +30,5 @@ export default function initGUI() {
     gui.add(API, 'Auto rotate camera').onChange(() => {
         controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.2 : 0;
     });
-
     gui.close();
 }
