@@ -13,9 +13,20 @@ const params = new URL(document.location).searchParams;
 const modelName = params.get('name');
 const model = data[modelName];
 
-// const model = data
-
 export default function init() {
+    // If we don't have data for this fungus name, we will show error message!
+    if (!model) {
+        document.querySelector('.spinner-wrapper').style.display = 'none';
+        const noData = document.querySelector('.no-data-found');
+        if (modelName) {
+            noData.querySelector('b').innerText = modelName.replace('-', ' ');
+        } else {
+            noData.querySelector('h3').innerText = 'You have to choose fungus from fungi tree';
+        }
+        noData.style.display = 'block';
+        return; // no need for init() to continue
+    }
+
     // Lights
     scene.add(lights.staticPointLight);
     scene.add(lights.movingPointLight);
@@ -34,7 +45,6 @@ export default function init() {
 
     // Load model name
     const loader = new window.THREE.FontLoader();
-
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
         const geometry = new window.THREE.TextGeometry(model.name.split(' ').join('\n'), {
             font,
