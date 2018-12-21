@@ -32,7 +32,7 @@ export default function loadModels(modelsArray, scene) {
                             const { r, g, b } = hexToRGB(model.color);
                             child.material.color.setRGB(r / 255, g / 255, b / 255);
                         } else {
-                            child.material.color.setRGB(0, 0, 0);
+                            child.material.color.setRGB(48 / 255, 57 / 255, 82 / 255);
                         }
                     }
                 });

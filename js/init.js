@@ -5,50 +5,15 @@ import loadModels from './obj-loader/loadModels';
 import onWindowResize from './events/onWindowResize';
 import initGUI from './gui/init';
 import loadControllers from './controllers/loadControllers';
+import data from '../data/fungi-data.json';
+import loadModal from './loadModal/loadModal';
 
-const model1Info = {
-    name: 'Phytophthora infestans',
-    parts: [
-        {
-            name: 'Spors',
-            url: '../assets/phytophthora-infestans/spors.obj',
-            color: '#574b90',
-        },
-        {
-            name: 'Hypha',
-            url: '../assets/phytophthora-infestans/hypha.obj',
-            color: '#303952',
-        },
-    ],
-};
-// const model2Info = {
-//     name: 'Penicillium',
-//     parts: [
-//         {
-//             name: 'Spors',
-//             url: '../assets/penicillium/spors.obj',
-//         },
-//         {
-//             name: 'Hypha',
-//             url: '../assets/penicillium/hypha.obj',
-//         },
-//     ],
-// };
+// Get model name from url query
+const params = new URL(document.location).searchParams;
+const modelName = params.get('name');
+const model = data[modelName];
 
-// TODO: MAKE ARROWS DYNAMIC
-function makeArrow(x, y, z) {
-    const dir = new window.THREE.Vector3(x, y, z);
-    dir.normalize();
-    const origin = new window.THREE.Vector3(0, 0, 0);
-    const length = 1;
-    const hex = 0x000000;
-    const arrowHelper = new window.THREE.ArrowHelper(dir, origin, length, hex);
-    window.ar = arrowHelper;
-
-    scene.add(arrowHelper);
-    return arrowHelper;
-}
-window.makeArrow = makeArrow;
+// const model = data
 
 export default function init() {
     // Lights
@@ -59,18 +24,19 @@ export default function init() {
     scene.add(floor);
 
     // Load Model
-    loadModels(model1Info.parts, scene);
+    loadModels(model.parts, scene);
 
     // Load controllers
-    loadControllers(model1Info.parts);
+    loadControllers(model.parts);
+
+    // Load model modal
+    loadModal({ ...model.info, name: model.name });
 
     // Load model name
-
-    // TEXT
     const loader = new window.THREE.FontLoader();
 
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
-        const geometry = new window.THREE.TextGeometry(model1Info.name.split(' ').join('\n'), {
+        const geometry = new window.THREE.TextGeometry(model.name.split(' ').join('\n'), {
             font,
             size: 1 / 2.2,
             height: 0.01,

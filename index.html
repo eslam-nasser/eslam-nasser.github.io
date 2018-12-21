@@ -18,6 +18,7 @@
     </head>
 
     <body>
+        <!-- Loader -->
         <div class="progress-bar-wrapper">
             <div class="spinner"></div>
             <h3>Loading scene...</h3>
@@ -28,14 +29,22 @@
             </div>
         </div>
 
-        <div class="info" style="display: none">
-            <h1>formica rufa</h1>
-            <h3><span>Kingdom:</span> Animalia</h3>
-            <h3><span>Phylum:</span> Arthropoda</h3>
-            <h3><span>Class:</span> Insecta</h3>
-            <h3><span>Order:</span> Hymenoptera</h3>
-            <h3><span>Family:</span> Formicidae</h3>
+        <!-- Fungs's Info -->
+        <button class="show-info-btn" onclick="openModal()">
+            Show Fungs's Info
+        </button>
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="close" onclick="closeModal()"></div>
+
+                <div class="modal-body">
+                    <h3>Such Modal, Much Animate!</h3>
+                    <div class="body"></div>
+                    <a href="#" target="_blank" class="source"> Source </a>
+                </div>
+            </div>
         </div>
+        <div class="modal-overlay"></div>
 
         <!-- Controllers -->
         <div id="controllers"></div>
