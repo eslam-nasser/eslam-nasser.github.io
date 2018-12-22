@@ -1,6 +1,6 @@
 # Hypha App [Online Preview](https://eslam-nasser.github.io/)
 
-Interactive 3D expirance to better understand the morphology of a wide range of types of fungi (Kindom Mycota).
+Interactive 3D experience to better understand the morphology of a wide range of types of fungi (Kindom Mycota).
 
 ## Table of contents
 
@@ -14,13 +14,13 @@ Interactive 3D expirance to better understand the morphology of a wide range of 
 
 ## Download
 
-Currently the app is still under development so you will have to either [manually run the project locally](#run-the-project-locally) on your machine or [preview it online](https://eslam-nasser.github.io/).
+Currently, the app is still under development so you will have to either [manually run the project locally](#run-the-project-locally) on your machine or [preview it online](https://eslam-nasser.github.io/).
 
-In the near future we will build a desktop version of this web app so it can work totally offline.
+In the near future, we will build a desktop version of this web app so it can work totally offline.
 
 ## Goal
 
-The goal of this app is to help teachers and students all around the world to visually understand the morphological differences between deffrint kinds of fungi.
+The goal of this app is to help teachers and students all around the world to visually understand the morphological differences between different kinds of fungi.
 
 ## Run the project locally
 
@@ -48,7 +48,7 @@ Big thanks to all of these projects/libraries for helping us accelerate this pro
 
 ## Maintainers
 
-This project was build as a graduation project in Plant Protection Department, Agriculture College, Fayoum University, Egypt.
+This project was built as a graduation project in Plant Protection Department, Agriculture College, Fayoum University, Egypt.
 
 Developer:
 
@@ -63,8 +63,8 @@ Blender Designers:
 
 ## Report an issue
 
-Please if you find any scientific inaccuracies please email us at [eslam.nasser.dev@gmail.com](mailto:eslam.nasser.dev@gmail.com) or [open new issue](https://github.com/eslam-nasser/eslam-nasser.github.io/issues/new) on this repo.
+Please if you find any scientific inaccuracies please email us at [eslam.nasser.dev@gmail.com](mailto:eslam.nasser.dev@gmail.com) or [open a new issue](https://github.com/eslam-nasser/eslam-nasser.github.io/issues/new) on this repo.
 
 ## License
 
-Hypha App is icensed under the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)
+Hypha App is licensed under the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)
