@@ -7,7 +7,9 @@
     "author": "Eslam nasser <in1146@fayoum.edu.eg>",
     "license": "MPL-2.0",
     "scripts": {
-        "start": "webpack-dev-server --open"
+        "start": "webpack-dev-server --open",
+        "serve": "php -S localhost:4000",
+        "dev": "npx webpack --config webpack.config.js"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",

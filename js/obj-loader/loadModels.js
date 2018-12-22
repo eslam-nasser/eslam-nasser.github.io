@@ -18,21 +18,17 @@ export default function loadModels(modelsArray, scene) {
         loader.load(
             model.url,
             (object) => {
-                // Load the texture
-                // const textureLoader = new window.THREE.TextureLoader();
-                // const modelTexture = textureLoader.load(
-                //     model.texture ? model.texture : '../assets/img/1.jpg',
-                // );
-                // Append texture to its model
+                const defaultColor = model.name === 'Spors' ? '#574b90' : '#303952';
+                // Append color to model
                 object.traverse((child) => {
                     if (child instanceof window.THREE.Mesh) {
-                        // child.material.map = modelTexture;
                         child.material.flatShading = true;
                         if (model.color) {
                             const { r, g, b } = hexToRGB(model.color);
                             child.material.color.setRGB(r / 255, g / 255, b / 255);
                         } else {
-                            child.material.color.setRGB(48 / 255, 57 / 255, 82 / 255);
+                            const { r, g, b } = hexToRGB(defaultColor);
+                            child.material.color.setRGB(r / 255, g / 255, b / 255);
                         }
                     }
                 });
