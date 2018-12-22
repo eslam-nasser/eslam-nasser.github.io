@@ -14,7 +14,7 @@ Interactive 3D experience to better understand the morphology of a wide range of
 
 ## Download
 
-Currently, the app is still under development so you will have to either [manually run the project locally](#run-the-project-locally) on your machine or [preview it online](https://eslam-nasser.github.io/).
+Currently, the app is still under development so you will have to either [run the project locally](#run-the-project-locally) on your machine or [preview it online](https://eslam-nasser.github.io/).
 
 In the near future, we will build a desktop version of this web app so it can work totally offline.
 

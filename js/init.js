@@ -44,6 +44,7 @@ export default function init() {
     loadModal({ ...model.info, name: model.name });
 
     // Load model name
+    document.title = document.title.replace('Fungs', model.name);
     const loader = new window.THREE.FontLoader();
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
         const geometry = new window.THREE.TextGeometry(model.name.split(' ').join('\n'), {
