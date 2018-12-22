@@ -15,10 +15,6 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-canvas {
-    width: 100%;
-    height: 100%;
-}
 /* No data found */
 .no-data-found {
     color: #fff;
@@ -37,7 +33,7 @@ canvas {
     font-weight: bold;
     color: #fff;
 }
-.no-data-found a {
+.btn {
     width: 100%;
     padding: 10px 15px;
     color: #fff;
@@ -50,10 +46,11 @@ canvas {
     justify-content: center;
     align-items: center;
 }
-.no-data-found a img {
+.btn img {
     width: 18px;
     margin-right: 10px;
 }
+
 /* Progress Bar */
 .progress-bar-wrapper {
     position: absolute;
@@ -210,11 +207,17 @@ canvas {
     position: absolute;
     left: 0;
     top: 0;
-    color: #000;
-    opacity: 0.6;
-    transition: 0.15s;
 }
-#instructions:hover {
+#instructions > a {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#instructions > div {
+    color: #1d2935;
+    transition: 0.15s;
+    opacity: 0.6;
+}
+#instructions > div:hover {
     opacity: 1;
 }
 #instructions > div {

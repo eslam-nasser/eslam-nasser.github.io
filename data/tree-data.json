@@ -9,7 +9,7 @@
             "children": [],
             "link": {
                 "href": null,
-                "target": "_blank"
+                "target": "_self"
             }
         },
         {
@@ -32,20 +32,20 @@
                             "hasLink": true,
                             "link": {
                                 "href": "/fungus.html?name=penicillium",
-                                "target": "_blank"
+                                "target": "_self"
                             }
                         }
                     ],
                     "hasLink": false,
                     "link": {
                         "href": null,
-                        "target": "_blank"
+                        "target": "_self"
                     }
                 }
             ],
             "link": {
                 "href": null,
-                "target": "_blank"
+                "target": "_self"
             }
         },
         {
@@ -56,7 +56,7 @@
             "hasLink": false,
             "link": {
                 "href": null,
-                "target": "_blank"
+                "target": "_self"
             },
             "children": [
                 {
@@ -66,7 +66,7 @@
                     },
                     "link": {
                         "href": null,
-                        "target": "_blank"
+                        "target": "_self"
                     },
                     "hasLink": false,
                     "children": [
@@ -78,7 +78,7 @@
                             "hasLink": true,
                             "link": {
                                 "href": "/fungus.html?name=phytophthora-infestans",
-                                "target": "_blank"
+                                "target": "_self"
                             }
                         }
                     ]
@@ -90,7 +90,7 @@
                     },
                     "link": {
                         "href": null,
-                        "target": "_blank"
+                        "target": "_self"
                     },
                     "hasLink": false,
                     "children": []
@@ -102,7 +102,7 @@
                     },
                     "link": {
                         "href": null,
-                        "target": "_blank"
+                        "target": "_self"
                     },
                     "hasLink": false,
                     "children": []
@@ -118,7 +118,7 @@
             "children": [],
             "link": {
                 "href": null,
-                "target": "_blank"
+                "target": "_self"
             }
         },
         {
@@ -130,7 +130,7 @@
             "children": [],
             "link": {
                 "href": null,
-                "target": "_blank"
+                "target": "_self"
             }
         }
     ]

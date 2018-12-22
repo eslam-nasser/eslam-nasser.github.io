@@ -43,7 +43,7 @@ const app = new window.Vue({
                 children: [],
                 link: {
                     href: null,
-                    target: '_blank',
+                    target: '_self',
                 },
             },
             {
@@ -55,7 +55,7 @@ const app = new window.Vue({
                 children: [],
                 link: {
                     href: null,
-                    target: '_blank',
+                    target: '_self',
                 },
             },
             {
@@ -67,7 +67,7 @@ const app = new window.Vue({
                 hasLink: false,
                 link: {
                     href: null,
-                    target: '_blank',
+                    target: '_self',
                 },
                 children: [
                     {
@@ -77,7 +77,7 @@ const app = new window.Vue({
                         },
                         link: {
                             href: null,
-                            target: '_blank',
+                            target: '_self',
                         },
                         hasLink: false,
                         children: [],
@@ -89,7 +89,7 @@ const app = new window.Vue({
                         },
                         link: {
                             href: null,
-                            target: '_blank',
+                            target: '_self',
                         },
                         hasLink: false,
                         children: [],
@@ -101,7 +101,7 @@ const app = new window.Vue({
                         },
                         link: {
                             href: null,
-                            target: '_blank',
+                            target: '_self',
                         },
                         hasLink: false,
                         children: [],
@@ -117,7 +117,7 @@ const app = new window.Vue({
                 children: [],
                 link: {
                     href: null,
-                    target: '_blank',
+                    target: '_self',
                 },
             },
             {
@@ -129,7 +129,7 @@ const app = new window.Vue({
                 children: [],
                 link: {
                     href: null,
-                    target: '_blank',
+                    target: '_self',
                 },
             },
         ],
@@ -158,7 +158,7 @@ const app = new window.Vue({
                 hasLink: false,
                 link: {
                     href: null,
-                    target: '_blank',
+                    target: '_self',
                 },
             };
             this.tasks.unshift(newFungi);
