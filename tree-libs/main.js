@@ -167,8 +167,6 @@ const app = new window.Vue({
 });
 
 async function renderTree() {
-    // console.log('rendering ...');
-
     // Reset tree
     if (window.mycota_tree) {
         window.mycota_tree.destroy();

@@ -8,6 +8,9 @@ module.exports = {
     },
     mode: 'development',
     watch: true,
+    devServer: {
+        publicPath: './',
+    },
     // devServer: {
     //     contentBase: path.join(__dirname, './'),
     //     compress: true,
