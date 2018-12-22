@@ -5,7 +5,7 @@
     "main": "index.js",
     "repository": "https://github.com/eslam-nasser/eslam-nasser.github.io.git",
     "author": "Eslam nasser <in1146@fayoum.edu.eg>",
-    "license": "MIT",
+    "license": "MPL-2.0",
     "scripts": {
         "start": "webpack-dev-server --open"
     },
