@@ -61,7 +61,7 @@ export default function init() {
         const name = new window.THREE.Mesh(geometry, materials);
         name.rotation.x = Math.PI / -2;
         name.position.x = -1.3;
-        name.position.y = 0;
+        name.position.y = 0 + -1.5; // camera offset
         name.position.z = -3.85;
         window.f_name = name;
 

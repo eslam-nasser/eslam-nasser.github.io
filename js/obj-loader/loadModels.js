@@ -35,9 +35,7 @@ export default function loadModels(modelsArray, scene) {
 
                 // the .obj files has a floor by default,
                 // so we hide it by moving it below the our floor
-                object.position.y = -0.001;
-                // to offset the model to the camera's center
-                // object.position.z = 0.5;
+                object.position.y = -1.5;
 
                 // Add name to the object so we can query it
                 object.name = model.name;
