@@ -58,7 +58,7 @@ Blender Designers:
 
 -   Nada.M
 -   Fatma.G
--   Yasmine
+-   Yasmine.M
 -   Nada.I
 
 ## Report an issue

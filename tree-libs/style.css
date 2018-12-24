@@ -267,3 +267,22 @@ li input[type='text'] {
 #tree-controles span img {
     width: 100%;
 }
+
+.links {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--darkColor);
+    opacity: 0.6;
+    transition: 0.15s;
+}
+.links a:hover {
+    opacity: 1;
+}
+.links img {
+    width: 15px;
+}
