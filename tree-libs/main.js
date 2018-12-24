@@ -212,6 +212,7 @@ async function renderTree() {
             text: {
                 name: 'Mycota',
             },
+            pseudo: false,
             HTMLclass: 'the-parent',
             children: nodeStructure,
         },
@@ -219,28 +220,59 @@ async function renderTree() {
     // Init tree
     window.mycota_tree = new window.Treant(treeStructure);
 }
-renderTree();
 
-// function scrollByDrag() {
-//     let curYPos = 0;
-//     let curXPos = 0;
-//     let curDown = false;
-//     const el = document.querySelector('#tree');
+window.onload = () => {
+    renderTree();
 
-//     el.addEventListener('mousemove', (e) => {
-//         if (curDown === true) {
-//             el.scrollTo(el.scrollLeft + (curXPos - e.pageX), el.scrollTop + (curYPos - e.pageY));
-//         }
-//     });
+    // The item (or items) to press and hold on
+    const arrows = document.querySelectorAll('#tree-controles span');
 
-//     el.addEventListener('mousedown', (e) => {
-//         curDown = true;
-//         curYPos = e.pageY;
-//         curXPos = e.pageX;
-//     });
+    let timerID;
+    let counter = 0;
 
-//     el.addEventListener('mouseup', (e) => {
-//         curDown = false;
-//     });
-// }
-// scrollByDrag();
+    arrows.forEach((item) => {
+        // Listening for the mouse and touch events
+        item.addEventListener('mousedown', pressingDown, false);
+        item.addEventListener('mouseup', notPressingDown, false);
+        item.addEventListener('mouseleave', notPressingDown, false);
+
+        item.addEventListener('touchstart', pressingDown, false);
+        item.addEventListener('touchend', notPressingDown, false);
+
+        // Listening for our custom pressHold event
+        item.addEventListener('pressHold', doSomething, false);
+    });
+
+    function pressingDown(e) {
+        // Start the timer
+        requestAnimationFrame(timer.bind(this));
+
+        e.preventDefault();
+    }
+
+    function notPressingDown(e) {
+        // Stop the timer
+        cancelAnimationFrame(timerID);
+        counter = 0;
+    }
+
+    //
+    // Runs at 60fps when you are pressing down
+    //
+    function timer() {
+        const dir = this.classList[0];
+        const tree = document.querySelector('#tree');
+
+        if (dir === 'right') tree.scrollLeft += 6;
+        if (dir === 'left') tree.scrollLeft -= 6;
+        if (dir === 'up') tree.scrollTop -= 6;
+        if (dir === 'down') tree.scrollTop += 6;
+
+        timerID = requestAnimationFrame(timer.bind(this));
+        counter++;
+    }
+
+    function doSomething(e) {
+        // console.log('pressHold event fired!');
+    }
+};
