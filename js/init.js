@@ -63,13 +63,9 @@ export default function init() {
         name.position.x = -1.3;
         name.position.y = 0 + -1.5; // camera offset
         name.position.z = -3.85;
-        window.f_name = name;
 
         scene.add(name);
     });
-
-    // Arrows
-    // const ar = makeArrow(1, 2, 0);
 
     // RESIZE IF NEEDED
     window.addEventListener('resize', onWindowResize, false);

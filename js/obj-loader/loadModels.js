@@ -35,6 +35,9 @@ export default function loadModels(modelsArray, scene) {
 
                 // the .obj files has a floor by default,
                 // so we hide it by moving it below the our floor
+                // const box = new window.THREE.Box3().setFromObject(object);
+                // console.log(box.min, box.max, box.getSize());
+
                 object.position.y = -1.5;
 
                 // Add name to the object so we can query it

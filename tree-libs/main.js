@@ -199,6 +199,7 @@ async function renderTree() {
                     'stroke-width': 2,
                     'stroke-linecap': 'round',
                     stroke: '#ccc',
+                    // 'arrow-end': 'oval-wide-long',
                 },
             },
         },
