@@ -1,4 +1,4 @@
-/* eslint no-param-reassign: ["error", { "props": false }] */
+/* eslint-disable */
 
 const local = {
     template: '#template-dra',
@@ -175,8 +175,11 @@ async function renderTree() {
     // Get data
     let nodeStructure = JSON.parse(localStorage.getItem('nodeStructure'));
     if (!nodeStructure || nodeStructure.length === 0) {
-        const { nodeStructure: data } = await fetch('./data/tree-data.json').then(res => res.json());
+        const { nodeStructure: data } = await fetch('./data/tree-data.json').then(res =>
+            res.json(),
+        );
         nodeStructure = data;
+        localStorage.setItem('nodeStructure', JSON.stringify(data));
     }
 
     const treeStructure = {
@@ -211,7 +214,7 @@ async function renderTree() {
         nodeStructure: {
             id: Math.floor(Math.random() * 1000),
             text: {
-                name: 'Mycota',
+                name: 'Eumycota',
             },
             pseudo: false,
             HTMLclass: 'the-parent',
@@ -224,14 +227,21 @@ async function renderTree() {
 
 window.onload = () => {
     renderTree();
+    movingControles();
+    zoomingControles();
+};
 
+function movingControles() {
     // The item (or items) to press and hold on
-    const arrows = document.querySelectorAll('#tree-controles span');
+    const arrows = document.querySelectorAll('#tree-controles span.moving-btn');
 
     let timerID;
     let counter = 0;
+    let scrollSpeed = 10;
+    let pageX = 0;
+    let pageY = 0;
 
-    arrows.forEach((item) => {
+    arrows.forEach(item => {
         // Listening for the mouse and touch events
         item.addEventListener('mousedown', pressingDown, false);
         item.addEventListener('mouseup', notPressingDown, false);
@@ -248,6 +258,9 @@ window.onload = () => {
         // Start the timer
         requestAnimationFrame(timer.bind(this));
 
+        pageX = window.scrollX;
+        pageY = window.scrollY;
+
         e.preventDefault();
     }
 
@@ -262,18 +275,44 @@ window.onload = () => {
     //
     function timer() {
         const dir = this.classList[0];
-        const tree = document.querySelector('#tree');
 
-        if (dir === 'right') tree.scrollLeft += 6;
-        if (dir === 'left') tree.scrollLeft -= 6;
-        if (dir === 'up') tree.scrollTop -= 6;
-        if (dir === 'down') tree.scrollTop += 6;
+        if (dir === 'right') {
+            pageX += scrollSpeed;
+        }
+        if (dir === 'left') {
+            pageX -= scrollSpeed;
+        }
+        if (dir === 'up') {
+            pageY -= scrollSpeed;
+        }
+        if (dir === 'down') {
+            pageY += scrollSpeed;
+        }
+
+        window.scrollTo(pageX, pageY);
 
         timerID = requestAnimationFrame(timer.bind(this));
-        counter++;
+        counter += 1;
     }
 
     function doSomething(e) {
         // console.log('pressHold event fired!');
     }
-};
+}
+
+function zoomingControles() {
+    const btns = document.querySelectorAll('#tree-controles span[class^="zoom-"]');
+    const tree = document.querySelector('#tree');
+    let zoomLevel = 1;
+
+    btns.forEach(btn => {
+        btn.addEventListener('click', e => {
+            if (e.target.classList[0] === 'zoom-out') {
+                zoomLevel = zoomLevel - 0.05;
+            } else if (e.target.classList[0] === 'zoom-in') {
+                zoomLevel = zoomLevel + 0.05;
+            }
+            tree.style.transform = `scale(${zoomLevel})`;
+        });
+    });
+}
