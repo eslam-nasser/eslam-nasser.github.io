@@ -315,4 +315,16 @@ function zoomingControles() {
             tree.style.transform = `scale(${zoomLevel})`;
         });
     });
+
+    // Reset
+    const reset = document.querySelector('#tree-controles span.reset');
+    reset.addEventListener('click', () => {
+        zoomLevel = 1;
+        tree.style.transform = `scale(${zoomLevel})`;
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
+    });
 }

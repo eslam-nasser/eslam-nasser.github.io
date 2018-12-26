@@ -29,6 +29,7 @@ body {
     cursor: -webkit-move;
     overflow: inherit !important;
     transform-origin: 25% top;
+    transition: 0.15s;
 }
 
 .Treant path {
