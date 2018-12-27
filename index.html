@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="dragscroll_">
+<body class="dragscroll">
     <!-- Tree -->
     <div class="chart" id="tree"></div>
 
@@ -62,7 +62,7 @@
     </div>
     
     <!-- Vue App -->
-    <div id="app" style="display: block">
+    <div id="app" style="display: none">
         <button @click="addNew">Add new fungus</button>
         <button @click="save">Save & Render</button>
         <local-draggable :tasks="tasks" />
