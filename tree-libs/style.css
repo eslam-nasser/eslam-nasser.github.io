@@ -23,10 +23,10 @@ body {
 
 .chart {
     user-select: none;
-    cursor: move;
+    /* cursor: move;
     cursor: -o-move;
     cursor: -moz-move;
-    cursor: -webkit-move;
+    cursor: -webkit-move; */
     overflow: inherit !important;
     transform-origin: 25% top;
     transition: 0.15s;
@@ -36,38 +36,64 @@ body {
     stroke: #45586b;
 }
 .evolution-tree {
-    width: 40px;
-    height: 20px;
-    border-radius: 3px;
-    font-size: 10px;
-}
-
-.evolution-tree .node-name {
     background-color: #2c3e50;
-    padding: 5px 10px;
+    border-bottom: 1px solid #2c3e50;
+    padding: 7px 10px;
     border-radius: 3px;
-    text-align: left;
-    position: absolute;
-    left: -100%;
     margin: 0;
     color: #fff;
     font-size: 22px;
 }
-a.evolution-tree .node-name {
+
+.evolution-tree .node-name {
+    margin: 0;
+}
+/* a.evolution-tree .node-name {
     transition: 0.15s;
 }
 a.evolution-tree:hover .node-name {
     background-color: #6c5ce7;
-}
+} */
 
-a.node .node-name {
-    /* color: #6c5ce7; */
+/* a.node .node-name {
     text-decoration: underline;
-}
+} */
 
-.evolution-tree img {
-    margin: auto;
-    float: none !important;
+.node a.collapse-switch {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent !important;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+.node a.collapse-switch::after {
+    content: 'collapse';
+    padding-bottom: 20px;
+    width: 60px;
+    height: 100%;
+    background-image: url('../assets/img/icons/fold.svg');
+    background-position: 10px bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(0);
+    font-size: 15px;
+    background-size: 15px;
+    text-align: center;
+    transition: 0.15s;
+    color: var(--darkColor);
+}
+.node.collapsed a.collapse-switch::after {
+    width: 100px;
+    content: 'expand';
+    background-image: url('../assets/img/icons/expand.svg');
+    transform: translateX(-50%);
+    background-position: center bottom;
 }
 
 .evolution-tree.the-parent {
@@ -75,13 +101,13 @@ a.node .node-name {
     background-color: var(--darkColor);
     width: 5px;
     height: 5px;
+    padding: 0;
 }
 
 .evolution-tree.the-parent .node-name {
     position: absolute;
     bottom: 100%;
-    left: 50%;
-    left: -43px;
+    left: -60px;
     color: var(--darkColor);
     top: -30px;
     text-indent: 12px;

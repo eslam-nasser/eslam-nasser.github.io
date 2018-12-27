@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="dragscroll">
+<body class="dragscroll_">
     <!-- Tree -->
     <div class="chart" id="tree"></div>
 
@@ -62,26 +62,50 @@
     </div>
     
     <!-- Vue App -->
-    <div id="app" style="display: none">
+    <div id="app" style="display: block">
         <button @click="addNew">Add new fungus</button>
         <button @click="save">Save & Render</button>
         <local-draggable :tasks="tasks" />
     </div>
     <script type="text/x-template" id="template-dra">
         <draggable :element="'ul'" :list="tasks":options="{group:{ name:'g1'}}" @change="onMove">
-            <li v-for="(el, i) in tasks">
+            <li v-for="(node, i) in tasks">
+                <!-- remove node -->
                 <button @click="remove(tasks, i)">x</button>
-                <input 
-                    type="checkbox" 
-                    :checked="el.hasLink" 
-                    v-model="el.hasLink" 
-                    @change="setLink($event, el)"
-                >
-                <input type="text" v-model="el.text.name">
-                <a v-if="el.link && el.link.href" :href="el.link.href" target="_blank">
+                <!-- Edit node name -->
+                <input type="text" v-model="node.text.name">
+                <!-- is this node will be link? -->
+                <label>
+                    node link?
+                    <input 
+                        type="checkbox" 
+                        :checked="node.hasLink" 
+                        v-model="node.hasLink" 
+                        @change="setLink($event, node)"
+                    >
+                </label>
+                <a v-if="node.link && node.link.href" :href="node.link.href" target="_blank">
                     Open in new tab
                 </a>
-                <local-draggable v-if="el.children" :tasks="el.children"></local-draggable>
+                <!-- collapsable stuff -->
+                <label>
+                    collapsable?
+                    <input 
+                        type="checkbox" 
+                        :checked="node.collapsable" 
+                        v-model="node.collapsable" 
+                    >
+                </label>
+                <label v-if="node.collapsable">
+                    collapsed?
+                    <input 
+                        type="checkbox" 
+                        :checked="node.collapsed" 
+                        v-model="node.collapsed"
+                    >
+                </label>
+                <!-- drop area -->
+                <local-draggable v-if="node.children" :tasks="node.children"></local-draggable>
             </li>
         </draggable>
     </script>

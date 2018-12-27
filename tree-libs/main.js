@@ -17,6 +17,14 @@ const local = {
             }
         },
 
+        // setCollapsable(e, item) {
+        // console.log(item.collapsable);
+        // if (item.collapsable){
+
+        // }
+        // item.collapsable = !item.collapsable;
+        // },
+
         parseName(name) {
             return `/fungus.html?name=${name.toLowerCase().replace(' ', '-')}`;
         },

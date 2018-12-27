@@ -3,7 +3,7 @@
         {
             "id": 291,
             "text": {
-                "name": "D: Oomycota"
+                "name": "Oomycota"
             },
             "hasLink": false,
             "link": {
@@ -13,18 +13,18 @@
             "children": [
                 {
                     "text": {
-                        "name": "C: Oomycetes"
+                        "name": "Oomycetes"
                     },
                     "children": [
                         {
                             "text": {
-                                "name": "O: Peronosporales"
+                                "name": "Peronosporales"
                             },
                             "children": [
                                 {
                                     "id": 500,
                                     "text": {
-                                        "name": "F: Peronosporaceae"
+                                        "name": "Peronosporaceae"
                                     },
                                     "link": {
                                         "href": null,
@@ -34,7 +34,7 @@
                                     "children": [
                                         {
                                             "text": {
-                                                "name": "G: Plasmopara viticola"
+                                                "name": "Plasmopara viticola"
                                             },
                                             "children": [],
                                             "hasLink": false,
@@ -45,7 +45,7 @@
                                         },
                                         {
                                             "text": {
-                                                "name": "G: Pythium debaryanum"
+                                                "name": "Pythium debaryanum"
                                             },
                                             "children": [],
                                             "hasLink": false,
@@ -70,7 +70,9 @@
                         "target": "_self"
                     }
                 }
-            ]
+            ],
+            "collapsable": true,
+            "collapsed": true
         },
         {
             "id": 588,
@@ -141,7 +143,9 @@
             "link": {
                 "href": null,
                 "target": "_self"
-            }
+            },
+            "collapsable": true,
+            "collapsed": true
         },
         {
             "id": 369,
@@ -201,7 +205,9 @@
             "link": {
                 "href": null,
                 "target": "_self"
-            }
+            },
+            "collapsable": true,
+            "collapsed": true
         },
         {
             "id": 593,
@@ -329,7 +335,9 @@
             "link": {
                 "href": null,
                 "target": "_self"
-            }
+            },
+            "collapsable": true,
+            "collapsed": true
         },
         {
             "id": 676,
@@ -341,7 +349,9 @@
             "link": {
                 "href": null,
                 "target": "_self"
-            }
+            },
+            "collapsable": true,
+            "collapsed": true
         }
     ]
 }
