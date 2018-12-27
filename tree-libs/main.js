@@ -174,13 +174,15 @@ async function renderTree() {
 
     // Get data
     let nodeStructure = JSON.parse(localStorage.getItem('nodeStructure'));
-    if (location.hostname !== 'localhost' || location.hostname !== '127.0.0.1') {
+    if (
+        (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') ||
+        !nodeStructure ||
+        nodeStructure.length === 0
+    ) {
         const { nodeStructure: data } = await fetch('./data/tree-data.json').then(res =>
             res.json(),
         );
         nodeStructure = data;
-    }
-    if (!nodeStructure || nodeStructure.length === 0) {
         localStorage.setItem('nodeStructure', JSON.stringify(data));
     }
 
