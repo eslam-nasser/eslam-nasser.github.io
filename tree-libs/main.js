@@ -17,14 +17,6 @@ const local = {
             }
         },
 
-        // setCollapsable(e, item) {
-        // console.log(item.collapsable);
-        // if (item.collapsable){
-
-        // }
-        // item.collapsable = !item.collapsable;
-        // },
-
         parseName(name) {
             return `/fungus.html?name=${name.toLowerCase().replace(' ', '-')}`;
         },
@@ -182,11 +174,13 @@ async function renderTree() {
 
     // Get data
     let nodeStructure = JSON.parse(localStorage.getItem('nodeStructure'));
-    if (!nodeStructure || nodeStructure.length === 0) {
+    if (location.hostname !== 'localhost' || location.hostname !== '127.0.0.1') {
         const { nodeStructure: data } = await fetch('./data/tree-data.json').then(res =>
             res.json(),
         );
         nodeStructure = data;
+    }
+    if (!nodeStructure || nodeStructure.length === 0) {
         localStorage.setItem('nodeStructure', JSON.stringify(data));
     }
 
@@ -213,11 +207,11 @@ async function renderTree() {
                     // 'arrow-end': 'oval-wide-long',
                 },
             },
+            animation: {
+                nodeSpeed: 300,
+                connectorsSpeed: 300,
+            },
         },
-
-        // node: {
-        //     collapsable: true
-        // },
 
         nodeStructure: {
             id: Math.floor(Math.random() * 1000),
@@ -230,7 +224,9 @@ async function renderTree() {
         },
     };
     // Init tree
-    window.mycota_tree = new window.Treant(treeStructure);
+    window.mycota_tree = new window.Treant(treeStructure, () => {
+        console.log('tree loaded..');
+    });
 }
 
 window.onload = () => {
@@ -334,5 +330,10 @@ function zoomingControles() {
             left: 0,
             behavior: 'smooth',
         });
+        // Reset tree
+        if (window.mycota_tree) {
+            window.mycota_tree.destroy();
+        }
+        renderTree();
     });
 }

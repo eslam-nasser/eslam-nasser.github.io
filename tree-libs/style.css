@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-color: var(--bgColor);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-height: 98vh;
 }
 /*
     // Light
@@ -29,7 +30,7 @@ body {
     cursor: -webkit-move; */
     overflow: inherit !important;
     transform-origin: 25% top;
-    /* transition: 0.15s; */
+    transition: 0.15s;
 }
 
 .Treant path {
@@ -72,11 +73,12 @@ a.evolution-tree:hover .node-name {
 }
 .node a.collapse-switch::after {
     content: 'collapse';
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     width: 60px;
     height: 100%;
     background-image: url('../assets/img/icons/fold.svg');
-    background-position: 10px bottom;
+    background-position-x: 10px;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     position: absolute;
     left: 50%;
@@ -93,7 +95,20 @@ a.evolution-tree:hover .node-name {
     content: 'expand';
     background-image: url('../assets/img/icons/expand.svg');
     transform: translateX(-50%);
-    background-position: center bottom;
+    background-position-x: center;
+    animation: downy 1s linear infinite;
+    padding-bottom: 25px;
+}
+@keyframes downy {
+    from {
+        background-position-y: bottom;
+    }
+    50% {
+        background-position-y: 50%;
+    }
+    to {
+        background-position-y: bottom;
+    }
 }
 
 .evolution-tree.the-parent {
