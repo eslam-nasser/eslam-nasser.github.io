@@ -13,39 +13,25 @@ export default function initGUI(modelParts) {
         'Auto rotate camera': false,
     };
 
-    // scene.traverse((node) => {
-    // console.log(node);
-    // if (node.treeNode && node.treeNode.sid) {
-    // }
-    // sid.forEach(function (id) {
-
-    //         removeNode(node, scene);
-
-    //     }
-    // });
-    // });
-    // const colors = {
-    //     spors: '#000',
-    // };
-    // const CameraPositon = {
-    //     x: window.camera.position.x,
-    //     y: window.camera.position.y,
-    //     z: window.camera.position.z,
-    // };
+    const CameraPositon = {
+        x: window.camera.position.x,
+        y: window.camera.position.y,
+        z: window.camera.position.z,
+    };
     const gui = new GUI({
         closed: true,
         useLocalStorage: true,
     });
-    // gui.addFolder('Camera Position');
-    // gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
-    //     window.camera.position.x = value;
-    // });
-    // gui.add(CameraPositon, 'y', 0, 10).onChange((value) => {
-    //     window.camera.position.y = value;
-    // });
-    // gui.add(CameraPositon, 'z', 0, 10).onChange((value) => {
-    //     window.camera.position.z = value;
-    // });
+    gui.addFolder('Camera Position');
+    gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
+        window.camera.position.x = value;
+    });
+    gui.add(CameraPositon, 'y', 0, 10).onChange((value) => {
+        window.camera.position.y = value;
+    });
+    gui.add(CameraPositon, 'z', 0, 10).onChange((value) => {
+        window.camera.position.z = value;
+    });
 
     const colors = {};
     modelParts.forEach(({ name, color }) => {
@@ -63,10 +49,10 @@ export default function initGUI(modelParts) {
             });
         });
     });
-    // console.log(name, object);
 
     gui.add(API, 'Auto rotate camera').onChange(() => {
         controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.2 : 0;
     });
+
     gui.close();
 }

@@ -10,11 +10,11 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.25;
 controls.screenSpacePanning = true;
 // controls.enableZoom = false;
-// controls.minDistance = 2;
-// controls.maxDistance = 10;
-// controls.maxPolarAngle = Math.PI / 2.2;
-
+controls.minDistance = 2;
+controls.maxDistance = 30;
 controls.minPolarAngle = Math.PI / 4;
 controls.maxPolarAngle = Math.PI / 1.5;
+
+// const zoom = controls.target.distanceTo(controls.object.position);
 
 export default controls;
