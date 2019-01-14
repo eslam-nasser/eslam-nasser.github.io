@@ -30,5 +30,14 @@
                 "url": "../assets/penicillium/hypha.obj"
             }
         ]
+    },
+    "ustilago": {
+        "name": "Ustilago",
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "../assets/ustilago/spors.obj"
+            }
+        ]
     }
 }

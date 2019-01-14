@@ -1,4 +1,11 @@
 /* eslint-disable */
+window.onload = () => {
+    renderTree();
+    movingControles();
+    zoomingControles();
+
+    document.querySelector('span.random-example').addEventListener('click', randomSample);
+};
 
 const local = {
     template: '#template-dra',
@@ -231,12 +238,6 @@ async function renderTree() {
     });
 }
 
-window.onload = () => {
-    renderTree();
-    movingControles();
-    zoomingControles();
-};
-
 function movingControles() {
     // The item (or items) to press and hold on
     const arrows = document.querySelectorAll('#tree-controles span.moving-btn');
@@ -338,4 +339,13 @@ function zoomingControles() {
         }
         renderTree();
     });
+}
+
+async function randomSample() {
+    const data = await fetch('../data/fungi-data.json').then(res => res.json());
+    const dataKeys = Object.keys(data);
+    const randomIndex = Math.floor(Math.random() * dataKeys.length);
+    const name = dataKeys[randomIndex];
+
+    window.location.href = `/fungus.html?name=${name}`;
 }

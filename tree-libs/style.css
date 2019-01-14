@@ -38,12 +38,13 @@ body {
 }
 .evolution-tree {
     background-color: #2c3e50;
-    border-bottom: 1px solid #2c3e50;
+    /* border-bottom: 1px solid #2c3e50; */
     padding: 7px 10px;
     border-radius: 3px;
     margin: 0;
     color: #fff;
     font-size: 22px;
+    transform: translateY(2px);
 }
 
 .evolution-tree .node-name {
@@ -306,7 +307,13 @@ li input[type='text'] {
     top: 110%;
     right: 0;
 }
-
+#tree-controles span.random-example {
+    width: 100%;
+    color: #fff;
+    height: auto;
+    font-size: 12px;
+    top: 150%;
+}
 .links {
     position: fixed;
     right: 20px;

@@ -98,12 +98,12 @@
                                     "children": [
                                         {
                                             "text": {
-                                                "name": "Penicillum"
+                                                "name": "Penicillium"
                                             },
                                             "children": [],
-                                            "hasLink": false,
+                                            "hasLink": true,
                                             "link": {
-                                                "href": null,
+                                                "href": "/fungus.html?name=penicillium",
                                                 "target": "_self"
                                             }
                                         },
@@ -240,14 +240,17 @@
                                             "link": {
                                                 "href": null,
                                                 "target": "_self"
-                                            }
+                                            },
+                                            "collapsable": false
                                         }
                                     ],
                                     "hasLink": false,
                                     "link": {
                                         "href": null,
                                         "target": "_self"
-                                    }
+                                    },
+                                    "collapsable": true,
+                                    "collapsed": true
                                 },
                                 {
                                     "text": {
@@ -270,7 +273,9 @@
                                     "link": {
                                         "href": null,
                                         "target": "_self"
-                                    }
+                                    },
+                                    "collapsable": true,
+                                    "collapsed": true
                                 },
                                 {
                                     "text": {
@@ -315,7 +320,9 @@
                                     "link": {
                                         "href": null,
                                         "target": "_self"
-                                    }
+                                    },
+                                    "collapsable": true,
+                                    "collapsed": true
                                 }
                             ],
                             "hasLink": false,
