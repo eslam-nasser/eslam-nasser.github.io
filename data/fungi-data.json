@@ -23,11 +23,13 @@
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/penicillium/spors.obj"
+                "url": "../assets/penicillium/spors.obj",
+                "color": "#574b90"
             },
             {
                 "name": "Hypha",
-                "url": "../assets/penicillium/hypha.obj"
+                "url": "../assets/penicillium/hypha.obj",
+                "color": "#303952"
             }
         ]
     },
@@ -36,7 +38,8 @@
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/ustilago/spors.obj"
+                "url": "../assets/ustilago/spors.obj",
+                "color": "#574b90"
             }
         ]
     }
