@@ -13,25 +13,25 @@ export default function initGUI(modelParts) {
         'Auto rotate camera': false,
     };
 
-    const CameraPositon = {
-        x: window.camera.position.x,
-        y: window.camera.position.y,
-        z: window.camera.position.z,
-    };
+    // const CameraPositon = {
+    //     x: window.camera.position.x,
+    //     y: window.camera.position.y,
+    //     z: window.camera.position.z,
+    // };
     const gui = new GUI({
         closed: true,
         useLocalStorage: true,
     });
     gui.addFolder('Camera Position');
-    gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
-        window.camera.position.x = value;
-    });
-    gui.add(CameraPositon, 'y', 0, 10).onChange((value) => {
-        window.camera.position.y = value;
-    });
-    gui.add(CameraPositon, 'z', 0, 10).onChange((value) => {
-        window.camera.position.z = value;
-    });
+    // gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
+    //     window.camera.position.x = value;
+    // });
+    // gui.add(CameraPositon, 'y', 0, 10).onChange((value) => {
+    //     window.camera.position.y = value;
+    // });
+    // gui.add(CameraPositon, 'z', 0, 10).onChange((value) => {
+    //     window.camera.position.z = value;
+    // });
 
     const colors = {};
     modelParts.forEach(({ name, color }) => {
@@ -51,7 +51,7 @@ export default function initGUI(modelParts) {
     });
 
     gui.add(API, 'Auto rotate camera').onChange(() => {
-        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.2 : 0;
+        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.35 : 0;
     });
 
     gui.close();

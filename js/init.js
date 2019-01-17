@@ -7,6 +7,7 @@ import initGUI from './gui/init';
 import loadControllers from './controllers/loadControllers';
 import data from '../data/fungi-data.json';
 import loadModal from './loadModal/loadModal';
+import './globalMethods';
 
 // Get model name from url query
 const params = new URL(document.location).searchParams;
@@ -35,7 +36,7 @@ export default function init() {
     scene.add(floor);
 
     // Load Model
-    loadModels(model.parts, scene);
+    loadModels(model.parts);
 
     // Load controllers
     loadControllers(model.parts);

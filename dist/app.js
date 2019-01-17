@@ -108,7 +108,7 @@ return n.__gui.remove(n),n}}),n instanceof B["default"])!function(){var e=new N[
 /* 1 */
 /***/ (function(module) {
 
-module.exports = {"phytophthora-infestans":{"name":"Phytophthora infestans","parts":[{"name":"Spors","url":"../assets/phytophthora-infestans/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/phytophthora-infestans/hypha.obj","color":"#303952"}],"info":{"body":"<p>The asexual life cycle of <em>Phytophthora infestans</em> is characterized by alternating phases of <a href=\"https://en.wikipedia.org/wiki/Hypha\" target=\"_blank\">hyphal</a> growth, sporulation, sporangia germination (either through <a href=\"https://en.wikipedia.org/wiki/Zoospore\" target=\"_blank\">zoospore</a> release or direct germination, i.e. germ tube emergence from the <a href=\"https://en.wikipedia.org/wiki/Sporangium\" target=\"_blank\">sporangium</a>), and the re-establishment of hyphal growth.<a href=\"https://en.wikipedia.org/wiki/Phytophthora_infestans#cite_note-VCRB2012b-5\" target=\"_blank\"><sup>[5]</sup></a> There is also a sexual cycle, which occurs when isolates of opposite <a href=\"https://en.wikipedia.org/wiki/Mating_type\" target=\"_blank\">mating type</a> (A1 and A2) meet. Hormonal communication triggers the formation of the sexual <a href=\"https://en.wikipedia.org/wiki/Spore\" target=\"_blank\">spores</a>, called <a href=\"https://en.wikipedia.org/wiki/Oospore\" target=\"_blank\">oospores</a>.<a href=\"https://en.wikipedia.org/wiki/Phytophthora_infestans#cite_note-6\" target=\"_blank\"><sup>[6]</sup></a>&nbsp;</p>\r\n\r\n<p>\r\n\t<br>\r\n</p>\r\n\r\n<p>The different types of spores play major roles in the dissemination and survival of <em>P. infestans.</em> Sporangia are spread by wind or water and enable the movement of <em>P. infestans</em> between different <a href=\"https://en.wikipedia.org/wiki/Host_(biology)\" target=\"_blank\">host</a> plants. The zoospores released from sporangia are <a href=\"https://en.wikipedia.org/wiki/Biflagellate\" target=\"_blank\">biflagellated</a> and <a href=\"https://en.wikipedia.org/wiki/Chemotactic\" target=\"_blank\">chemotactic</a>, allowing further movement of <em>P. infestans</em> on water films found on leaves or soils. Both sporangia and zoospores are short-lived, in contrast to oospores which can persist in a viable form for many years.</p>\r\n","source":"https://en.wikipedia.org/wiki/Phytophthora_infestans"}},"penicillium":{"name":"Penicillium","parts":[{"name":"Spors","url":"../assets/penicillium/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/penicillium/hypha.obj","color":"#303952"}]},"ustilago":{"name":"Ustilago","parts":[{"name":"Spors","url":"../assets/ustilago/spors.obj","color":"#574b90"}]}};
+module.exports = {"phytophthora-infestans":{"name":"Phytophthora infestans","parts":[{"name":"Spors","url":"../assets/phytophthora-infestans/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/phytophthora-infestans/hypha.obj","color":"#303952"}],"info":{"body":"<p>The asexual life cycle of <em>Phytophthora infestans</em> is characterized by alternating phases of <a href=\"https://en.wikipedia.org/wiki/Hypha\" target=\"_blank\">hyphal</a> growth, sporulation, sporangia germination (either through <a href=\"https://en.wikipedia.org/wiki/Zoospore\" target=\"_blank\">zoospore</a> release or direct germination, i.e. germ tube emergence from the <a href=\"https://en.wikipedia.org/wiki/Sporangium\" target=\"_blank\">sporangium</a>), and the re-establishment of hyphal growth.<a href=\"https://en.wikipedia.org/wiki/Phytophthora_infestans#cite_note-VCRB2012b-5\" target=\"_blank\"><sup>[5]</sup></a> There is also a sexual cycle, which occurs when isolates of opposite <a href=\"https://en.wikipedia.org/wiki/Mating_type\" target=\"_blank\">mating type</a> (A1 and A2) meet. Hormonal communication triggers the formation of the sexual <a href=\"https://en.wikipedia.org/wiki/Spore\" target=\"_blank\">spores</a>, called <a href=\"https://en.wikipedia.org/wiki/Oospore\" target=\"_blank\">oospores</a>.<a href=\"https://en.wikipedia.org/wiki/Phytophthora_infestans#cite_note-6\" target=\"_blank\"><sup>[6]</sup></a>&nbsp;</p>\r\n\r\n<p>\r\n\t<br>\r\n</p>\r\n\r\n<p>The different types of spores play major roles in the dissemination and survival of <em>P. infestans.</em> Sporangia are spread by wind or water and enable the movement of <em>P. infestans</em> between different <a href=\"https://en.wikipedia.org/wiki/Host_(biology)\" target=\"_blank\">host</a> plants. The zoospores released from sporangia are <a href=\"https://en.wikipedia.org/wiki/Biflagellate\" target=\"_blank\">biflagellated</a> and <a href=\"https://en.wikipedia.org/wiki/Chemotactic\" target=\"_blank\">chemotactic</a>, allowing further movement of <em>P. infestans</em> on water films found on leaves or soils. Both sporangia and zoospores are short-lived, in contrast to oospores which can persist in a viable form for many years.</p>\r\n","source":"https://en.wikipedia.org/wiki/Phytophthora_infestans"}},"penicillium":{"name":"Penicillium","parts":[{"name":"Spors","url":"../assets/penicillium/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/penicillium/hypha.obj","color":"#303952"}]},"ustilago":{"name":"Ustilago","parts":[{"name":"Spors","url":"../assets/ustilago/spors.obj","color":"#542d17"}]}};
 
 /***/ }),
 /* 2 */
@@ -119,7 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./js/world/scene.js
 // SCENE
-const scene_scene = new window.THREE.Scene();
+const scene = new window.THREE.Scene();
 
 const bgFilename = '360-bg-texture-white.png';
 
@@ -130,16 +130,16 @@ const backgroundSphere = new window.THREE.Mesh(
         side: window.THREE.DoubleSide,
     }),
 );
-scene_scene.add(backgroundSphere);
+scene.add(backgroundSphere);
 
-/* harmony default export */ var world_scene = (scene_scene);
+/* harmony default export */ var world_scene = (scene);
 
 // CONCATENATED MODULE: ./js/world/floor.js
 // FLOOR
 const floorWidth = 3;
 const floorHeight = floorWidth * 2;
 const floorThickness = 0.1;
-const floorOffset = -1.5;
+const floorZOffset = -1.5;
 const floorYOffset = -1.5;
 
 const planeGeometry = new window.THREE.PlaneGeometry(floorWidth, floorHeight / 4, 1, 1);
@@ -148,7 +148,7 @@ const planeMesh = new window.THREE.Mesh(planeGeometry, planeMaterial);
 planeMesh.material.side = window.THREE.DoubleSide;
 planeMesh.rotation.x = Math.PI / 2;
 planeMesh.position.y = -0.01 + floorYOffset;
-planeMesh.position.z = -(floorHeight / 4) * 1.5 + floorOffset;
+planeMesh.position.z = -(floorHeight / 4) * 1.5 + floorZOffset;
 
 const galssGeometry = new window.THREE.BoxGeometry(floorWidth, floorHeight, floorThickness);
 const material = new window.THREE.MeshLambertMaterial({
@@ -160,7 +160,7 @@ const floor = new window.THREE.Mesh(galssGeometry, material);
 floor.material.side = window.THREE.DoubleSide;
 floor.rotation.x = Math.PI / 2;
 floor.position.y = -0.05 + floorYOffset;
-floor.position.z = floorOffset;
+floor.position.z = floorZOffset;
 
 const group = new window.THREE.Group();
 group.add(floor);
@@ -233,8 +233,9 @@ function onError(xhr) {
 
 
 
+
 // Load model
-function loadModels(modelsArray, scene) {
+function loadModels(modelsArray) {
     // Hide spinner and show progress bar
     document.querySelector('.spinner').style.display = 'none';
     document.querySelector('.spinner + h3').style.display = 'none';
@@ -248,6 +249,7 @@ function loadModels(modelsArray, scene) {
             model.url,
             (object) => {
                 const defaultColor = model.name === 'Spors' ? '#574b90' : '#303952';
+
                 // Append color to model
                 object.traverse((child) => {
                     if (child instanceof window.THREE.Mesh) {
@@ -272,9 +274,9 @@ function loadModels(modelsArray, scene) {
                 // Add name to the object so we can query it
                 object.name = model.name;
 
-                window.LoadedObjectInScreen = object;
+                // window.LoadedObjectInScreen = object;
                 // window.insect = object;
-                scene.add(object);
+                world_scene.add(object);
             },
             onProgress,
             onError,
@@ -356,25 +358,25 @@ function initGUI(modelParts) {
         'Auto rotate camera': false,
     };
 
-    const CameraPositon = {
-        x: window.camera.position.x,
-        y: window.camera.position.y,
-        z: window.camera.position.z,
-    };
+    // const CameraPositon = {
+    //     x: window.camera.position.x,
+    //     y: window.camera.position.y,
+    //     z: window.camera.position.z,
+    // };
     const gui = new dat_gui_min["GUI"]({
         closed: true,
         useLocalStorage: true,
     });
     gui.addFolder('Camera Position');
-    gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
-        window.camera.position.x = value;
-    });
-    gui.add(CameraPositon, 'y', 0, 10).onChange((value) => {
-        window.camera.position.y = value;
-    });
-    gui.add(CameraPositon, 'z', 0, 10).onChange((value) => {
-        window.camera.position.z = value;
-    });
+    // gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
+    //     window.camera.position.x = value;
+    // });
+    // gui.add(CameraPositon, 'y', 0, 10).onChange((value) => {
+    //     window.camera.position.y = value;
+    // });
+    // gui.add(CameraPositon, 'z', 0, 10).onChange((value) => {
+    //     window.camera.position.z = value;
+    // });
 
     const colors = {};
     modelParts.forEach(({ name, color }) => {
@@ -394,16 +396,13 @@ function initGUI(modelParts) {
     });
 
     gui.add(API, 'Auto rotate camera').onChange(() => {
-        world_controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.2 : 0;
+        world_controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.35 : 0;
     });
 
     gui.close();
 }
 
 // CONCATENATED MODULE: ./js/controllers/loadControllers.js
-/* eslint no-param-reassign: ["error", { "props": false }] */
-
-
 /* harmony default export */ var loadControllers = (function (modelInfo) {
     const controllersDiv = document.querySelector('#controllers');
     modelInfo.forEach((part) => {
@@ -415,38 +414,6 @@ function initGUI(modelParts) {
         `;
     });
 });
-
-window.toggleShowPart = (name, e) => {
-    // const label = e.target.parentNode;
-    // const allInputs = Array.from(label.parentNode.querySelectorAll('input'));
-    // const isAllChecked = allInputs.every(el => el.checked === true);
-    // console.log(isAllChecked);
-    // if (isAllChecked) {
-    //     allInputs.forEach((el) => {
-    //         el.checked = false;
-    //     });
-    //     e.target.checked = true;
-    // }
-
-    // query the object by its name
-    const object = world_scene.getObjectByName(name, true);
-    // toggle its opacity
-    if (e.target.checked === false) {
-        object.traverse((node) => {
-            if (node.material) {
-                node.material.opacity = 0.1;
-                node.material.transparent = true;
-            }
-        });
-    } else {
-        object.traverse((node) => {
-            if (node.material) {
-                node.material.opacity = 1;
-                node.material.transparent = true;
-            }
-        });
-    }
-};
 
 // EXTERNAL MODULE: ./data/fungi-data.json
 var fungi_data = __webpack_require__(1);
@@ -518,7 +485,40 @@ window.closeModal = () => {
     modal.style.opacity = 0;
 };
 
+// CONCATENATED MODULE: ./js/globalMethods.js
+/* eslint no-param-reassign: ["error", { "props": false }] */
+
+
+
+
+window.resetCamera = () => {
+    world_camera.position.set(8, 5, 9);
+    world_controls.reset();
+};
+
+window.toggleShowPart = (name, e) => {
+    // query the object by its name
+    const object = world_scene.getObjectByName(name, true);
+    // toggle its opacity
+    if (e.target.checked === false) {
+        object.traverse((node) => {
+            if (node.material) {
+                node.material.opacity = 0.1;
+                node.material.transparent = true;
+            }
+        });
+    } else {
+        object.traverse((node) => {
+            if (node.material) {
+                node.material.opacity = 1;
+                node.material.transparent = true;
+            }
+        });
+    }
+};
+
 // CONCATENATED MODULE: ./js/init.js
+
 
 
 
@@ -556,7 +556,7 @@ function init() {
     world_scene.add(world_floor);
 
     // Load Model
-    loadModels(init_model.parts, world_scene);
+    loadModels(init_model.parts);
 
     // Load controllers
     loadControllers(init_model.parts);

@@ -3,9 +3,10 @@
 import onProgress from './onProgress';
 import onError from './onError';
 import hexToRGB from '../utils/hexToRGB';
+import scene from '../world/scene';
 
 // Load model
-export default function loadModels(modelsArray, scene) {
+export default function loadModels(modelsArray) {
     // Hide spinner and show progress bar
     document.querySelector('.spinner').style.display = 'none';
     document.querySelector('.spinner + h3').style.display = 'none';
@@ -19,6 +20,7 @@ export default function loadModels(modelsArray, scene) {
             model.url,
             (object) => {
                 const defaultColor = model.name === 'Spors' ? '#574b90' : '#303952';
+
                 // Append color to model
                 object.traverse((child) => {
                     if (child instanceof window.THREE.Mesh) {
@@ -43,7 +45,7 @@ export default function loadModels(modelsArray, scene) {
                 // Add name to the object so we can query it
                 object.name = model.name;
 
-                window.LoadedObjectInScreen = object;
+                // window.LoadedObjectInScreen = object;
                 // window.insect = object;
                 scene.add(object);
             },
