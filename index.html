@@ -1,144 +1,58 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <title>Hypha App | Fungi Tree</title>
-    <link
-        rel="shortcut icon"
-        href="./assets/img/logo.png"
-        type="image/png"
-    />
-    <!-- <link
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Hypha App | Fungi Tree</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/img/logo.png"
+            type="image/png"
+        />
+        <!-- <link
         href="https://fonts.googleapis.com/css?family=Montserrat"
         rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="./tree-libs/treant-js/Treant.css">
-    <link rel="stylesheet" href="./tree-libs/style.css">
+        <!-- <link rel="stylesheet" href="./tree-libs/treant-js/Treant.css" /> -->
+        <link rel="stylesheet" href="./tree-libs/style.css" />
+    </head>
 
+    <body>
+        <!-- Cards -->
+        <div class="cards-wrapper"><!-- *_* --></div>
 
-</head>
+        <!-- Links -->
+        <div class="links">
+            <a
+                target="_blank"
+                href="https://github.com/eslam-nasser/eslam-nasser.github.io#maintainers"
+                class="credits"
+                >Credits</a
+            >
+            <a
+                target="_blank"
+                href="https://github.com/eslam-nasser/eslam-nasser.github.io"
+                class="github"
+                ><img src="./assets/img/icons/github-logo-white.svg"
+            /></a>
+        </div>
 
-<body class="dragscroll">
-    <!-- Tree -->
-    <div class="chart" id="tree"></div>
+        <script src="./tree-libs/main.js"></script>
 
-    <!-- Links -->
-    <div class="links">
-        <a target="_blank" href="https://github.com/eslam-nasser/eslam-nasser.github.io#maintainers" class="credits">Credits</a>
-        <a target="_blank" href="https://github.com/eslam-nasser/eslam-nasser.github.io" class="github"><img src="./assets/img/icons/github-logo-white.svg"></a>
-    </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-131252474-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-    <!-- Tree Controles -->
-    <div id="tree-controles">
-        <span class="up moving-btn">
-            <img src="./assets/img/icons/up.svg">
-        </span>
-        <span class="right moving-btn">
-            <img src="./assets/img/icons/right.svg">
-        </span>
-        <span class="down moving-btn">
-            <img src="./assets/img/icons/down.svg">
-        </span>
-        <span class="left moving-btn">
-            <img src="./assets/img/icons/left.svg">
-        </span>
-        <span class="zoom-in">
-            <img src="./assets/img/icons/zoom-in.svg">
-        </span>
-        <span class="zoom-out">
-            <img src="./assets/img/icons/zoom-out.svg">
-        </span>
-        <span class="reset">
-            <img src="./assets/img/icons/refresh.svg">
-        </span>
-        <span class="random-example">
-            Random Example
-        </span>
-    </div>
-
-    <!-- Settings -->
-    <div id="settings">
-        <img src="./assets/img/icon-cog.svg" />
-    </div>
-    
-    <!-- Vue App -->
-    <div id="app" style="display: none">
-        <button @click="addNew">Add new fungus</button>
-        <button @click="save">Save & Render</button>
-        <local-draggable :tasks="tasks" />
-    </div>
-    <script type="text/x-template" id="template-dra">
-        <draggable :element="'ul'" :list="tasks":options="{group:{ name:'g1'}}" @change="onMove">
-            <li v-for="(node, i) in tasks">
-                <!-- remove node -->
-                <button @click="remove(tasks, i)">x</button>
-                <!-- Edit node name -->
-                <input type="text" v-model="node.text.name">
-                <!-- is this node will be link? -->
-                <label>
-                    node link?
-                    <input 
-                        type="checkbox" 
-                        :checked="node.hasLink" 
-                        v-model="node.hasLink" 
-                        @change="setLink($event, node)"
-                    >
-                </label>
-                <a v-if="node.link && node.link.href" :href="node.link.href" target="_blank">
-                    Open in new tab
-                </a>
-                <!-- collapsable stuff -->
-                <label>
-                    collapsable?
-                    <input 
-                        type="checkbox" 
-                        :checked="node.collapsable" 
-                        v-model="node.collapsable" 
-                    >
-                </label>
-                <label v-if="node.collapsable">
-                    collapsed?
-                    <input 
-                        type="checkbox" 
-                        :checked="node.collapsed" 
-                        v-model="node.collapsed"
-                    >
-                </label>
-                <!-- drop area -->
-                <local-draggable v-if="node.children" :tasks="node.children"></local-draggable>
-            </li>
-        </draggable>
-    </script>
-    
-    <!-- Tree libs -->
-    <script src="./tree-libs/treant-js/raphael.js"></script>
-    <script src="./tree-libs/treant-js/Treant.js"></script>
-
-    <!-- drag scroll -->
-    <script src="./tree-libs/dragscroll.js"></script>
-
-    <!-- Vue App -->
-    <script src="./tree-libs/vue/vue.js"></script>
-    <script src="./tree-libs/vue/Sortable.js"></script>
-    <script src="./tree-libs/vue/lodash.min.js"></script>
-    <script src="./tree-libs/vue/vuedraggable.js"></script>
-
-    <script src="./tree-libs/main.js"></script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131252474-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-131252474-1');
-    </script>
-
-</body>
-
+            gtag('config', 'UA-131252474-1');
+        </script>
+    </body>
 </html>

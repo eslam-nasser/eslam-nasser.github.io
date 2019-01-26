@@ -1,6 +1,7 @@
 {
     "phytophthora-infestans": {
         "name": "Phytophthora infestans",
+        "order": "ORDER_1",
         "parts": [
             {
                 "name": "Spors",
@@ -20,6 +21,7 @@
     },
     "penicillium": {
         "name": "Penicillium",
+        "order": "ORDER_1",
         "parts": [
             {
                 "name": "Spors",
@@ -33,8 +35,41 @@
             }
         ]
     },
+    "fusarium": {
+        "name": "Fusarium",
+        "order": "ORDER_2",
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "../assets/fusarium/spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "../assets/fusarium/hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "plasmopara-viticola": {
+        "name": "Plasmopara Viticola",
+        "order": "ORDER_2",
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "../assets/plasmopara-viticola/spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "../assets/plasmopara-viticola/hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
     "ustilago": {
         "name": "Ustilago",
+        "order": "ORDER_3",
         "parts": [
             {
                 "name": "Spors",

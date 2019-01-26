@@ -1,351 +1,43 @@
 /* eslint-disable */
 window.onload = () => {
-    renderTree();
-    movingControles();
-    zoomingControles();
-
-    document.querySelector('span.random-example').addEventListener('click', randomSample);
+    renderCards();
 };
 
-const local = {
-    template: '#template-dra',
-    name: 'local-draggable',
-    props: ['tasks'],
-    methods: {
-        remove(all, i) {
-            all = all.splice(i, 1);
-        },
-
-        setLink(e, item) {
-            if (item.hasLink) {
-                item.link.href = this.parseName(item.text.name);
-            } else {
-                item.link.href = null;
-            }
-        },
-
-        parseName(name) {
-            return `/fungus.html?name=${name.toLowerCase().replace(' ', '-')}`;
-        },
-
-        onMove() {
-            // console.log('moved ..');
-        },
-    },
-};
-
-const app = new window.Vue({
-    el: '#app',
-    components: {
-        'local-draggable': local,
-    },
-    data: {
-        tasks: [
-            {
-                id: Math.floor(Math.random() * 1000),
-                text: {
-                    name: 'Zygomycota',
-                },
-                hasLink: false,
-                children: [],
-                link: {
-                    href: null,
-                    target: '_self',
-                },
-            },
-            {
-                id: Math.floor(Math.random() * 1000),
-                text: {
-                    name: 'Ascomycota',
-                },
-                hasLink: false,
-                children: [],
-                link: {
-                    href: null,
-                    target: '_self',
-                },
-            },
-            {
-                id: Math.floor(Math.random() * 1000),
-                // collapsable: true,
-                text: {
-                    name: 'Oomycota',
-                },
-                hasLink: false,
-                link: {
-                    href: null,
-                    target: '_self',
-                },
-                children: [
-                    {
-                        id: Math.floor(Math.random() * 1000),
-                        text: {
-                            name: 'Peronosporaceae',
-                        },
-                        link: {
-                            href: null,
-                            target: '_self',
-                        },
-                        hasLink: false,
-                        children: [],
-                    },
-                    {
-                        id: Math.floor(Math.random() * 1000),
-                        text: {
-                            name: 'Albugniaceae',
-                        },
-                        link: {
-                            href: null,
-                            target: '_self',
-                        },
-                        hasLink: false,
-                        children: [],
-                    },
-                    {
-                        id: Math.floor(Math.random() * 1000),
-                        text: {
-                            name: 'Pythiceae',
-                        },
-                        link: {
-                            href: null,
-                            target: '_self',
-                        },
-                        hasLink: false,
-                        children: [],
-                    },
-                ],
-            },
-            {
-                id: Math.floor(Math.random() * 1000),
-                text: {
-                    name: 'Basidiomycota',
-                },
-                hasLink: false,
-                children: [],
-                link: {
-                    href: null,
-                    target: '_self',
-                },
-            },
-            {
-                id: Math.floor(Math.random() * 1000),
-                text: {
-                    name: 'Deuteromycota',
-                },
-                hasLink: false,
-                children: [],
-                link: {
-                    href: null,
-                    target: '_self',
-                },
-            },
-        ],
-    },
-    created() {
-        const data = JSON.parse(localStorage.getItem('nodeStructure'));
-        if (data && data.length) {
-            this.tasks = data;
+// Get data
+async function renderCards() {
+    const data = await fetch('./data/fungi-data.json').then(res => res.json());
+    const cardsWrapper = document.querySelector('.cards-wrapper');
+    let sections = {};
+    for (let key in data) {
+        const fungi = data[key];
+        fungi['slug'] = key;
+        if (sections[fungi.order]) {
+            sections[fungi.order].push({ ...fungi });
+        } else {
+            sections[fungi.order] = [fungi];
         }
-    },
-    methods: {
-        save() {
-            localStorage.setItem('nodeStructure', JSON.stringify(this.tasks));
-            this.render();
-        },
-        render() {
-            window.renderTree();
-        },
-
-        addNew() {
-            const newFungi = {
-                text: {
-                    name: 'NEW FUNGI',
-                },
-                children: [],
-                hasLink: false,
-                link: {
-                    href: null,
-                    target: '_self',
-                },
-            };
-            this.tasks.unshift(newFungi);
-        },
-    },
-});
-
-async function renderTree() {
-    // Reset tree
-    if (window.mycota_tree) {
-        window.mycota_tree.destroy();
     }
-
-    // Get data
-    let nodeStructure = JSON.parse(localStorage.getItem('nodeStructure'));
-    if (
-        (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') ||
-        !nodeStructure ||
-        nodeStructure.length === 0
-    ) {
-        const { nodeStructure: data } = await fetch('./data/tree-data.json').then(res =>
-            res.json(),
-        );
-        nodeStructure = data;
-        localStorage.setItem('nodeStructure', JSON.stringify(data));
-    }
-
-    const treeStructure = {
-        chart: {
-            container: '#tree',
-            levelSeparation: 200,
-            siblingSeparation: 200,
-            subTeeSeparation: 200,
-            nodeAlign: 'CENTER',
-            rootOrientation: 'NORTH', // NORTH,EAST,WEST,SOUTH
-            // animateOnInit: true,
-            // animateOnInitDelay: 1000,
-            padding: 50,
-            node: {
-                HTMLclass: 'evolution-tree',
-            },
-            connectors: {
-                type: 'curve', // curve,bCurve,step,straight
-                style: {
-                    'stroke-width': 2,
-                    'stroke-linecap': 'round',
-                    stroke: '#ccc',
-                    // 'arrow-end': 'oval-wide-long',
-                },
-            },
-            animation: {
-                nodeSpeed: 300,
-                connectorsSpeed: 300,
-            },
-        },
-
-        nodeStructure: {
-            id: Math.floor(Math.random() * 1000),
-            text: {
-                name: 'Eumycota',
-            },
-            pseudo: false,
-            HTMLclass: 'the-parent',
-            children: nodeStructure,
-        },
-    };
-    // Init tree
-    window.mycota_tree = new window.Treant(treeStructure, () => {
-        console.log('tree loaded..');
-    });
-}
-
-function movingControles() {
-    // The item (or items) to press and hold on
-    const arrows = document.querySelectorAll('#tree-controles span.moving-btn');
-
-    let timerID;
-    let counter = 0;
-    let scrollSpeed = 10;
-    let pageX = 0;
-    let pageY = 0;
-
-    arrows.forEach(item => {
-        // Listening for the mouse and touch events
-        item.addEventListener('mousedown', pressingDown, false);
-        item.addEventListener('mouseup', notPressingDown, false);
-        item.addEventListener('mouseleave', notPressingDown, false);
-
-        item.addEventListener('touchstart', pressingDown, false);
-        item.addEventListener('touchend', notPressingDown, false);
-
-        // Listening for our custom pressHold event
-        item.addEventListener('pressHold', doSomething, false);
-    });
-
-    function pressingDown(e) {
-        // Start the timer
-        requestAnimationFrame(timer.bind(this));
-
-        pageX = window.scrollX;
-        pageY = window.scrollY;
-
-        e.preventDefault();
-    }
-
-    function notPressingDown(e) {
-        // Stop the timer
-        cancelAnimationFrame(timerID);
-        counter = 0;
-    }
-
-    //
-    // Runs at 60fps when you are pressing down
-    //
-    function timer() {
-        const dir = this.classList[0];
-
-        if (dir === 'right') {
-            pageX += scrollSpeed;
+    for (let key in sections) {
+        let section = sections[key];
+        let sectionHTML = '';
+        let cardsHTML = '';
+        for (let fungi of section) {
+            cardsHTML += `
+                <a href="/fungus.html?name=${fungi.slug}" class="card">
+                    <div
+                        class="image"
+                        style="background-image: url('./assets/${fungi.slug}/preview.png')"
+                    ></div>
+                    <h5>${fungi.name}</h5>
+                </a>
+            `;
         }
-        if (dir === 'left') {
-            pageX -= scrollSpeed;
-        }
-        if (dir === 'up') {
-            pageY -= scrollSpeed;
-        }
-        if (dir === 'down') {
-            pageY += scrollSpeed;
-        }
-
-        window.scrollTo(pageX, pageY);
-
-        timerID = requestAnimationFrame(timer.bind(this));
-        counter += 1;
+        sectionHTML = `
+            <section>
+                <h2>${key}</h2>
+                ${cardsHTML}
+            </section>
+        `;
+        cardsWrapper.innerHTML += sectionHTML;
     }
-
-    function doSomething(e) {
-        // console.log('pressHold event fired!');
-    }
-}
-
-function zoomingControles() {
-    const btns = document.querySelectorAll('#tree-controles span[class^="zoom-"]');
-    const tree = document.querySelector('#tree');
-    let zoomLevel = 1;
-
-    btns.forEach(btn => {
-        btn.addEventListener('click', e => {
-            if (e.target.classList[0] === 'zoom-out') {
-                zoomLevel = zoomLevel - 0.05;
-            } else if (e.target.classList[0] === 'zoom-in') {
-                zoomLevel = zoomLevel + 0.05;
-            }
-            tree.style.transform = `scale(${zoomLevel})`;
-        });
-    });
-
-    // Reset
-    const reset = document.querySelector('#tree-controles span.reset');
-    reset.addEventListener('click', () => {
-        zoomLevel = 1;
-        tree.style.transform = `scale(${zoomLevel})`;
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        });
-        // Reset tree
-        if (window.mycota_tree) {
-            window.mycota_tree.destroy();
-        }
-        renderTree();
-    });
-}
-
-async function randomSample() {
-    const data = await fetch('../data/fungi-data.json').then(res => res.json());
-    const dataKeys = Object.keys(data);
-    const randomIndex = Math.floor(Math.random() * dataKeys.length);
-    const name = dataKeys[randomIndex];
-
-    window.location.href = `/fungus.html?name=${name}`;
 }
