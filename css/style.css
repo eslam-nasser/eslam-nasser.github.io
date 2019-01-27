@@ -193,14 +193,22 @@ p {
 #controllers label {
     display: block;
     padding: 10px 15px;
+    width: 130px;
     transition: 0.14s;
     cursor: pointer;
     color: #fff;
+    border-bottom: 1px solid #4d5865;
+}
+#controllers label:last-of-type {
+    border: 0;
 }
 #controllers label:hover {
     background-color: rgba(29, 41, 53, 1);
 }
-
+#controllers label span {
+    text-align: right;
+    width: 100%;
+}
 #controllers [type='checkbox']:checked + span,
 #controllers [type='checkbox']:not(:checked) + span {
     position: relative;
