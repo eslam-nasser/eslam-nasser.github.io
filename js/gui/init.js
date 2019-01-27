@@ -4,6 +4,7 @@ import { GUI } from '../libs/dat.gui.min';
 import controls from '../world/controls';
 import scene from '../world/scene';
 import hexToRGB from '../utils/hexToRGB';
+import ArNames from '../../data/fungi-parts-ar-names';
 
 export default function initGUI(modelParts) {
     const API = {
@@ -22,7 +23,11 @@ export default function initGUI(modelParts) {
         closed: true,
         useLocalStorage: true,
     });
-    gui.addFolder('Camera Position');
+
+    gui.add(API, 'Auto rotate camera').onChange(() => {
+        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.7 : 0;
+    });
+
     // gui.add(CameraPositon, 'x', 0, 10).onChange((value) => {
     //     window.camera.position.x = value;
     // });
@@ -33,13 +38,13 @@ export default function initGUI(modelParts) {
     //     window.camera.position.z = value;
     // });
 
-    const colors = {};
+    const coloredParts = {};
     modelParts.forEach(({ name, color }) => {
-        colors[name] = color || '#000';
+        coloredParts[name] = color || '#000';
     });
 
-    Object.keys(colors).forEach((key) => {
-        gui.addColor(colors, key).onChange((e) => {
+    Object.keys(coloredParts).forEach((key) => {
+        gui.addColor(coloredParts, key).onChange((e) => {
             const object = scene.getObjectByName(key, true);
             object.traverse((node) => {
                 if (node instanceof window.THREE.Mesh) {
@@ -50,9 +55,7 @@ export default function initGUI(modelParts) {
         });
     });
 
-    gui.add(API, 'Auto rotate camera').onChange(() => {
-        controls.autoRotateSpeed = API['Auto rotate camera'] ? 0.35 : 0;
-    });
-
-    gui.close();
+    setTimeout(() => {
+        gui.close();
+    }, 3000);
 }

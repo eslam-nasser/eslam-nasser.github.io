@@ -14,6 +14,8 @@ controls.minDistance = 2;
 controls.maxDistance = 30;
 controls.minPolarAngle = Math.PI / 4;
 controls.maxPolarAngle = Math.PI / 1.5;
+controls.autoRotateSpeed = 0.7; // rotating the camera by default
+controls.defaultAutoRotate = true;
 
 // const zoom = controls.target.distanceTo(controls.object.position);
 

@@ -28,3 +28,10 @@ window.toggleShowPart = (name, e) => {
         });
     }
 };
+
+window.onmousedown = () => {
+    if (controls.defaultAutoRotate) {
+        controls.autoRotateSpeed = 0;
+        controls.defaultAutoRotate = false;
+    }
+};
