@@ -26,7 +26,7 @@ async function renderCards() {
                 <a href="/fungus.html?name=${fungi.slug}" class="card">
                     <div
                         class="image"
-                        style="background-image: url('./assets/${fungi.slug}/preview.png')"
+                        style="background-image: url('./assets/${fungi.slug}/preview.PNG')"
                     ></div>
                     <h5>${fungi.name}</h5>
                 </a>
