@@ -27,7 +27,15 @@ async function renderCards() {
                     <div
                         class="image"
                         style="background-image: url('./assets/${fungi.slug}/preview.PNG')"
-                    ></div>
+                    >
+                        <div class="info">
+                            <ul>
+                            <li>Class: CLASS NAME </li>
+                            <li>Order: ORDER NAME </li>
+                            <li>Family: FAMILY NAME </li>
+                            </ul>
+                        </div>
+                    </div>
                     <h5>${fungi.name}</h5>
                 </a>
             `;

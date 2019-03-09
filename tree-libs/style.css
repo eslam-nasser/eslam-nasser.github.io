@@ -116,10 +116,30 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: #aaa;
+    position: relative;
 }
 .cards-wrapper .card h5 {
     margin: 0;
     padding: 10px 5px;
     font-size: 1.3em;
     text-align: center;
+}
+
+.cards-wrapper .card .image .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    color: #fff;
+    transition: .15s;
+    font-size: 22px;
+}
+.cards-wrapper .card .image .info li{
+    padding: 10px 0
+}
+.cards-wrapper .card:hover .image .info{
+    opacity: 1;
 }
