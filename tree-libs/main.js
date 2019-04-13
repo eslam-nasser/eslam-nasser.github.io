@@ -1,4 +1,10 @@
 /* eslint-disable */
+
+/*
+    WIKI API EXAMPLE:
+    - https://en.wikipedia.org/w/api.php?action=parse&format=json&rvprop=content&page=Penicillium&contentmodel=wikitext
+*/
+
 window.onload = () => {
     renderCards();
 };
