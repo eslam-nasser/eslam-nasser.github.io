@@ -36,7 +36,7 @@ export default function init() {
     scene.add(floor);
 
     // Load Model
-    loadModels(model.parts);
+    loadModels(model.parts, modelName);
 
     // Load controllers
     loadControllers(model.parts);

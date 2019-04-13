@@ -81,11 +81,17 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module) {
+
+module.exports = {"Spors":"جراثيم","Hypha":"هيفا"};
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -105,13 +111,13 @@ return n.__gui.remove(n),n}}),n instanceof B["default"])!function(){var e=new N[
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module) {
 
-module.exports = {"phytophthora-infestans":{"name":"Phytophthora infestans","order":"ORDER_1","parts":[{"name":"Spors","url":"../assets/phytophthora-infestans/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/phytophthora-infestans/hypha.obj","color":"#303952"}],"info":{"body":"<p>The asexual life cycle of <em>Phytophthora infestans</em> is characterized by alternating phases of <a href=\"https://en.wikipedia.org/wiki/Hypha\" target=\"_blank\">hyphal</a> growth, sporulation, sporangia germination (either through <a href=\"https://en.wikipedia.org/wiki/Zoospore\" target=\"_blank\">zoospore</a> release or direct germination, i.e. germ tube emergence from the <a href=\"https://en.wikipedia.org/wiki/Sporangium\" target=\"_blank\">sporangium</a>), and the re-establishment of hyphal growth.<a href=\"https://en.wikipedia.org/wiki/Phytophthora_infestans#cite_note-VCRB2012b-5\" target=\"_blank\"><sup>[5]</sup></a> There is also a sexual cycle, which occurs when isolates of opposite <a href=\"https://en.wikipedia.org/wiki/Mating_type\" target=\"_blank\">mating type</a> (A1 and A2) meet. Hormonal communication triggers the formation of the sexual <a href=\"https://en.wikipedia.org/wiki/Spore\" target=\"_blank\">spores</a>, called <a href=\"https://en.wikipedia.org/wiki/Oospore\" target=\"_blank\">oospores</a>.<a href=\"https://en.wikipedia.org/wiki/Phytophthora_infestans#cite_note-6\" target=\"_blank\"><sup>[6]</sup></a>&nbsp;</p>\r\n\r\n<p>\r\n\t<br>\r\n</p>\r\n\r\n<p>The different types of spores play major roles in the dissemination and survival of <em>P. infestans.</em> Sporangia are spread by wind or water and enable the movement of <em>P. infestans</em> between different <a href=\"https://en.wikipedia.org/wiki/Host_(biology)\" target=\"_blank\">host</a> plants. The zoospores released from sporangia are <a href=\"https://en.wikipedia.org/wiki/Biflagellate\" target=\"_blank\">biflagellated</a> and <a href=\"https://en.wikipedia.org/wiki/Chemotactic\" target=\"_blank\">chemotactic</a>, allowing further movement of <em>P. infestans</em> on water films found on leaves or soils. Both sporangia and zoospores are short-lived, in contrast to oospores which can persist in a viable form for many years.</p>\r\n","source":"https://en.wikipedia.org/wiki/Phytophthora_infestans"}},"penicillium":{"name":"Penicillium","order":"ORDER_1","parts":[{"name":"Spors","url":"../assets/penicillium/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/penicillium/hypha.obj","color":"#303952"}]},"fusarium":{"name":"Fusarium","order":"ORDER_2","parts":[{"name":"Spors","url":"../assets/fusarium/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/fusarium/hypha.obj","color":"#303952"}]},"plasmopara-viticola":{"name":"Plasmopara Viticola","order":"ORDER_2","parts":[{"name":"Spors","url":"../assets/plasmopara-viticola/spors.obj","color":"#574b90"},{"name":"Hypha","url":"../assets/plasmopara-viticola/hypha.obj","color":"#303952"}]},"ustilago":{"name":"Ustilago","order":"ORDER_3","parts":[{"name":"Spors","url":"../assets/ustilago/spors.obj","color":"#542d17"}]}};
+module.exports = {"cephalosporium-maydis":{"name":"Cephalosporium Maydis","classification":{"phylum":"Ascomycota","class":"Ascomycetes","order":"Incertae sedis","genus":"Maydis"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"phytophthora-infestans":{"name":"Phytophthora Infestans","classification":{"class":"lorem_class","order":"lorem_order","genus":"lorem_genus","phylum":"lorem_phylum"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"penicillium":{"name":"Penicillium","classification":{"class":"lorem_class","order":"lorem_order","genus":"lorem_genus","phylum":"lorem_phylum"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"fusarium":{"name":"Fusarium","classification":{"class":"lorem_class","order":"lorem_order","genus":"lorem_genus","phylum":"lorem_phylum"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"plasmopara-viticola":{"name":"Plasmopara Viticola","classification":{"class":"lorem_class","order":"lorem_order","genus":"lorem_genus","phylum":"lorem_phylum"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"ustilago":{"name":"Ustilago","classification":{"class":"lorem_class","order":"lorem_order","genus":"lorem_genus","phylum":"lorem_phylum"},"parts":[{"name":"Spors","url":"spors.obj","color":"#542d17"}]}};
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -235,7 +241,7 @@ function onError(xhr) {
 
 
 // Load model
-function loadModels(modelsArray) {
+function loadModels(modelsArray, modelName) {
     // Hide spinner and show progress bar
     document.querySelector('.spinner').style.display = 'none';
     document.querySelector('.spinner + h3').style.display = 'none';
@@ -246,7 +252,7 @@ function loadModels(modelsArray) {
         // model
         const loader = new window.THREE.OBJLoader();
         loader.load(
-            model.url,
+            `../assets/fungi-models/${modelName}/${model.url}`,
             (object) => {
                 const defaultColor = model.name === 'Spors' ? '#574b90' : '#303952';
 
@@ -270,6 +276,9 @@ function loadModels(modelsArray) {
                 // console.log(box.min, box.max, box.getSize());
 
                 object.position.y = -1.5;
+
+                // scale the object
+                // object.scale.set(10, 10);
 
                 // Add name to the object so we can query it
                 object.name = model.name;
@@ -318,7 +327,7 @@ function onWindowResize() {
 }
 
 // EXTERNAL MODULE: ./js/libs/dat.gui.min.js
-var dat_gui_min = __webpack_require__(0);
+var dat_gui_min = __webpack_require__(1);
 
 // CONCATENATED MODULE: ./js/world/controls.js
 
@@ -345,7 +354,7 @@ controls.defaultAutoRotate = true;
 /* harmony default export */ var world_controls = (controls);
 
 // EXTERNAL MODULE: ./data/fungi-parts-ar-names.json
-var fungi_parts_ar_names = __webpack_require__(3);
+var fungi_parts_ar_names = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./js/gui/init.js
 /* eslint no-param-reassign: ["error", { "props": false }] */
@@ -426,7 +435,7 @@ function initGUI(modelParts) {
 });
 
 // EXTERNAL MODULE: ./data/fungi-data.json
-var fungi_data = __webpack_require__(1);
+var fungi_data = __webpack_require__(2);
 
 // CONCATENATED MODULE: ./js/loadModal/loadModal.js
 /* eslint prefer-destructuring: ["error", {VariableDeclarator: {object: true}}] */
@@ -548,16 +557,16 @@ window.onmousedown = () => {
 
 // Get model name from url query
 const params = new URL(document.location).searchParams;
-const modelName = params.get('name');
-const init_model = fungi_data[modelName];
+const init_modelName = params.get('name');
+const init_model = fungi_data[init_modelName];
 
 function init() {
     // If we don't have data for this fungus name, we will show error message!
     if (!init_model) {
         document.querySelector('.spinner-wrapper').style.display = 'none';
         const noData = document.querySelector('.no-data-found');
-        if (modelName) {
-            noData.querySelector('b').innerText = modelName.replace('-', ' ');
+        if (init_modelName) {
+            noData.querySelector('b').innerText = init_modelName.replace('-', ' ');
         } else {
             noData.querySelector('h3').innerText = 'You have to choose fungus from fungi tree';
         }
@@ -573,7 +582,7 @@ function init() {
     world_scene.add(world_floor);
 
     // Load Model
-    loadModels(init_model.parts);
+    loadModels(init_model.parts, init_modelName);
 
     // Load controllers
     loadControllers(init_model.parts);
@@ -649,12 +658,6 @@ function animate() {
 init();
 animate();
 
-
-/***/ }),
-/* 3 */
-/***/ (function(module) {
-
-module.exports = {"Spors":"جراثيم","Hypha":"هيفا"};
 
 /***/ })
 /******/ ]);

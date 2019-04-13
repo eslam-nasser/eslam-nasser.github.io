@@ -6,7 +6,7 @@ import hexToRGB from '../utils/hexToRGB';
 import scene from '../world/scene';
 
 // Load model
-export default function loadModels(modelsArray) {
+export default function loadModels(modelsArray, modelName) {
     // Hide spinner and show progress bar
     document.querySelector('.spinner').style.display = 'none';
     document.querySelector('.spinner + h3').style.display = 'none';
@@ -17,7 +17,7 @@ export default function loadModels(modelsArray) {
         // model
         const loader = new window.THREE.OBJLoader();
         loader.load(
-            model.url,
+            `../assets/fungi-models/${modelName}/${model.url}`,
             (object) => {
                 const defaultColor = model.name === 'Spors' ? '#574b90' : '#303952';
 
@@ -41,6 +41,9 @@ export default function loadModels(modelsArray) {
                 // console.log(box.min, box.max, box.getSize());
 
                 object.position.y = -1.5;
+
+                // scale the object
+                // object.scale.set(10, 10);
 
                 // Add name to the object so we can query it
                 object.name = model.name;

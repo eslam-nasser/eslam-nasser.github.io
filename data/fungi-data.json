@@ -1,21 +1,42 @@
 {
-    "phytophthora-infestans": {
-        "name": "Phytophthora infestans",
+    "cephalosporium-maydis": {
+        "name": "Cephalosporium Maydis",
         "classification": {
-            "class": "lorem class",
-            "order": "lorem order",
-            "genus": "lorem genus",
-            "phylum": "lorem phylum"
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "Incertae sedis",
+            "genus": "Maydis"
         },
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/phytophthora-infestans/spors.obj",
+                "url": "spors.obj",
                 "color": "#574b90"
             },
             {
                 "name": "Hypha",
-                "url": "../assets/phytophthora-infestans/hypha.obj",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "phytophthora-infestans": {
+        "name": "Phytophthora Infestans",
+        "classification": {
+            "class": "lorem_class",
+            "order": "lorem_order",
+            "genus": "lorem_genus",
+            "phylum": "lorem_phylum"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
                 "color": "#303952"
             }
         ]
@@ -23,20 +44,20 @@
     "penicillium": {
         "name": "Penicillium",
         "classification": {
-            "class": "lorem class",
-            "order": "lorem order",
-            "genus": "lorem genus",
-            "phylum": "lorem phylum"
+            "class": "lorem_class",
+            "order": "lorem_order",
+            "genus": "lorem_genus",
+            "phylum": "lorem_phylum"
         },
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/penicillium/spors.obj",
+                "url": "spors.obj",
                 "color": "#574b90"
             },
             {
                 "name": "Hypha",
-                "url": "../assets/penicillium/hypha.obj",
+                "url": "hypha.obj",
                 "color": "#303952"
             }
         ]
@@ -44,20 +65,20 @@
     "fusarium": {
         "name": "Fusarium",
         "classification": {
-            "class": "lorem class",
-            "order": "lorem order",
-            "genus": "lorem genus",
-            "phylum": "lorem phylum"
+            "class": "lorem_class",
+            "order": "lorem_order",
+            "genus": "lorem_genus",
+            "phylum": "lorem_phylum"
         },
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/fusarium/spors.obj",
+                "url": "spors.obj",
                 "color": "#574b90"
             },
             {
                 "name": "Hypha",
-                "url": "../assets/fusarium/hypha.obj",
+                "url": "hypha.obj",
                 "color": "#303952"
             }
         ]
@@ -65,20 +86,20 @@
     "plasmopara-viticola": {
         "name": "Plasmopara Viticola",
         "classification": {
-            "class": "lorem class",
-            "order": "lorem order",
-            "genus": "lorem genus",
-            "phylum": "lorem phylum"
+            "class": "lorem_class",
+            "order": "lorem_order",
+            "genus": "lorem_genus",
+            "phylum": "lorem_phylum"
         },
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/plasmopara-viticola/spors.obj",
+                "url": "spors.obj",
                 "color": "#574b90"
             },
             {
                 "name": "Hypha",
-                "url": "../assets/plasmopara-viticola/hypha.obj",
+                "url": "hypha.obj",
                 "color": "#303952"
             }
         ]
@@ -86,15 +107,15 @@
     "ustilago": {
         "name": "Ustilago",
         "classification": {
-            "class": "lorem class",
-            "order": "lorem order",
-            "genus": "lorem genus",
-            "phylum": "lorem phylum"
+            "class": "lorem_class",
+            "order": "lorem_order",
+            "genus": "lorem_genus",
+            "phylum": "lorem_phylum"
         },
         "parts": [
             {
                 "name": "Spors",
-                "url": "../assets/ustilago/spors.obj",
+                "url": "spors.obj",
                 "color": "#542d17"
             }
         ]

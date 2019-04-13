@@ -17,10 +17,10 @@ async function renderCards() {
     for (let key in data) {
         const fungi = data[key];
         fungi['slug'] = key;
-        if (sections[fungi.order]) {
-            sections[fungi.order].push({ ...fungi });
+        if (sections[fungi.classification.order]) {
+            sections[fungi.classification.order].push({ ...fungi });
         } else {
-            sections[fungi.order] = [fungi];
+            sections[fungi.classification.order] = [fungi];
         }
     }
     for (let key in sections) {
