@@ -1,10 +1,47 @@
 {
+    "tilletia": {
+        "name": "tilletia",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "TEST ORDER NAME",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            }
+        ]
+    },
+    "leveillula-2": {
+        "name": "leveillula-2",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "TEST ORDER NAME",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
     "urocystis": {
         "name": "urocystis",
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -20,7 +57,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -41,7 +78,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -62,7 +99,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -83,7 +120,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -104,7 +141,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -125,7 +162,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -143,10 +180,11 @@
     },
     "pseudoperonospora-cubensis": {
         "name": "pseudoperonospora cubensis",
+        "fontSizeRatio": 0.65,
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -167,7 +205,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -188,7 +226,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -214,7 +252,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -240,7 +278,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -266,7 +304,59 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Body",
+                "url": "body.obj",
+                "color": "#303952"
+            },
+            {
+                "name": "Tentacles",
+                "url": "tent.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "microsphaera": {
+        "name": "microsphaera",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "TEST ORDER NAME",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Body",
+                "url": "body.obj",
+                "color": "#303952"
+            },
+            {
+                "name": "Tentacles",
+                "url": "tent.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "podosphaera": {
+        "name": "Podosphaera",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -292,7 +382,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -318,7 +408,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -344,7 +434,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -370,7 +460,7 @@
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -393,10 +483,11 @@
     },
     "cephalosporium-maydis": {
         "name": "Cephalosporium Maydis",
+        "fontSizeRatio": 0.75,
         "classification": {
             "phylum": "Ascomycota",
             "class": "Ascomycetes",
-            "order": "Incertae sedis",
+            "order": "TEST ORDER NAME",
             "genus": "Maydis"
         },
         "parts": [
@@ -416,7 +507,7 @@
         "name": "Phytophthora Infestans",
         "classification": {
             "class": "lorem_class",
-            "order": "lorem_order",
+            "order": "TEST ORDER NAME",
             "genus": "lorem_genus",
             "phylum": "lorem_phylum"
         },
@@ -437,7 +528,7 @@
         "name": "Penicillium",
         "classification": {
             "class": "lorem_class",
-            "order": "lorem_order",
+            "order": "TEST ORDER NAME",
             "genus": "lorem_genus",
             "phylum": "lorem_phylum"
         },
@@ -458,7 +549,7 @@
         "name": "Fusarium",
         "classification": {
             "class": "lorem_class",
-            "order": "lorem_order",
+            "order": "TEST ORDER NAME",
             "genus": "lorem_genus",
             "phylum": "lorem_phylum"
         },
@@ -479,7 +570,7 @@
         "name": "Plasmopara Viticola",
         "classification": {
             "class": "lorem_class",
-            "order": "lorem_order",
+            "order": "TEST ORDER NAME",
             "genus": "lorem_genus",
             "phylum": "lorem_phylum"
         },
@@ -500,15 +591,14 @@
         "name": "Ustilago",
         "classification": {
             "class": "lorem_class",
-            "order": "lorem_order",
+            "order": "TEST ORDER NAME",
             "genus": "lorem_genus",
             "phylum": "lorem_phylum"
         },
         "parts": [
             {
                 "name": "Spors",
-                "url": "spors.obj",
-                "color": "#542d17"
+                "url": "spors.obj"
             }
         ]
     }

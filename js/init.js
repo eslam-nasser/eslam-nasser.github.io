@@ -45,12 +45,19 @@ export default function init() {
     loadModal({ ...model.info, name: model.name });
 
     // Load model name
-    document.title = document.title.replace('Fungs', model.name);
+    document.title = document.title.replace('Interactive 3D Fungi', model.name);
     const loader = new window.THREE.FontLoader();
+    const fontSizeRatio = model.fontSizeRatio || 1;
+    const nameCapitalized = model.name
+        .toLowerCase()
+        .split(' ')
+        .map(s => s.charAt(0).toUpperCase() + s.substring(1))
+        .join('\n');
+
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
-        const geometry = new window.THREE.TextGeometry(model.name.split(' ').join('\n'), {
+        const geometry = new window.THREE.TextGeometry(nameCapitalized, {
             font,
-            size: 1 / 3.1,
+            size: (1 / 3.1) * fontSizeRatio,
             height: 0.01,
         });
         const materials = [
