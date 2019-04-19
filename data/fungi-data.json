@@ -15,6 +15,90 @@
             }
         ]
     },
+    "rhizopus-stolonifer": {
+        "name": "rhizopus stolonifer",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "Incertae sedis",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "botrytis": {
+        "name": "Botrytis",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "Incertae sedis",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "bremia": {
+        "name": "bremia",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "Incertae sedis",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "alternaria": {
+        "name": "alternaria",
+        "classification": {
+            "phylum": "Ascomycota",
+            "class": "Ascomycetes",
+            "order": "Incertae sedis",
+            "genus": "Maydis"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
     "sclerospora-graminicola": {
         "name": "sclerospora graminicola",
         "classification": {
