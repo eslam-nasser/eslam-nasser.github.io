@@ -157,7 +157,7 @@ p {
 /* Reset camera */
 .reset-camera {
     position: absolute;
-    right: 140px;
+    right: 170px;
     bottom: 0;
     border: 0;
     background-color: rgba(29, 41, 53, 0.95);
@@ -193,7 +193,7 @@ p {
 #controllers label {
     display: block;
     padding: 10px 15px;
-    width: 130px;
+    width: 160px;
     transition: 0.14s;
     cursor: pointer;
     color: #fff;

@@ -462,7 +462,7 @@ function initGUI(modelParts) {
     });
 
     setTimeout(() => {
-        // gui.close();
+        gui.close();
     }, 3000);
 }
 
