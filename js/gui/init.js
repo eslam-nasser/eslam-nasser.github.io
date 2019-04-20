@@ -4,7 +4,7 @@ import { GUI } from '../libs/dat.gui.min';
 import controls from '../world/controls';
 import scene from '../world/scene';
 import hexToRGB from '../utils/hexToRGB';
-import ArNames from '../../data/fungi-parts-ar-names';
+// import ArNames from '../../data/fungi-parts-ar-names';
 
 export default function initGUI(modelParts) {
     const API = {
@@ -12,6 +12,7 @@ export default function initGUI(modelParts) {
         'Camera Poistion Y': true,
         'Camera Poistion Z': true,
         'Auto rotate camera': false,
+        'Show glass slide': true,
     };
 
     // const CameraPositon = {
@@ -22,6 +23,52 @@ export default function initGUI(modelParts) {
     const gui = new GUI({
         closed: true,
         useLocalStorage: true,
+    });
+
+    gui.add(API, 'Show glass slide').onChange((state) => {
+        // query the object by its name
+        const floor = scene.getObjectByName('floor', true);
+        const modelName = scene.getObjectByName('model-name', true);
+        const whitePaper = scene.getObjectByName('white-paper', true);
+
+        // toggle its opacity
+        if (state === false) {
+            floor.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 0;
+                    node.material.transparent = true;
+                }
+            });
+            modelName.traverse((node) => {
+                if (node.material) {
+                    node.position.y = -100;
+                }
+            });
+            whitePaper.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 0;
+                    node.material.transparent = true;
+                }
+            });
+        } else {
+            floor.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 0.3;
+                    node.material.transparent = true;
+                }
+            });
+            modelName.traverse((node) => {
+                if (node.material) {
+                    node.position.y = -1.5;
+                }
+            });
+            whitePaper.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 1;
+                    node.material.transparent = true;
+                }
+            });
+        }
     });
 
     gui.add(API, 'Auto rotate camera').onChange(() => {
@@ -56,6 +103,6 @@ export default function initGUI(modelParts) {
     });
 
     setTimeout(() => {
-        gui.close();
+        // gui.close();
     }, 3000);
 }

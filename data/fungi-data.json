@@ -1,21 +1,4 @@
 {
-    "tilletia": {
-        "name": "tilletia",
-        "classification": {
-            "phylum": "Basidiomycota",
-            "class": "Exobasidiomycetes",
-            "order": "Tilletiales",
-            "family": "Tilletiaceae",
-            "genus": "Tilletia"
-        },
-        "parts": [
-            {
-                "name": "Spors",
-                "url": "spors.obj",
-                "color": "#574b90"
-            }
-        ]
-    },
     "leveillula-2": {
         "name": "leveillula-2",
         "classification": {
@@ -35,6 +18,23 @@
                 "name": "Hypha",
                 "url": "hypha.obj",
                 "color": "#303952"
+            }
+        ]
+    },
+    "tilletia": {
+        "name": "tilletia",
+        "classification": {
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Tilletiales",
+            "family": "Tilletiaceae",
+            "genus": "Tilletia"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
             }
         ]
     },

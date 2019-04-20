@@ -12,6 +12,7 @@ planeMesh.material.side = window.THREE.DoubleSide;
 planeMesh.rotation.x = Math.PI / 2;
 planeMesh.position.y = -0.01 + floorYOffset;
 planeMesh.position.z = -(floorHeight / 4) * 1.5 + floorZOffset;
+planeMesh.name = 'white-paper';
 
 const galssGeometry = new window.THREE.BoxGeometry(floorWidth, floorHeight, floorThickness);
 const material = new window.THREE.MeshLambertMaterial({
@@ -19,11 +20,13 @@ const material = new window.THREE.MeshLambertMaterial({
     opacity: 0.3,
     transparent: true,
 });
+
 const floor = new window.THREE.Mesh(galssGeometry, material);
 floor.material.side = window.THREE.DoubleSide;
 floor.rotation.x = Math.PI / 2;
 floor.position.y = -0.05 + floorYOffset;
 floor.position.z = floorZOffset;
+floor.name = 'floor';
 
 const group = new window.THREE.Group();
 group.add(floor);

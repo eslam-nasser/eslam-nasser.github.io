@@ -45,7 +45,6 @@ export default function init() {
     loadModal({ ...model.info, name: model.name });
 
     // Load model name
-    document.title = document.title.replace('Interactive 3D Fungi', model.name);
     const loader = new window.THREE.FontLoader();
     const fontSizeRatio = model.fontSizeRatio || 1;
     const nameCapitalized = model.name
@@ -53,6 +52,8 @@ export default function init() {
         .split(' ')
         .map(s => s.charAt(0).toUpperCase() + s.substring(1))
         .join('\n');
+
+    document.title = document.title.replace('Interactive 3D Fungi', nameCapitalized);
 
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
         const geometry = new window.THREE.TextGeometry(nameCapitalized, {
@@ -71,7 +72,7 @@ export default function init() {
         name.position.x = -1.3;
         name.position.y = 0 + -1.5; // camera offset
         name.position.z = -3.85;
-
+        name.name = 'model-name';
         scene.add(name);
     });
 

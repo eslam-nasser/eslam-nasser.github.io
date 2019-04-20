@@ -88,7 +88,7 @@
 /* 0 */
 /***/ (function(module) {
 
-module.exports = {"Spors":"جراثيم","Hypha":"هيفا"};
+module.exports = {"Spors":"جراثيم","Hypha":"هيفا","Container":"كيس جرثومي","Body":"كيس جرثومي","Tentacles":"زوائد"};
 
 /***/ }),
 /* 1 */
@@ -114,7 +114,7 @@ return n.__gui.remove(n),n}}),n instanceof B["default"])!function(){var e=new N[
 /* 2 */
 /***/ (function(module) {
 
-module.exports = {"tilletia":{"name":"tilletia","classification":{"phylum":"Basidiomycota","class":"Exobasidiomycetes","order":"Tilletiales","family":"Tilletiaceae","genus":"Tilletia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"}]},"leveillula-2":{"name":"leveillula-2","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Leveillula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"urocystis":{"name":"urocystis","classification":{"phylum":"Basidiomycota","class":"Ustilaginomycetes","order":"Urocystidales","family":"Urocystidiaceae","genus":"Urocystis"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"}]},"rhizopus-stolonifer":{"name":"rhizopus stolonifer","classification":{"phylum":"","class":"Mucoromycotina","order":"Mucorales","family":"Mucoraceae","genus":"Rhizopus"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"botrytis":{"name":"Botrytis","classification":{"phylum":"","class":"Leotiomycetes","order":"Helotiales","family":"Sclerotiniaceae","genus":"Botrytis"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"bremia":{"name":"bremia","classification":{"phylum":"","class":"Oomycetes","order":"Peronosporales","family":"Peronosporaceae","genus":"Bremia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"alternaria":{"name":"alternaria","classification":{"phylum":"","class":"Dothideomycetes","order":"Pleosporales","family":"Pleosporaceae","genus":"Alternaria"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"sclerospora-graminicola":{"name":"sclerospora graminicola","classification":{"phylum":"","class":"Oomycetes","order":"Sclerosporales","family":"Sclerosporaceae","genus":"Sclerospora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"tranzschelia":{"name":"tranzschelia","classification":{"phylum":"","class":"","order":"____________","genus":""},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"pseudoperonospora-cubensis":{"name":"pseudoperonospora cubensis","fontSizeRatio":0.65,"classification":{"phylum":"","class":"Oomycetes","order":"Peronosporales","family":"Peronosporaceae","genus":"Pseudoperonospora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"peronospora-destructor":{"name":"Peronospora destructor","classification":{"phylum":"","class":"Oomycota","order":"Peronosporales","family":"Peronosporaceae","genus":"Peronospora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"puccinia":{"name":"puccinia","classification":{"phylum":"","class":"Pucciniomycetes","order":"Pucciniales","family":"Pucciniaceae","genus":"Puccinia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"},{"name":"Container","url":"container.obj","color":"#303952"}]},"uromyces":{"name":"uromyces","classification":{"phylum":"","class":"Urediniomycetes","order":"Uredinales","family":"Pucciniaceae","genus":"Uromyces"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"},{"name":"Container","url":"container.obj","color":"#303952"}]},"phragmidium":{"name":"Phragmidium","classification":{"phylum":"","class":"Pucciniomycetes","order":"Pucciniales","family":"Phragmidiaceae","genus":"Phragmidium"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"},{"name":"Container","url":"container.obj","color":"#303952"}]},"leveillula":{"name":"Leveillula","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Leveillula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"microsphaera":{"name":"microsphaera","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Microsphaera"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"podosphaera":{"name":"Podosphaera","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Podosphaera"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"uncinula":{"name":"uncinula","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Uncinula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"sphaerotheca":{"name":"sphaerotheca","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Sphaerotheca"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"erysiphe":{"name":"Erysiphe","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Erysiphe"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"phyllactinia":{"name":"phyllactinia","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Phyllactinia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"cephalosporium-maydis":{"name":"Cephalosporium Maydis","fontSizeRatio":0.75,"classification":{"phylum":"","class":"Ascomycetes","order":"Incertae sedis","family":"Incertae sedis","genus":"Hymenula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"phytophthora-infestans":{"name":"Phytophthora Infestans","classification":{"phylum":"Heterokontophyta","class":"Oomycota","order":"Peronosporales","family":"Peronosporaceae","genus":"Phytophthora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"penicillium":{"name":"Penicillium","classification":{"phylum":"","class":"Eurotiomycetes","order":"Eurotiales","family":"Trichocomaceae","genus":"Penicillium"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"fusarium":{"name":"Fusarium","classification":{"phylum":"","class":"Sordariomycetes","order":"Hypocreales","family":"Hypocreales","genus":"Nectriaceae"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"plasmopara-viticola":{"name":"Plasmopara Viticola","classification":{"phylum":"","class":"Oomycota","order":"Peronosporales","family":"Peronosporaceae","genus":"Plasmopara"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"ustilago":{"name":"Ustilago","classification":{"phylum":"Basidiomycota","class":"Ustilaginomycetes","order":"Ustilaginales","family":"Ustilaginaleceae","genus":"Ustilago"},"parts":[{"name":"Spors","url":"spors.obj"}]}};
+module.exports = {"leveillula-2":{"name":"leveillula-2","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Leveillula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"tilletia":{"name":"tilletia","classification":{"phylum":"Basidiomycota","class":"Exobasidiomycetes","order":"Tilletiales","family":"Tilletiaceae","genus":"Tilletia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"}]},"urocystis":{"name":"urocystis","classification":{"phylum":"Basidiomycota","class":"Ustilaginomycetes","order":"Urocystidales","family":"Urocystidiaceae","genus":"Urocystis"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"}]},"rhizopus-stolonifer":{"name":"rhizopus stolonifer","classification":{"phylum":"","class":"Mucoromycotina","order":"Mucorales","family":"Mucoraceae","genus":"Rhizopus"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"botrytis":{"name":"Botrytis","classification":{"phylum":"","class":"Leotiomycetes","order":"Helotiales","family":"Sclerotiniaceae","genus":"Botrytis"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"bremia":{"name":"bremia","classification":{"phylum":"","class":"Oomycetes","order":"Peronosporales","family":"Peronosporaceae","genus":"Bremia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"alternaria":{"name":"alternaria","classification":{"phylum":"","class":"Dothideomycetes","order":"Pleosporales","family":"Pleosporaceae","genus":"Alternaria"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"sclerospora-graminicola":{"name":"sclerospora graminicola","classification":{"phylum":"","class":"Oomycetes","order":"Sclerosporales","family":"Sclerosporaceae","genus":"Sclerospora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"tranzschelia":{"name":"tranzschelia","classification":{"phylum":"","class":"","order":"____________","genus":""},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"pseudoperonospora-cubensis":{"name":"pseudoperonospora cubensis","fontSizeRatio":0.65,"classification":{"phylum":"","class":"Oomycetes","order":"Peronosporales","family":"Peronosporaceae","genus":"Pseudoperonospora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"peronospora-destructor":{"name":"Peronospora destructor","classification":{"phylum":"","class":"Oomycota","order":"Peronosporales","family":"Peronosporaceae","genus":"Peronospora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"puccinia":{"name":"puccinia","classification":{"phylum":"","class":"Pucciniomycetes","order":"Pucciniales","family":"Pucciniaceae","genus":"Puccinia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"},{"name":"Container","url":"container.obj","color":"#303952"}]},"uromyces":{"name":"uromyces","classification":{"phylum":"","class":"Urediniomycetes","order":"Uredinales","family":"Pucciniaceae","genus":"Uromyces"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"},{"name":"Container","url":"container.obj","color":"#303952"}]},"phragmidium":{"name":"Phragmidium","classification":{"phylum":"","class":"Pucciniomycetes","order":"Pucciniales","family":"Phragmidiaceae","genus":"Phragmidium"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"},{"name":"Container","url":"container.obj","color":"#303952"}]},"leveillula":{"name":"Leveillula","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Leveillula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"microsphaera":{"name":"microsphaera","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Microsphaera"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"podosphaera":{"name":"Podosphaera","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Podosphaera"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"uncinula":{"name":"uncinula","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Uncinula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"sphaerotheca":{"name":"sphaerotheca","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Sphaerotheca"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"erysiphe":{"name":"Erysiphe","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Erysiphe"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"phyllactinia":{"name":"phyllactinia","classification":{"phylum":"","class":"Leotiomycetes","order":"Erysiphales","family":"Erysiphaceae","genus":"Phyllactinia"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Body","url":"body.obj","color":"#303952"},{"name":"Tentacles","url":"tent.obj","color":"#303952"}]},"cephalosporium-maydis":{"name":"Cephalosporium Maydis","fontSizeRatio":0.75,"classification":{"phylum":"","class":"Ascomycetes","order":"Incertae sedis","family":"Incertae sedis","genus":"Hymenula"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"phytophthora-infestans":{"name":"Phytophthora Infestans","classification":{"phylum":"Heterokontophyta","class":"Oomycota","order":"Peronosporales","family":"Peronosporaceae","genus":"Phytophthora"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"penicillium":{"name":"Penicillium","classification":{"phylum":"","class":"Eurotiomycetes","order":"Eurotiales","family":"Trichocomaceae","genus":"Penicillium"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"fusarium":{"name":"Fusarium","classification":{"phylum":"","class":"Sordariomycetes","order":"Hypocreales","family":"Hypocreales","genus":"Nectriaceae"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"plasmopara-viticola":{"name":"Plasmopara Viticola","classification":{"phylum":"","class":"Oomycota","order":"Peronosporales","family":"Peronosporaceae","genus":"Plasmopara"},"parts":[{"name":"Spors","url":"spors.obj","color":"#574b90"},{"name":"Hypha","url":"hypha.obj","color":"#303952"}]},"ustilago":{"name":"Ustilago","classification":{"phylum":"Basidiomycota","class":"Ustilaginomycetes","order":"Ustilaginales","family":"Ustilaginaleceae","genus":"Ustilago"},"parts":[{"name":"Spors","url":"spors.obj"}]}};
 
 /***/ }),
 /* 3 */
@@ -155,6 +155,7 @@ planeMesh.material.side = window.THREE.DoubleSide;
 planeMesh.rotation.x = Math.PI / 2;
 planeMesh.position.y = -0.01 + floorYOffset;
 planeMesh.position.z = -(floorHeight / 4) * 1.5 + floorZOffset;
+planeMesh.name = 'white-paper';
 
 const galssGeometry = new window.THREE.BoxGeometry(floorWidth, floorHeight, floorThickness);
 const material = new window.THREE.MeshLambertMaterial({
@@ -162,14 +163,16 @@ const material = new window.THREE.MeshLambertMaterial({
     opacity: 0.3,
     transparent: true,
 });
-const floor = new window.THREE.Mesh(galssGeometry, material);
-floor.material.side = window.THREE.DoubleSide;
-floor.rotation.x = Math.PI / 2;
-floor.position.y = -0.05 + floorYOffset;
-floor.position.z = floorZOffset;
+
+const floor_floor = new window.THREE.Mesh(galssGeometry, material);
+floor_floor.material.side = window.THREE.DoubleSide;
+floor_floor.rotation.x = Math.PI / 2;
+floor_floor.position.y = -0.05 + floorYOffset;
+floor_floor.position.z = floorZOffset;
+floor_floor.name = 'floor';
 
 const group = new window.THREE.Group();
-group.add(floor);
+group.add(floor_floor);
 group.add(planeMesh);
 
 /* harmony default export */ var world_floor = (group);
@@ -353,9 +356,6 @@ controls.defaultAutoRotate = true;
 
 /* harmony default export */ var world_controls = (controls);
 
-// EXTERNAL MODULE: ./data/fungi-parts-ar-names.json
-var fungi_parts_ar_names = __webpack_require__(0);
-
 // CONCATENATED MODULE: ./js/gui/init.js
 /* eslint no-param-reassign: ["error", { "props": false }] */
 
@@ -363,7 +363,7 @@ var fungi_parts_ar_names = __webpack_require__(0);
 
 
 
-
+// import ArNames from '../../data/fungi-parts-ar-names';
 
 function initGUI(modelParts) {
     const API = {
@@ -371,6 +371,7 @@ function initGUI(modelParts) {
         'Camera Poistion Y': true,
         'Camera Poistion Z': true,
         'Auto rotate camera': false,
+        'Show glass slide': true,
     };
 
     // const CameraPositon = {
@@ -381,6 +382,52 @@ function initGUI(modelParts) {
     const gui = new dat_gui_min["GUI"]({
         closed: true,
         useLocalStorage: true,
+    });
+
+    gui.add(API, 'Show glass slide').onChange((state) => {
+        // query the object by its name
+        const floor = world_scene.getObjectByName('floor', true);
+        const modelName = world_scene.getObjectByName('model-name', true);
+        const whitePaper = world_scene.getObjectByName('white-paper', true);
+
+        // toggle its opacity
+        if (state === false) {
+            floor.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 0;
+                    node.material.transparent = true;
+                }
+            });
+            modelName.traverse((node) => {
+                if (node.material) {
+                    node.position.y = -100;
+                }
+            });
+            whitePaper.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 0;
+                    node.material.transparent = true;
+                }
+            });
+        } else {
+            floor.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 0.3;
+                    node.material.transparent = true;
+                }
+            });
+            modelName.traverse((node) => {
+                if (node.material) {
+                    node.position.y = -1.5;
+                }
+            });
+            whitePaper.traverse((node) => {
+                if (node.material) {
+                    node.material.opacity = 1;
+                    node.material.transparent = true;
+                }
+            });
+        }
     });
 
     gui.add(API, 'Auto rotate camera').onChange(() => {
@@ -415,9 +462,12 @@ function initGUI(modelParts) {
     });
 
     setTimeout(() => {
-        gui.close();
+        // gui.close();
     }, 3000);
 }
+
+// EXTERNAL MODULE: ./data/fungi-parts-ar-names.json
+var fungi_parts_ar_names = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./js/controllers/loadControllers.js
 
@@ -591,7 +641,6 @@ function init() {
     loadModal({ ...init_model.info, name: init_model.name });
 
     // Load model name
-    document.title = document.title.replace('Interactive 3D Fungi', init_model.name);
     const loader = new window.THREE.FontLoader();
     const fontSizeRatio = init_model.fontSizeRatio || 1;
     const nameCapitalized = init_model.name
@@ -599,6 +648,8 @@ function init() {
         .split(' ')
         .map(s => s.charAt(0).toUpperCase() + s.substring(1))
         .join('\n');
+
+    document.title = document.title.replace('Interactive 3D Fungi', nameCapitalized);
 
     loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
         const geometry = new window.THREE.TextGeometry(nameCapitalized, {
@@ -617,7 +668,7 @@ function init() {
         name.position.x = -1.3;
         name.position.y = 0 + -1.5; // camera offset
         name.position.z = -3.85;
-
+        name.name = 'model-name';
         world_scene.add(name);
     });
 
