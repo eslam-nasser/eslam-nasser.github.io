@@ -37,11 +37,6 @@ img.logo {
     width: 200px;
 }
 /* LINKS */
-.links {
-    /* position: fixed; */
-    /* right: 20px; */
-    /* top: 20px; */
-}
 .links a {
     margin-right: 15px;
     text-decoration: none;
