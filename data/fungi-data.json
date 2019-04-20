@@ -19,7 +19,7 @@
     "leveillula-2": {
         "name": "leveillula-2",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -58,7 +58,7 @@
     "rhizopus-stolonifer": {
         "name": "rhizopus stolonifer",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Mucoromycotina",
             "order": "Mucorales",
             "family": "Mucoraceae",
@@ -80,7 +80,7 @@
     "botrytis": {
         "name": "Botrytis",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Helotiales",
             "family": "Sclerotiniaceae",
@@ -102,7 +102,7 @@
     "bremia": {
         "name": "bremia",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Oomycetes",
             "order": "Peronosporales",
             "family": "Peronosporaceae",
@@ -124,7 +124,7 @@
     "alternaria": {
         "name": "alternaria",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Dothideomycetes",
             "order": "Pleosporales",
             "family": "Pleosporaceae",
@@ -146,7 +146,7 @@
     "sclerospora-graminicola": {
         "name": "sclerospora graminicola",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Oomycetes",
             "order": "Sclerosporales",
             "family": "Sclerosporaceae",
@@ -168,10 +168,10 @@
     "tranzschelia": {
         "name": "tranzschelia",
         "classification": {
-            "phylum": "______________",
-            "class": "______________",
+            "phylum": "",
+            "class": "",
             "order": "____________",
-            "genus": "______________"
+            "genus": ""
         },
         "parts": [
             {
@@ -190,7 +190,7 @@
         "name": "pseudoperonospora cubensis",
         "fontSizeRatio": 0.65,
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Oomycetes",
             "order": "Peronosporales",
             "family": "Peronosporaceae",
@@ -212,7 +212,7 @@
     "peronospora-destructor": {
         "name": "Peronospora destructor",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Oomycota",
             "order": "Peronosporales",
             "family": "Peronosporaceae",
@@ -234,7 +234,7 @@
     "puccinia": {
         "name": "puccinia",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Pucciniomycetes",
             "order": "Pucciniales",
             "family": "Pucciniaceae",
@@ -261,7 +261,7 @@
     "uromyces": {
         "name": "uromyces",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Urediniomycetes",
             "order": "Uredinales",
             "family": "Pucciniaceae",
@@ -288,7 +288,7 @@
     "phragmidium": {
         "name": "Phragmidium",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Pucciniomycetes",
             "order": "Pucciniales",
             "family": "Phragmidiaceae",
@@ -315,7 +315,7 @@
     "leveillula": {
         "name": "Leveillula",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -342,7 +342,7 @@
     "microsphaera": {
         "name": "microsphaera",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -369,7 +369,7 @@
     "podosphaera": {
         "name": "Podosphaera",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -396,7 +396,7 @@
     "uncinula": {
         "name": "uncinula",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -423,7 +423,7 @@
     "sphaerotheca": {
         "name": "sphaerotheca",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -450,7 +450,7 @@
     "erysiphe": {
         "name": "Erysiphe",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -477,7 +477,7 @@
     "phyllactinia": {
         "name": "phyllactinia",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
@@ -505,7 +505,7 @@
         "name": "Cephalosporium Maydis",
         "fontSizeRatio": 0.75,
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Ascomycetes",
             "order": "Incertae sedis",
             "family": "Incertae sedis",
@@ -549,7 +549,7 @@
     "penicillium": {
         "name": "Penicillium",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Eurotiomycetes",
             "order": "Eurotiales",
             "family": "Trichocomaceae",
@@ -571,7 +571,7 @@
     "fusarium": {
         "name": "Fusarium",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Sordariomycetes",
             "order": "Hypocreales",
             "family": "Hypocreales",
@@ -593,7 +593,7 @@
     "plasmopara-viticola": {
         "name": "Plasmopara Viticola",
         "classification": {
-            "phylum": "______________",
+            "phylum": "",
             "class": "Oomycota",
             "order": "Peronosporales",
             "family": "Peronosporaceae",

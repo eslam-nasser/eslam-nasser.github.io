@@ -70,7 +70,7 @@ img.logo {
     color: var(--darkColor);
 }
 .container::before {
-    content: 'Eumycota';
+    content: 'Kingdom: Fungi';
     background-color: var(--darkColor);
     color: #fff;
     position: absolute;
@@ -145,6 +145,7 @@ img.logo {
 }
 .container section.closed h2 img {
     transform: translateY(-50%) rotate(0);
+    opacity: 1;
 }
 
 .container .card {

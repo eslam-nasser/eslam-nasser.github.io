@@ -40,15 +40,15 @@ async function renderCards() {
                             <ul>
                                 <li>
                                     <span>Class:</span>
-                                    _________
+                                    ${fungi.classification.class}
                                  </li>
                                 <li>
                                     <span>Order:</span>
-                                    _________
+                                    ${fungi.classification.order}
                                  </li>
                                 <li>
                                     <span>Family:</span>
-                                    _________
+                                    ${fungi.classification.family}
                                  </li>
                             </ul>
                         </div>
@@ -60,7 +60,7 @@ async function renderCards() {
         sectionHTML = `
             <section>
                 <h2>
-                    ${key}
+                    Order: ${key}
                     <img src="./assets/img/icons/expand.svg" />
                 </h2>
                 <div class="section-cards-wrapper">
