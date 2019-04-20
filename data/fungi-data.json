@@ -2,10 +2,11 @@
     "tilletia": {
         "name": "tilletia",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Tilletiales",
+            "family": "Tilletiaceae",
+            "genus": "Tilletia"
         },
         "parts": [
             {
@@ -18,10 +19,11 @@
     "leveillula-2": {
         "name": "leveillula-2",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Leveillula"
         },
         "parts": [
             {
@@ -39,10 +41,11 @@
     "urocystis": {
         "name": "urocystis",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "Basidiomycota",
+            "class": "Ustilaginomycetes",
+            "order": "Urocystidales",
+            "family": "Urocystidiaceae",
+            "genus": "Urocystis"
         },
         "parts": [
             {
@@ -55,10 +58,11 @@
     "rhizopus-stolonifer": {
         "name": "rhizopus stolonifer",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Mucoromycotina",
+            "order": "Mucorales",
+            "family": "Mucoraceae",
+            "genus": "Rhizopus"
         },
         "parts": [
             {
@@ -76,10 +80,11 @@
     "botrytis": {
         "name": "Botrytis",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Sclerotiniaceae",
+            "genus": "Botrytis"
         },
         "parts": [
             {
@@ -97,10 +102,11 @@
     "bremia": {
         "name": "bremia",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Oomycetes",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Bremia"
         },
         "parts": [
             {
@@ -118,10 +124,11 @@
     "alternaria": {
         "name": "alternaria",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Alternaria"
         },
         "parts": [
             {
@@ -139,10 +146,11 @@
     "sclerospora-graminicola": {
         "name": "sclerospora graminicola",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Oomycetes",
+            "order": "Sclerosporales",
+            "family": "Sclerosporaceae",
+            "genus": "Sclerospora"
         },
         "parts": [
             {
@@ -160,10 +168,10 @@
     "tranzschelia": {
         "name": "tranzschelia",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "______________",
+            "order": "____________",
+            "genus": "______________"
         },
         "parts": [
             {
@@ -182,10 +190,11 @@
         "name": "pseudoperonospora cubensis",
         "fontSizeRatio": 0.65,
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Oomycetes",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Pseudoperonospora"
         },
         "parts": [
             {
@@ -203,10 +212,11 @@
     "peronospora-destructor": {
         "name": "Peronospora destructor",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Oomycota",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Peronospora"
         },
         "parts": [
             {
@@ -224,10 +234,11 @@
     "puccinia": {
         "name": "puccinia",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Pucciniomycetes",
+            "order": "Pucciniales",
+            "family": "Pucciniaceae",
+            "genus": "Puccinia"
         },
         "parts": [
             {
@@ -250,10 +261,11 @@
     "uromyces": {
         "name": "uromyces",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Urediniomycetes",
+            "order": "Uredinales",
+            "family": "Pucciniaceae",
+            "genus": "Uromyces"
         },
         "parts": [
             {
@@ -276,10 +288,11 @@
     "phragmidium": {
         "name": "Phragmidium",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Pucciniomycetes",
+            "order": "Pucciniales",
+            "family": "Phragmidiaceae",
+            "genus": "Phragmidium"
         },
         "parts": [
             {
@@ -302,10 +315,11 @@
     "leveillula": {
         "name": "Leveillula",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Leveillula"
         },
         "parts": [
             {
@@ -328,10 +342,11 @@
     "microsphaera": {
         "name": "microsphaera",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Microsphaera"
         },
         "parts": [
             {
@@ -354,10 +369,11 @@
     "podosphaera": {
         "name": "Podosphaera",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Podosphaera"
         },
         "parts": [
             {
@@ -380,10 +396,11 @@
     "uncinula": {
         "name": "uncinula",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Uncinula"
         },
         "parts": [
             {
@@ -403,13 +420,14 @@
             }
         ]
     },
-    "spherotheca": {
-        "name": "spherotheca",
+    "sphaerotheca": {
+        "name": "sphaerotheca",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Sphaerotheca"
         },
         "parts": [
             {
@@ -432,10 +450,11 @@
     "erysiphe": {
         "name": "Erysiphe",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Erysiphe"
         },
         "parts": [
             {
@@ -458,10 +477,11 @@
     "phyllactinia": {
         "name": "phyllactinia",
         "classification": {
-            "phylum": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "phylum": "______________",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Phyllactinia"
         },
         "parts": [
             {
@@ -485,10 +505,11 @@
         "name": "Cephalosporium Maydis",
         "fontSizeRatio": 0.75,
         "classification": {
-            "phylum": "Ascomycota",
+            "phylum": "______________",
             "class": "Ascomycetes",
-            "order": "TEST ORDER NAME",
-            "genus": "Maydis"
+            "order": "Incertae sedis",
+            "family": "Incertae sedis",
+            "genus": "Hymenula"
         },
         "parts": [
             {
@@ -506,10 +527,11 @@
     "phytophthora-infestans": {
         "name": "Phytophthora Infestans",
         "classification": {
-            "class": "lorem_class",
-            "order": "TEST ORDER NAME",
-            "genus": "lorem_genus",
-            "phylum": "lorem_phylum"
+            "phylum": "Heterokontophyta",
+            "class": "Oomycota",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Phytophthora"
         },
         "parts": [
             {
@@ -527,10 +549,11 @@
     "penicillium": {
         "name": "Penicillium",
         "classification": {
-            "class": "lorem_class",
-            "order": "TEST ORDER NAME",
-            "genus": "lorem_genus",
-            "phylum": "lorem_phylum"
+            "phylum": "______________",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Trichocomaceae",
+            "genus": "Penicillium"
         },
         "parts": [
             {
@@ -548,10 +571,11 @@
     "fusarium": {
         "name": "Fusarium",
         "classification": {
-            "class": "lorem_class",
-            "order": "TEST ORDER NAME",
-            "genus": "lorem_genus",
-            "phylum": "lorem_phylum"
+            "phylum": "______________",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreales",
+            "genus": "Nectriaceae"
         },
         "parts": [
             {
@@ -569,10 +593,11 @@
     "plasmopara-viticola": {
         "name": "Plasmopara Viticola",
         "classification": {
-            "class": "lorem_class",
-            "order": "TEST ORDER NAME",
-            "genus": "lorem_genus",
-            "phylum": "lorem_phylum"
+            "phylum": "______________",
+            "class": "Oomycota",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Plasmopara"
         },
         "parts": [
             {
@@ -590,10 +615,11 @@
     "ustilago": {
         "name": "Ustilago",
         "classification": {
-            "class": "lorem_class",
-            "order": "TEST ORDER NAME",
-            "genus": "lorem_genus",
-            "phylum": "lorem_phylum"
+            "phylum": "Basidiomycota",
+            "class": "Ustilaginomycetes",
+            "order": "Ustilaginales",
+            "family": "Ustilaginaleceae",
+            "genus": "Ustilago"
         },
         "parts": [
             {
