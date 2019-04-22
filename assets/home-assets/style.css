@@ -64,7 +64,28 @@ img.logo {
     padding-left: 50px;
     color: var(--darkColor);
 }
-.container::before {
+.container.loading {
+    border-left-color: transparent;
+}
+.container.loading .spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 3px solid #6c5ce7;
+    animation: spin 0.3s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%) rotate(0);
+}
+@keyframes spin {
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.container:not(.loading)::before {
     content: 'Kingdom: Fungi';
     background-color: var(--darkColor);
     color: #fff;

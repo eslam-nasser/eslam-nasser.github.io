@@ -13,24 +13,33 @@ export default function loadModels(modelsArray, modelName) {
     document.querySelector('.bar-wrapper').style.display = 'block';
 
     // Loop the models
-    modelsArray.forEach((model) => {
+    modelsArray.forEach(model => {
         // model
         const loader = new window.THREE.OBJLoader();
         loader.load(
-            `../assets/fungi-models/${modelName}/${model.url}`,
-            (object) => {
-                const defaultColor = model.name === 'Spors' ? '#574b90' : '#303952';
+            `./assets/fungi-models/${modelName}/${model.url}`,
+            object => {
+                const defaultColor =
+                    model.name === 'Spors' ? '#574b90' : '#303952';
 
                 // Append color to model
-                object.traverse((child) => {
+                object.traverse(child => {
                     if (child instanceof window.THREE.Mesh) {
                         child.material.flatShading = true;
                         if (model.color) {
                             const { r, g, b } = hexToRGB(model.color);
-                            child.material.color.setRGB(r / 255, g / 255, b / 255);
+                            child.material.color.setRGB(
+                                r / 255,
+                                g / 255,
+                                b / 255
+                            );
                         } else {
                             const { r, g, b } = hexToRGB(defaultColor);
-                            child.material.color.setRGB(r / 255, g / 255, b / 255);
+                            child.material.color.setRGB(
+                                r / 255,
+                                g / 255,
+                                b / 255
+                            );
                         }
                     }
                 });
@@ -53,7 +62,7 @@ export default function loadModels(modelsArray, modelName) {
                 scene.add(object);
             },
             onProgress,
-            onError,
+            onError
         );
     });
 }

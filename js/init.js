@@ -22,7 +22,8 @@ export default function init() {
         if (modelName) {
             noData.querySelector('b').innerText = modelName.replace('-', ' ');
         } else {
-            noData.querySelector('h3').innerText = 'You have to choose fungus from fungi tree';
+            noData.querySelector('h3').innerText =
+                'You have to choose fungus from fungi tree';
         }
         noData.style.display = 'block';
         return; // no need for init() to continue
@@ -53,19 +54,22 @@ export default function init() {
         .map(s => s.charAt(0).toUpperCase() + s.substring(1))
         .join('\n');
 
-    document.title = document.title.replace('Interactive 3D Fungi', nameCapitalized);
+    document.title = document.title.replace(
+        'Interactive 3D Fungi',
+        nameCapitalized
+    );
 
-    loader.load('../assets/fonts/helvetiker_regular.typeface.json', (font) => {
+    loader.load('./assets/fonts/helvetiker_regular.typeface.json', font => {
         const geometry = new window.THREE.TextGeometry(nameCapitalized, {
             font,
             size: (1 / 3.1) * fontSizeRatio,
-            height: 0.01,
+            height: 0.01
         });
         const materials = [
             new window.THREE.MeshBasicMaterial({
-                color: 0x2206669,
+                color: 0x2206669
             }),
-            new window.THREE.MeshBasicMaterial({ color: 0x2206669 }),
+            new window.THREE.MeshBasicMaterial({ color: 0x2206669 })
         ];
         const name = new window.THREE.Mesh(geometry, materials);
         name.rotation.x = Math.PI / -2;

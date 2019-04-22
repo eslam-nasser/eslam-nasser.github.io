@@ -13,6 +13,7 @@ window.onload = () => {
 async function renderCards() {
     const data = await fetch('./data/fungi-data.json').then(res => res.json());
     const cardsWrapper = document.querySelector('.container');
+    // await new Promise(resolve => setTimeout(resolve, 2000));
     let sections = {};
     for (let key in data) {
         const fungi = data[key];
@@ -29,7 +30,7 @@ async function renderCards() {
         let cardsHTML = '';
         for (let fungi of section) {
             cardsHTML += `
-                <a href="/fungus.html?name=${fungi.slug}" class="card">
+                <a href="fungus.html?name=${fungi.slug}" class="card">
                     <div
                         class="image"
                         style="background-image: url('./assets/fungi-models/${
@@ -70,6 +71,7 @@ async function renderCards() {
         `;
         cardsWrapper.innerHTML += sectionHTML;
     }
+    cardsWrapper.classList.remove('loading');
     collapsibleSections();
 }
 
@@ -79,7 +81,8 @@ function collapsibleSections() {
     sectionsTitles.forEach(title => {
         title.addEventListener('click', e => {
             const section = e.target.parentNode;
-            const sectionCardsWrapper = section && section.querySelector('.section-cards-wrapper');
+            const sectionCardsWrapper =
+                section && section.querySelector('.section-cards-wrapper');
             section.classList.toggle('closed');
             DOMAnimations.slideToggle(sectionCardsWrapper);
         });
@@ -161,5 +164,5 @@ const DOMAnimations = {
         } else {
             return this.slideUp(element, duration);
         }
-    },
+    }
 };
