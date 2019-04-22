@@ -1,5 +1,5 @@
 {
-    "name": "interactive-3d-models",
+    "name": "fungus-scene",
     "version": "0.9.0",
     "description": "Interactive 3D models using Three.js and Blender",
     "main": "main.js",
