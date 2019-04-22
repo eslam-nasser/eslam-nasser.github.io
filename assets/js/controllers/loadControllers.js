@@ -1,4 +1,4 @@
-import ArNames from '../../data/fungi-parts-ar-names';
+import ArNames from '../../../data/fungi-parts-ar-names';
 
 export default function (modelInfo) {
     const controllersDiv = document.querySelector('#controllers');
