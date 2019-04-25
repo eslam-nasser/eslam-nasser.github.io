@@ -1,12 +1,34 @@
 {
-    "leveillula-2": {
-        "name": "leveillula-2",
+    "leveillula-asexual-phase": {
+        "name": "leveillula asexual phase",
         "classification": {
             "phylum": "",
             "class": "Leotiomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
             "genus": "Leveillula"
+        },
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
+    "verticillium-dahliae": {
+        "name": "verticillium dahliae",
+        "classification": {
+            "phylum": "",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Incertae sedis",
+            "genus": "Verticillium"
         },
         "parts": [
             {
@@ -168,10 +190,11 @@
     "tranzschelia": {
         "name": "tranzschelia",
         "classification": {
-            "phylum": "",
-            "class": "",
-            "order": "____________",
-            "genus": ""
+            "phylum": "Basidiomycota",
+            "class": "Urediniomycetes",
+            "order": "Uredinales",
+            "family": "Uropyxidaceae",
+            "genus": "Tranzschelia"
         },
         "parts": [
             {
