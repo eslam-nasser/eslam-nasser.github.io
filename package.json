@@ -28,8 +28,20 @@
     },
     "build": {
         "appId": "com.electron.fungusScene",
+        "productName": "fungusScene",
+        "copyright": "Copyright © 2019 Fungus Scene",
         "win": {
-            "target": "NSIS"
+            "icon": "./assets/logo/logo.png",
+            "legalTrademarks": "Fungus Scene",
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64",
+                        "ia32"
+                    ]
+                }
+            ]
         }
     }
 }
