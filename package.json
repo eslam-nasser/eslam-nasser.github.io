@@ -28,7 +28,7 @@
     },
     "build": {
         "appId": "com.electron.fungusScene",
-        "productName": "fungusScene",
+        "productName": "Fungus Scene",
         "copyright": "Copyright © 2019 Fungus Scene",
         "win": {
             "icon": "./assets/logo/logo.png",
