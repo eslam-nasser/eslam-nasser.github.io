@@ -43,6 +43,7 @@
         <script>
             // check if we are in an electron app
             function isElectron() {
+                var process = process || undefined;
                 return (
                     process &&
                     process.versions &&
