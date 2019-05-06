@@ -254,7 +254,7 @@ p {
 }
 
 /* instructions */
-#instructions {
+/* #instructions {
     position: absolute;
     left: 0;
     top: 0;
@@ -281,7 +281,7 @@ p {
 #instructions > div img {
     width: 20px;
     margin-right: 10px;
-}
+} */
 
 /* Show info */
 .show-info-btn {
@@ -391,10 +391,17 @@ p {
     margin-right: 10px;
 }
 
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 120px;
+    margin: 0;
+}
 /* tree-controles */
 #tree-controles {
     position: fixed;
-    top: 20px;
+    top: 80px;
     left: 20px;
     border-radius: 50%;
     width: 120px;
@@ -408,7 +415,7 @@ p {
 #tree-controles span {
     width: 35px;
     height: 35px;
-    background-color: var(--darkColor);
+    background-color: rgba(29, 41, 53, 1);
     display: flex;
     justify-content: center;
     align-items: center;
