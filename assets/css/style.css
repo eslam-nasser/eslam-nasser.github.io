@@ -267,6 +267,7 @@ p {
     color: #1d2935;
     transition: 0.15s;
     opacity: 0.6;
+    display: none !important;
 }
 #instructions > div:hover {
     opacity: 1;
@@ -388,6 +389,90 @@ p {
 .modal .source img {
     width: 20px;
     margin-right: 10px;
+}
+
+/* tree-controles */
+#tree-controles {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+#tree-controles:hover span {
+    opacity: 0.6;
+}
+#tree-controles span {
+    width: 35px;
+    height: 35px;
+    background-color: var(--darkColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 3px;
+    padding: 7px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.15s;
+}
+#tree-controles span::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+}
+#tree-controles span:hover {
+    opacity: 1;
+}
+/* Move */
+#tree-controles span:nth-child(1) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+#tree-controles span:nth-child(2) {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#tree-controles span:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#tree-controles span:nth-child(4) {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#tree-controles span img {
+    width: 100%;
+}
+/* Zooming */
+#tree-controles span:nth-child(5) {
+    top: 110%;
+}
+#tree-controles span:nth-child(6) {
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#tree-controles span:nth-child(7) {
+    top: 110%;
+    right: 0;
+}
+#tree-controles span.random-example {
+    width: 100%;
+    color: #fff;
+    height: auto;
+    font-size: 12px;
+    top: 150%;
 }
 
 /* cairo-regular - latin_arabic */
