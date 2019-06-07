@@ -35,3 +35,13 @@ window.onmousedown = () => {
         controls.defaultAutoRotate = false;
     }
 };
+
+const angle = 0;
+const radius = 500;
+window.angle = angle;
+
+window.turnCamera = () => {
+    camera.position.x = radius * Math.cos(window.angle);
+    camera.position.z = radius * Math.sin(window.angle);
+    window.angle += 0.1;
+};

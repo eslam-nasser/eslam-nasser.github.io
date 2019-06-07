@@ -62,34 +62,6 @@
         <!-- Controllers -->
         <div id="controllers"></div>
 
-        <!-- Tree Controles -->
-        <a href="index.html" class="btn back-btn">
-            <img src="./assets/img/icons/left.svg" /> الرجوع
-        </a>
-        <div id="tree-controles">
-            <span class="up moving-btn">
-                <img src="./assets/img/icons/up.svg" />
-            </span>
-            <span class="right moving-btn">
-                <img src="./assets/img/icons/right.svg" />
-            </span>
-            <span class="down moving-btn">
-                <img src="./assets/img/icons/down.svg" />
-            </span>
-            <span class="left moving-btn">
-                <img src="./assets/img/icons/left.svg" />
-            </span>
-            <span class="zoom-in">
-                <img src="./assets/img/icons/zoom-in.svg" />
-            </span>
-            <span class="zoom-out">
-                <img src="./assets/img/icons/zoom-out.svg" />
-            </span>
-            <span class="reset">
-                <img src="./assets/img/icons/refresh.svg" />
-            </span>
-        </div>
-
         <!-- Reset camera -->
         <button class="reset-camera" onclick="resetCamera()">
             <img src="./assets/img/icons/video-camera.svg" alt="Reset" />
@@ -97,7 +69,19 @@
         </button>
 
         <!-- Instructions -->
-        <!-- <div id="instructions"></div> -->
+        <div id="instructions">
+            <a href="index.html" class="btn">
+                <img src="./assets/img/icons/left.svg" /> الرجوع
+            </a>
+            <div class="left-click">
+                <img src="./assets/img/left-click.svg" />
+                <span>تدوير الكاميرا</span>
+            </div>
+            <div class="right-click">
+                <img src="./assets/img/right-click.svg" />
+                <span>تحريك الكاميرا</span>
+            </div>
+        </div>
 
         <script src="./assets/js/libs/three.min.js"></script>
         <script src="./assets/js/libs/OrbitControls.js"></script>

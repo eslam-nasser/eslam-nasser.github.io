@@ -254,7 +254,7 @@ p {
 }
 
 /* instructions */
-/* #instructions {
+#instructions {
     position: absolute;
     left: 0;
     top: 0;
@@ -266,12 +266,8 @@ p {
 #instructions > div {
     color: #1d2935;
     transition: 0.15s;
-    opacity: 0.6;
-    display: none !important;
 }
-#instructions > div:hover {
-    opacity: 1;
-}
+
 #instructions > div {
     display: flex;
     justify-content: center;
@@ -281,7 +277,7 @@ p {
 #instructions > div img {
     width: 20px;
     margin-right: 10px;
-} */
+}
 
 /* Show info */
 .show-info-btn {
@@ -398,7 +394,7 @@ p {
     width: 120px;
     margin: 0;
 }
-/* tree-controles */
+/* tree-controles 
 #tree-controles {
     position: fixed;
     top: 80px;
@@ -438,7 +434,7 @@ p {
 #tree-controles span:hover {
     opacity: 1;
 }
-/* Move */
+/* Move 
 #tree-controles span:nth-child(1) {
     left: 50%;
     transform: translateX(-50%);
@@ -461,7 +457,7 @@ p {
 #tree-controles span img {
     width: 100%;
 }
-/* Zooming */
+/* Zooming 
 #tree-controles span:nth-child(5) {
     top: 110%;
 }
