@@ -1,4 +1,4 @@
-import ArNames from '../../../data/fungi-parts-ar-names';
+// import ArNames from '../../../data/fungi-parts-ar-names';
 
 export default function (modelInfo) {
     const controllersDiv = document.querySelector('#controllers');
@@ -6,8 +6,9 @@ export default function (modelInfo) {
         controllersDiv.innerHTML += `
             <label>
                 <input checked type="checkbox" onchange="toggleShowPart('${part.name}', event)"/>
-                <span>${ArNames[part.name]}</span>
-            </label>
+                <span>${part.name}</span>
+                </label>
         `;
+        // <span>${ArNames[part.name]}</span>
     });
 }

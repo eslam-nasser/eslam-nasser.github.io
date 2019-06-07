@@ -135,7 +135,7 @@ p {
     }
 }
 
-/* DAT GUI */
+/* DAT GUI 
 .dg.main .close-button {
     height: 25px !important;
 }
@@ -153,6 +153,7 @@ p {
 .dg.main ul.closed + .close-button:after {
     content: 'فتح لوحة التحكم';
 }
+*/
 
 /* Reset camera */
 .reset-camera {
@@ -270,7 +271,7 @@ p {
 
 #instructions > div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 15px;
 }
