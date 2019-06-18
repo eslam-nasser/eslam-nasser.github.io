@@ -650,5 +650,16 @@
                 "url": "spors.obj"
             }
         ]
+    },
+    "aspergillus": {
+        "name": "Aspergillus",
+        "classification": {
+            "division": "Ascomycota",
+            "class": "Plectomycetes",
+            "order": "Aspergillales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+        },
+        "parts": []
     }
 }
