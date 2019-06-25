@@ -317,6 +317,7 @@ p {
 .modal {
     width: 800px;
     max-width: 100%;
+    max-height: 80vh;
     position: absolute;
     top: 100px;
     left: 50%;
@@ -331,7 +332,7 @@ p {
 }
 .modal .close {
     position: absolute;
-    right: 15px;
+    left: 15px;
     top: 12px;
     width: 32px;
     height: 32px;
@@ -363,11 +364,17 @@ p {
 }
 .modal .modal-body .body {
     padding: 5px 10px;
+    overflow: auto;
+    max-height: 65vh;
+    direction: rtl;
 }
 .modal .modal-body h3 {
     margin-top: 0;
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
+    text-align: right;
+    padding-right: 10px;
+    text-transform: capitalize;
 }
 .modal .source {
     background-color: #6058e4;
