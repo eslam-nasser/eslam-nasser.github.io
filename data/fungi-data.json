@@ -1,14 +1,14 @@
 {
-    "leveillula-asexual-phase": {
-        "name": "asexual leveillula",
+    "leveillula": {
+        "name": "Leveillula",
         "classification": {
             "division": "Ascomycota",
-            "class": "Loculoascomycetes",
+            "class": "Ascomycetes",
             "order": "Erysiphales",
             "family": "Erysiphaceae",
             "genus": "Leveillula"
         },
-        "body": "___________",
+        "body": "<p>التكاثر اللاجنسي: اذا كان الغزل الفطري سطحيا فإن الحامل الكونيدي قصير ويحمل سلسة من الجراثيم الكونيدية اما اذا كان الغزل الفطري متغلغلا داخل انسجة العائل فإن الحامل الكونيدي طويل و يخرج من الثغور ويحمل في نهايته كونيدة واحدة .</p><p>التكاثر الجنسي: الثمار الأسكية كروية مغلقة والزوائد غير متفرعة خيطية .</p>",
         "parts": [
             {
                 "name": "Spors",
@@ -16,9 +16,14 @@
                 "color": "#574b90"
             },
             {
-                "name": "Hypha",
-                "url": "hypha.obj",
+                "name": "Body",
+                "url": "body.obj",
                 "color": "#303952"
+            },
+            {
+                "name": "Tentacles",
+                "url": "tent.obj",
+                "color": "#53628c"
             }
         ]
     },
@@ -303,7 +308,7 @@
             "family": "Pucciniaceae",
             "genus": "Uromyces"
         },
-        "body": "___________",
+        "body": "No info currently available",
         "parts": [
             {
                 "name": "Spors",
@@ -347,34 +352,6 @@
                 "name": "Container",
                 "url": "container.obj",
                 "color": "#303952"
-            }
-        ]
-    },
-    "leveillula": {
-        "name": "Leveillula",
-        "classification": {
-            "division": "Ascomycota",
-            "class": "Ascomycetes",
-            "order": "Erysiphales",
-            "family": "Erysiphaceae",
-            "genus": "Leveillula"
-        },
-        "body": "<p>التكاثر اللاجنسي: اذا كان الغزل الفطري سطحيا فإن الحامل الكونيدي قصير ويحمل سلسة من الجراثيم الكونيدية اما اذا كان الغزل الفطري متغلغلا داخل انسجة العائل فإن الحامل الكونيدي طويل و يخرج من الثغور ويحمل في نهايته كونيدة واحدة .</p><p>التكاثر الجنسي: الثمار الأسكية كروية مغلقة والزوائد غير متفرعة خيطية .</p>",
-        "parts": [
-            {
-                "name": "Spors",
-                "url": "spors.obj",
-                "color": "#574b90"
-            },
-            {
-                "name": "Body",
-                "url": "body.obj",
-                "color": "#303952"
-            },
-            {
-                "name": "Tentacles",
-                "url": "tent.obj",
-                "color": "#53628c"
             }
         ]
     },
@@ -471,7 +448,7 @@
             "family": "Erysiphaceae",
             "genus": "Sphaerotheca"
         },
-        "body": "___________",
+        "body": "No info currently available",
         "parts": [
             {
                 "name": "Spors",
@@ -662,6 +639,29 @@
             }
         ]
     },
+    "leveillula-asexual-phase": {
+        "name": "asexual leveillula",
+        "classification": {
+            "division": "Ascomycota",
+            "class": "Loculoascomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Leveillula"
+        },
+        "body": "No info currently available",
+        "parts": [
+            {
+                "name": "Spors",
+                "url": "spors.obj",
+                "color": "#574b90"
+            },
+            {
+                "name": "Hypha",
+                "url": "hypha.obj",
+                "color": "#303952"
+            }
+        ]
+    },
     "ustilago": {
         "name": "Ustilago",
         "classification": {
@@ -678,17 +678,5 @@
                 "url": "spors.obj"
             }
         ]
-    },
-    "aspergillus": {
-        "name": "Aspergillus",
-        "classification": {
-            "division": "Ascomycota",
-            "class": "Plectomycetes",
-            "order": "Aspergillales",
-            "family": "Aspergillaceae",
-            "genus": "Aspergillus"
-        },
-        "body": "<p>الميسيليوم مقسم وتخرج الحوامل الكونيدية عمودية على بقية الميسيليوم وفي نهايتها يتكون انتفاخ يحمل تفرعات صغيرة تعرف بـ Stigmata تحمل كل منها سلسلة من الجراثيم الكونيدية مستديرة الشكل سوداء اللون</p><p>التكاثر الجنسي لهذا الفطر لم يعرف بعد.</p>",
-        "parts": []
     }
 }
