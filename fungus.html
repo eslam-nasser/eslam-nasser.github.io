@@ -90,14 +90,13 @@
         <script>
             // check if we are in an electron app
             function isElectron() {
-                var process = process || undefined;
+                var process = window.process || undefined;
                 return (
                     process &&
                     process.versions &&
                     process.versions.electron !== undefined
                 );
             }
-
             // if we are in an electron app then we need to open any external link in the default OS browser
             if (isElectron()) {
                 var all_a_tags = document.querySelectorAll(
@@ -107,7 +106,6 @@
                     link.addEventListener('click', function(e) {
                         e.preventDefault();
                         var link = e.target.href; // with the help of electron we can pass the link to the default OS browser!
-
                         require('electron').shell.openExternal(link);
                     });
                 });

@@ -1,4 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
+process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
+
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron');
 
