@@ -1,5 +1,6 @@
 {
     "leveillula": {
+        "source": "https://en.wikipedia.org/wiki/Leveillula",
         "name": "Leveillula",
         "classification": {
             "division": "Ascomycota",
@@ -28,6 +29,7 @@
         ]
     },
     "verticillium-dahliae": {
+        "source": "https://en.wikipedia.org/wiki/Verticillium_dahliae",
         "name": "verticillium dahliae",
         "classification": {
             "division": "Deuteromycotina",
@@ -51,6 +53,7 @@
         ]
     },
     "tilletia": {
+        "source": "https://en.wikipedia.org/wiki/Tilletia",
         "name": "tilletia",
         "classification": {
             "division": "Basidiomycota",
@@ -69,6 +72,7 @@
         ]
     },
     "urocystis": {
+        "source": "https://en.wikipedia.org/wiki/Urocystis",
         "name": "urocystis",
         "classification": {
             "division": "Basidiomycota",
@@ -87,6 +91,7 @@
         ]
     },
     "rhizopus-stolonifer": {
+        "source": "https://en.wikipedia.org/wiki/Rhizopus_stolonifer",
         "name": "rhizopus stolonifer",
         "classification": {
             "division": "Zygomycota",
@@ -110,6 +115,7 @@
         ]
     },
     "botrytis": {
+        "source": "https://en.wikipedia.org/wiki/Botrytis_(fungus)",
         "name": "Botrytis",
         "classification": {
             "division": "Deuteromycotina",
@@ -133,6 +139,7 @@
         ]
     },
     "bremia": {
+        "source": "https://en.wikipedia.org/wiki/Bremia",
         "name": "bremia",
         "classification": {
             "division": "oomycota",
@@ -156,6 +163,7 @@
         ]
     },
     "alternaria": {
+        "source": "https://en.wikipedia.org/wiki/Alternaria",
         "name": "alternaria",
         "classification": {
             "division": "eumycota",
@@ -179,6 +187,7 @@
         ]
     },
     "sclerospora-graminicola": {
+        "source": "https://en.wikipedia.org/wiki/Sclerospora_graminicola",
         "name": "sclerospora graminicola",
         "classification": {
             "division": "oomycota",
@@ -202,6 +211,7 @@
         ]
     },
     "tranzschelia": {
+        "source": "https://en.wikipedia.org/wiki/Tranzschelia_pruni-spinosae_var._discolor",
         "name": "tranzschelia",
         "classification": {
             "division": "Basidiomycota",
@@ -225,6 +235,7 @@
         ]
     },
     "pseudoperonospora-cubensis": {
+        "source": "https://en.wikipedia.org/wiki/Pseudoperonospora_cubensis",
         "name": "pseudoperonospora cubensis",
         "fontSizeRatio": 0.65,
         "classification": {
@@ -249,6 +260,7 @@
         ]
     },
     "peronospora-destructor": {
+        "source": "https://en.wikipedia.org/wiki/Peronospora_destructor",
         "name": "Peronospora destructor",
         "classification": {
             "division": "Oomycota",
@@ -272,6 +284,7 @@
         ]
     },
     "puccinia": {
+        "source": "https://en.wikipedia.org/wiki/Puccinia",
         "name": "puccinia",
         "classification": {
             "division": "Basidiomycota",
@@ -300,6 +313,7 @@
         ]
     },
     "uromyces": {
+        "source": "https://en.wikipedia.org/wiki/Uromyces",
         "name": "uromyces",
         "classification": {
             "division": "Basidiomycota",
@@ -328,6 +342,7 @@
         ]
     },
     "phragmidium": {
+        "source": "https://en.wikipedia.org/wiki/Phragmidium",
         "name": "Phragmidium",
         "classification": {
             "division": "Basidiomycota",
@@ -356,6 +371,7 @@
         ]
     },
     "microsphaera": {
+        "source": "https://en.wikipedia.org/wiki/Microsphaera",
         "name": "microsphaera",
         "classification": {
             "division": "Ascomycota",
@@ -384,6 +400,7 @@
         ]
     },
     "podosphaera": {
+        "source": "https://en.wikipedia.org/wiki/Podosphaera",
         "name": "Podosphaera",
         "classification": {
             "division": "Ascomycota",
@@ -412,6 +429,7 @@
         ]
     },
     "uncinula": {
+        "source": "https://en.wikipedia.org/wiki/Uncinula",
         "name": "uncinula",
         "classification": {
             "division": "Ascomycota",
@@ -440,6 +458,7 @@
         ]
     },
     "sphaerotheca": {
+        "source": "https://en.wikipedia.org/wiki/Sphaerotheca",
         "name": "sphaerotheca",
         "classification": {
             "division": "Ascomycota",
@@ -468,6 +487,7 @@
         ]
     },
     "erysiphe": {
+        "source": "https://en.wikipedia.org/wiki/Erysiphe",
         "name": "Erysiphe",
         "classification": {
             "division": "Ascomycota",
@@ -496,6 +516,7 @@
         ]
     },
     "phyllactinia": {
+        "source": "https://en.wikipedia.org/wiki/Phyllactinia",
         "name": "phyllactinia",
         "classification": {
             "division": "Ascomycota",
@@ -524,6 +545,7 @@
         ]
     },
     "cephalosporium-maydis": {
+        "source": "https://en.wikipedia.org/wiki/List_of_maize_diseases#Fungal_diseases",
         "name": "Cephalosporium Maydis",
         "fontSizeRatio": 0.75,
         "classification": {
@@ -548,6 +570,7 @@
         ]
     },
     "phytophthora-infestans": {
+        "source": "https://en.wikipedia.org/wiki/Phytophthora_infestans",
         "name": "Phytophthora Infestans",
         "classification": {
             "division": "Oomycota",
@@ -571,6 +594,7 @@
         ]
     },
     "penicillium": {
+        "source": "https://en.wikipedia.org/wiki/Penicillium",
         "name": "Penicillium",
         "classification": {
             "division": "Ascomycota",
@@ -594,6 +618,7 @@
         ]
     },
     "fusarium": {
+        "source": "https://en.wikipedia.org/wiki/Fusarium",
         "name": "Fusarium",
         "classification": {
             "division": "Eumycota",
@@ -617,6 +642,7 @@
         ]
     },
     "plasmopara-viticola": {
+        "source": "https://en.wikipedia.org/wiki/Plasmopara_viticola",
         "name": "Plasmopara Viticola",
         "classification": {
             "division": "Oomycota",
@@ -640,6 +666,7 @@
         ]
     },
     "leveillula-asexual-phase": {
+        "source": "https://en.wikipedia.org/wiki/Leveillula",
         "name": "asexual leveillula",
         "classification": {
             "division": "Ascomycota",
@@ -663,6 +690,7 @@
         ]
     },
     "ustilago": {
+        "source": "https://en.wikipedia.org/wiki/Ustilago",
         "name": "Ustilago",
         "classification": {
             "division": "Basidiomycota",

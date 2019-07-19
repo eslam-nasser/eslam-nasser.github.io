@@ -45,7 +45,7 @@
 
         <!-- Fungs's Info -->
         <button class="show-info-btn" onclick="openModal()">
-            More info about the fungus
+            Info about this fungus
             <!-- المزيد من المعلومات عن الفطر -->
         </button>
         <div class="modal">
@@ -55,7 +55,10 @@
                 <div class="modal-body">
                     <h3>Fungus name</h3>
                     <div class="body"></div>
-                    <!-- <a href="#" target="_blank" class="source"> Source </a> -->
+                    <a href="#" target="_blank" class="source">
+                        More info
+                        <img src="./assets/img/icons/w.svg" alt="Wikipedia" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,6 +87,32 @@
                 <span>Camera movment</span>
             </div>
         </div>
+        <script>
+            // check if we are in an electron app
+            function isElectron() {
+                var process = process || undefined;
+                return (
+                    process &&
+                    process.versions &&
+                    process.versions.electron !== undefined
+                );
+            }
+
+            // if we are in an electron app then we need to open any external link in the default OS browser
+            if (isElectron()) {
+                var all_a_tags = document.querySelectorAll(
+                    'a[target="_blank"]'
+                );
+                all_a_tags.forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var link = e.target.href; // with the help of electron we can pass the link to the default OS browser!
+
+                        require('electron').shell.openExternal(link);
+                    });
+                });
+            }
+        </script>
 
         <script src="./assets/js/libs/three.min.js"></script>
         <script src="./assets/js/libs/OrbitControls.js"></script>

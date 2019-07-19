@@ -42,7 +42,7 @@ export default function init() {
     loadControllers(model.parts);
 
     // Load model modal
-    loadModal({ name: model.name, body: model.body });
+    loadModal({ name: model.name, body: model.body, source: model.source });
 
     // Load model name
     const loader = new window.THREE.FontLoader();
