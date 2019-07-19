@@ -1,4 +1,4 @@
-# ![alt text](https://raw.githubusercontent.com/eslam-nasser/eslam-nasser.github.io/master/assets/logo/small-logo.png 'Fungus Scene Logo') Fungus Scene [Online Preview](https://eslam-nasser.github.io/)
+# ![alt text](https://eslam-nasser.github.io/assets/logo/small-logo.png 'Fungus Scene Logo') Fungus Scene [Online Preview](https://eslam-nasser.github.io/)
 
 Interactive 3D experience to better understand the morphology of a wide range of types of fungi.
 
