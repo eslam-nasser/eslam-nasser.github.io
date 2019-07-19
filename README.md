@@ -1,6 +1,6 @@
-# Fungus Scene [Online Preview](https://eslam-nasser.github.io/)
+# ![alt text](https://raw.githubusercontent.com/eslam-nasser/eslam-nasser.github.io/master/assets/logo/small-logo.png 'Fungus Scene Logo') Fungus Scene [Online Preview](https://eslam-nasser.github.io/)
 
-Interactive 3D experience to better understand the morphology of a wide range of types of fungi (Kindom Mycota).
+Interactive 3D experience to better understand the morphology of a wide range of types of fungi.
 
 ## Table of contents
 
@@ -14,9 +14,9 @@ Interactive 3D experience to better understand the morphology of a wide range of
 
 ## Download
 
-Currently, the app is still under development so you will have to either [run the project locally](#run-the-project-locally) on your machine or [preview it online](https://eslam-nasser.github.io/).
+You can [Download the app directly from github](https://github.com/eslam-nasser/eslam-nasser.github.io/releases/download/v1.0.0/Fungus.Scene.Setup.1.0.0.exe), its about 120 MB.
 
-In the near future, we will build a desktop version of this web app so it can work totally offline.
+You can also use [the online version](https://eslam-nasser.github.io) without the need to download anything.
 
 ## Run the project locally
 
@@ -27,10 +27,19 @@ You will need to have `NodeJS` and `NPM` installed on your machine before runnin
 git clone https://github.com/eslam-nasser/eslam-nasser.github.io.git
 
 # 2) cd to app directory and install dependencies
-cd eslam-nasser.github.io && npm i
+cd eslam-nasser.github.io && yarn
 
-# 3) After installing is finished you can run the project
-npm run start
+# 3) After installing is finished you can open it locally as an electron app with this command
+yarn start
+
+# 3.1) You can also run the app in the browser assuming you have php installed on your machine, it will open on http://localhost:4000/
+yarn serve
+
+# 4) build .exe it will be in /dist folder
+yarn build
+
+# 5) if you want to modify any js file in /assets/js folder then you will have to recomplie the code running this command
+yarn dev
 ```
 
 ## Goal
