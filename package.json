@@ -1,6 +1,6 @@
 {
     "name": "fungus-scene",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Interactive 3D models using Three.js and Blender",
     "main": "main.js",
     "repository": "https://github.com/eslam-nasser/eslam-nasser.github.io.git",
@@ -29,9 +29,9 @@
     "build": {
         "appId": "com.electron.fungusScene",
         "productName": "Fungus Scene",
-        "copyright": "Copyright © 2019 Fungus Scene",
+        "copyright": "Copyright © 2019-2020 Fungus Scene",
         "win": {
-            "icon": "./assets/logo/logo.png",
+            "icon": "./assets/logo/logo-sq.png",
             "legalTrademarks": "Fungus Scene",
             "target": [
                 {
