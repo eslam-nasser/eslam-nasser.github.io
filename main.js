@@ -14,7 +14,7 @@ function createWindow() {
         width: 1100,
         height: 900,
         autoHideMenuBar: true,
-        icon: './assets/logo/logo.png',
+        icon: './assets/logo/logo-sq.png',
         webPreferences: {
             nodeIntegration: true,
         },
