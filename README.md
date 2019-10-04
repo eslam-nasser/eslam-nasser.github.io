@@ -1,4 +1,4 @@
-# ![](https://eslam-nasser.github.io/assets/logo/logo-sq.png 'Fungus Scene Logo') Fungus Scene [Online Preview](https://eslam-nasser.github.io/)
+# Fungus Scene [Online Preview](https://eslam-nasser.github.io/)
 
 Interactive 3D experience to better understand the morphology of a wide range of types of fungi.
 
@@ -14,7 +14,7 @@ Interactive 3D experience to better understand the morphology of a wide range of
 
 ## Download
 
-You can [Download the app directly from github](https://github.com/eslam-nasser/eslam-nasser.github.io/releases/download/v1.0.0/Fungus.Scene.Setup.1.0.0.exe), its about 120 MB.
+You can [Download the app directly from github](https://github.com/eslam-nasser/eslam-nasser.github.io/releases/download/v1.0.2/Fungus.Scene.Setup.1.0.2.exe), its about 120 MB.
 
 You can also use [the online version](https://eslam-nasser.github.io) without the need to download anything.
 
